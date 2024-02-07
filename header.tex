@@ -5,7 +5,7 @@
 \pdfminorversion=5
 \pdfobjcompresslevel=1
 % Allgemeines
-\usepackage[automark]{scrpage2} % Kopf- und Fußzeilen
+\usepackage[automark]{scrlayer-scrpage} % Kopf- und Fußzeilen
 \usepackage{amsmath} % Mathesachen
 \newtheorem{definition}{Definition}
 \usepackage[T1]{fontenc} % Ligaturen, richtige Umlaute im PDF
@@ -20,6 +20,12 @@
 % \usepackage[scaled=.90]{helvet}
 % \usepackage{courier}
 \usepackage{setspace} % Zeilenabstand
+\usepackage{adjustbox}
+\usepackage{hhline}
+\usepackage{tikz}
+%\usepackage{gb4e}
+\usetikzlibrary{fit, positioning, shapes.geometric, decorations.pathreplacing,positioning, arrows.meta}
+
 \onehalfspacing % 1,5 Zeilen
 % Kein Seitenumbruch bei neuem Chapter
 \usepackage{etoolbox}
@@ -41,7 +47,7 @@
 %\setkomafont{captionof}{\small\sffamily}
 \setkomafont{footnote}{\sffamily}
 % Sprache: Deutsch, Englisch als default
-\usepackage[german,english]{babel} % Silbentrennung
+\usepackage[german, english]{babel} % Silbentrennung
 \usepackage[babel]{csquotes} % Anführungszeichen mit enquote
 % Tabellen
 \usepackage{multirow} % Tabellen-Zellen über mehrere Zeilen
@@ -66,7 +72,7 @@
 % Bilder
 \usepackage{graphicx} % Bilder
 \usepackage{color} % Farben
-\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[usenames,dvipsnames]{xcolor}
 \graphicspath{{images/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg} % bevorzuge pdf-Dateien
 \usepackage{subfigure} % mehrere Abbildungen nebeneinander/übereinander
@@ -107,6 +113,8 @@
 \usepackage{epstopdf} %eps to pdf 
 
 \usepackage{chngcntr}
+\usepackage{gb4e}
+\noautomath
  
 \counterwithout{figure}{chapter}
 \counterwithout{table}{chapter}

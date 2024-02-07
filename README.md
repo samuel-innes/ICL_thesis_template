@@ -3,7 +3,14 @@ LaTex template for theses at the Department of Computational Linguistics (ICL), 
 
 *Note that it is not required to use this template for your thesis at ICL, it serves solely as a **suggestion**. Please check with your advisor whether they approve the use of this template.*
 
-## Instructions
+## How to install further LaTeX packages
+1. Download the package from CTAN
+2. See if the package already contains a .sty file. If not, do the instructions in the README to generate this file.
+3. Transfer the folder to the correct path (/usr/local/texlive/2023basic/texmf-dist/tex)
+4. Run the command `sudo -H mktexlsr` to update the indexes
+5. You're ready to go!
+
+## Instructions for the template
 
 1. **Installation**
     

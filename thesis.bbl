@@ -1,0 +1,318 @@
+\begin{thebibliography}{38}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Jens Van~Gysel and Xue(2022)]{umrslides2022}
+Jin~Zhao Jens Van~Gysel, Meagan~Vigus and Nianwen Xue.
+\newblock Developing a uniform meaning representation for natural language
+  processing.
+\newblock Tutorial, 2022.
+\newblock URL
+  \url{https://lrec2022.lrec-conf.org/media/filer_public/94/45/9445a9b9-4cfb-4898-a5cc-a89143ab2a2a/umr_lrec_tutorial_slides_6.pdf}.
+
+\bibitem[van Hout(2016)]{10.1093/oxfordhb/9780199601264.013.25}
+Angeliek van Hout.
+\newblock {Lexical and Grammatical Aspect}.
+\newblock In \emph{{The Oxford Handbook of Developmental Linguistics}}. Oxford
+  University Press, 07 2016.
+\newblock ISBN 9780199601264.
+\newblock \doi{10.1093/oxfordhb/9780199601264.013.25}.
+\newblock URL \url{https://doi.org/10.1093/oxfordhb/9780199601264.013.25}.
+
+\bibitem[Smith(1991)]{Smith1991ThePO}
+Carlota Smith.
+\newblock The parameter of aspect.
+\newblock 1991.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:61127772}.
+
+\bibitem[Vendler(1957)]{vendler57}
+Zeno Vendler.
+\newblock Verbs and times.
+\newblock \emph{The Philosophical Review}, 66\penalty0 (2):\penalty0 143--160,
+  1957.
+\newblock ISSN 00318108, 15581470.
+\newblock URL \url{http://www.jstor.org/stable/2182371}.
+
+\bibitem[Egg et~al.(2019)Egg, Prepens, and
+  Roberts]{annotAndAutoClassOfAspectCat}
+Markus Egg, Helena Prepens, and Will Roberts.
+\newblock Annotation and automatic classification of aspectual categories.
+\newblock In Anna Korhonen, David~R. Traum, and Llu{\'{\i}}s M{\`{a}}rquez,
+  editors, \emph{Proceedings of the 57th Conference of the Association for
+  Computational Linguistics, {ACL} 2019, Florence, Italy, July 28- August 2,
+  2019, Volume 1: Long Papers}, pages 3335--3341. Association for Computational
+  Linguistics, 2019.
+\newblock \doi{10.18653/V1/P19-1323}.
+\newblock URL \url{https://doi.org/10.18653/v1/p19-1323}.
+
+\bibitem[Zhong et~al.(2023)Zhong, Ding, Liu, Du, and Tao]{zhong2023chatgpt}
+Qihuang Zhong, Liang Ding, Juhua Liu, Bo~Du, and Dacheng Tao.
+\newblock Can chatgpt understand too? a comparative study on chatgpt and
+  fine-tuned bert, 2023.
+
+\bibitem[Sasse(2002)]{Sasse2002RecentAI}
+Hans-J{\"u}rgen Sasse.
+\newblock Recent activity in the theory of aspect: Accomplishments,
+  achievements, or just non-progressive state?
+\newblock \emph{Linguistic Typology}, 6, 2002.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:121510831}.
+
+\bibitem[Matthews(2014)]{matthews2014concise}
+P.H. Matthews.
+\newblock \emph{The Concise Oxford Dictionary of Linguistics}.
+\newblock Oxford Paperback Reference. OUP Oxford, 2014.
+\newblock ISBN 9780199675128.
+\newblock URL \url{https://books.google.it/books?id=1mg3BQAAQBAJ}.
+
+\bibitem[Comrie(1976)]{comrie1976aspect}
+B.~Comrie.
+\newblock \emph{Aspect: An Introduction to the Study of Verbal Aspect and
+  Related Problems}.
+\newblock Camb. Textbk. Ling. Cambridge University Press, 1976.
+\newblock ISBN 9780521211093.
+\newblock URL \url{https://books.google.it/books?id=1RVcXZjV0j0C}.
+
+\bibitem[Jespersen(1933)]{jespersen2013essentials}
+Otto Jespersen.
+\newblock \emph{Essentials of English grammar}.
+\newblock Routledge, 1933.
+
+\bibitem[Bittner(2005)]{10.1093/jos/ffh029}
+Maria Bittner.
+\newblock {Future Discourse in a Tenseless Language}.
+\newblock \emph{Journal of Semantics}, 22\penalty0 (4):\penalty0 339--387, 08
+  2005.
+\newblock ISSN 0167-5133.
+\newblock \doi{10.1093/jos/ffh029}.
+\newblock URL \url{https://doi.org/10.1093/jos/ffh029}.
+
+\bibitem[Whorf(2012)]{whorf-writings}
+Benjamin~Lee Whorf.
+\newblock \emph{Language, Thought, and Reality: Selected Writings of Benjamin
+  Lee Whorf}.
+\newblock The MIT Press, 2012.
+\newblock ISBN 9780262517751.
+\newblock URL \url{http://www.jstor.org/stable/j.ctt5hhbx2}.
+
+\bibitem[Malotki(1983)]{hopitime}
+Ekkehart Malotki.
+\newblock \emph{Hopi Time}.
+\newblock De Gruyter Mouton, Berlin, New York, 1983.
+\newblock ISBN 9783110822816.
+\newblock \doi{doi:10.1515/9783110822816}.
+\newblock URL \url{https://doi.org/10.1515/9783110822816}.
+
+\bibitem[Franks(2005)]{franks2005slavic}
+Steven Franks.
+\newblock The slavic languages.
+\newblock \emph{Handbook of Comparative Syntax}, pages 373--419, 2005.
+
+\bibitem[Kiparsky(2004)]{Kiparsky2004PartitiveCA}
+Paul Kiparsky.
+\newblock Partitive case and aspect.
+\newblock 2004.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:118440489}.
+
+\bibitem[Boogaart(2004)]{Boogaart+2004+1165+1180}
+Ronny Boogaart.
+\newblock \emph{Aspect and Aktionsart}, pages 1165--1180.
+\newblock De Gruyter Mouton, Berlin • New York, 2004.
+\newblock ISBN 9783110194272.
+\newblock \doi{doi:10.1515/9783110172782.2.14.1165}.
+\newblock URL \url{https://doi.org/10.1515/9783110172782.2.14.1165}.
+
+\bibitem[Dahl(1985)]{Dahl1985TenseAA}
+{\"O}sten Dahl.
+\newblock Tense and aspect systems.
+\newblock 1985.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:18132338}.
+
+\bibitem[Xiao and Mcenery(2006)]{XiaoMcenery+2006+1+21}
+Richard Xiao and Tony Mcenery.
+\newblock Can completive and durative adverbials function as tests for
+  telicity? evidence from english and chinese.
+\newblock \emph{Corpus Linguistics and Linguistic Theory}, 2\penalty0
+  (1):\penalty0 1--21, 2006.
+\newblock \doi{doi:10.1515/CLLT.2006.001}.
+\newblock URL \url{https://doi.org/10.1515/CLLT.2006.001}.
+
+\bibitem[Krifka(1998)]{Krifka1998TheOO}
+Manfred Krifka.
+\newblock The origins of telicity.
+\newblock 1998.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:55535400}.
+
+\bibitem[Östen Dahl(2015)]{DAHL2015210}
+Östen Dahl.
+\newblock Tense, aspect, mood and evidentiality, linguistics of.
+\newblock In James~D. Wright, editor, \emph{International Encyclopedia of the
+  Social and Behavioral Sciences (Second Edition)}, pages 210--213. Elsevier,
+  Oxford, second edition edition, 2015.
+\newblock ISBN 978-0-08-097087-5.
+\newblock \doi{https://doi.org/10.1016/B978-0-08-097086-8.52025-X}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/B978008097086852025X}.
+
+\bibitem[Friedrich et~al.(2023)Friedrich, Xue, and
+  Palmer]{friedrich-etal-2023-kind}
+Annemarie Friedrich, Nianwen Xue, and Alexis Palmer.
+\newblock A kind introduction to lexical and grammatical aspect, with a survey
+  of computational approaches.
+\newblock In Andreas Vlachos and Isabelle Augenstein, editors,
+  \emph{Proceedings of the 17th Conference of the European Chapter of the
+  Association for Computational Linguistics}, pages 599--622, Dubrovnik,
+  Croatia, May 2023. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2023.eacl-main.44}.
+\newblock URL \url{https://aclanthology.org/2023.eacl-main.44}.
+
+\bibitem[Lo{\'a}iciga and Grisot(2016)]{loaiciga-grisot-2016-predicting}
+Sharid Lo{\'a}iciga and Cristina Grisot.
+\newblock Predicting and using a pragmatic component of lexical aspect of
+  simple past verbal tenses for improving {E}nglish-to-{F}rench machine
+  translation.
+\newblock \emph{Linguistic Issues in Language Technology}, 13, 2016.
+\newblock URL \url{https://aclanthology.org/2016.lilt-13.3}.
+
+\bibitem[Linguistics et~al.(2005)Linguistics, Carlota, and
+  Jan]{Linguistics2005DowtyD1}
+Pacific Linguistics, Segura Carlota, and Evert Jan.
+\newblock Dowty, david. 1979. word meaning and montague grammar: The semantics
+  of verbs and times in generative semantics and in montague's ptq. dordrecht:
+  Reidel.
+\newblock 2005.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:57525242}.
+
+\bibitem[Zucchi(2020)]{zucchi}
+Sandro Zucchi.
+\newblock \emph{Progressive: The Imperfective Paradox}, pages 1--32.
+\newblock 11 2020.
+\newblock ISBN 9781118788318.
+\newblock \doi{10.1002/9781118788516.sem138}.
+
+\bibitem[Depraetere(1995)]{6608d9d0-a477-39af-8491-2172df5ae612}
+Ilse Depraetere.
+\newblock On the necessity of distinguishing between (un)boundedness and
+  (a)telicity.
+\newblock \emph{Linguistics and Philosophy}, 18\penalty0 (1):\penalty0 1--19,
+  1995.
+\newblock ISSN 01650157, 15730549.
+\newblock URL \url{http://www.jstor.org/stable/25001576}.
+
+\bibitem[Binnick(1991)]{binnick1991time}
+R.I. Binnick.
+\newblock \emph{Time and the Verb: A Guide to Tense and Aspect}.
+\newblock Filologia y linguistica. Oxford University Press, 1991.
+\newblock ISBN 9780195062069.
+\newblock URL \url{https://books.google.it/books?id=LDXnCwAAQBAJ}.
+
+\bibitem[McIntosh(1975)]{McINTOSH+1975+35+42}
+C.~McIntosh.
+\newblock The semantics of stativity.
+\newblock \emph{Journal of Literary Semantics}, 4\penalty0
+  (Jahresband):\penalty0 35--42, 1975.
+\newblock \doi{doi:10.1515/jlse.1975.4.1.35}.
+\newblock URL \url{https://doi.org/10.1515/jlse.1975.4.1.35}.
+
+\bibitem[Granath and Wherrity(2013)]{Granath_Wherrity_2013}
+Solveig Granath and Michael Wherrity.
+\newblock I’m loving you – and knowing it too: Aspect and so-called stative
+  verbs.
+\newblock \emph{Rhesis. International Journal of Linguistics, Philology and
+  Literature}, 4\penalty0 (1):\penalty0 6--22, Dec. 2013.
+\newblock \doi{10.13125/rhesis/5575}.
+\newblock URL \url{https://ojs.unica.it/index.php/rhesis/article/view/5575}.
+
+\bibitem[Wilhelm(2007)]{102998}
+Andrea Wilhelm.
+\newblock \emph{Telicity and durativity: a study of aspect in Déne Sul/ine
+  (Chipewyan) and German}.
+\newblock Studies in linguistics. Routledge, New York, 2007.
+\newblock ISBN 9780415976459.
+\newblock Includes bibliographical references (p. 315-325) and indexes.
+
+\bibitem[Kenny(1963)]{Kenny1963-KENAEA}
+Anthony Kenny.
+\newblock \emph{Action, Emotion and Will}.
+\newblock Humanities Press, Ny, 1963.
+
+\bibitem[Mourelatos(1978)]{19c36731-bdec-362e-9f45-1aaba76109d7}
+Alexander P.~D. Mourelatos.
+\newblock Events, processes, and states.
+\newblock \emph{Linguistics and Philosophy}, 2\penalty0 (3):\penalty0 415--434,
+  1978.
+\newblock ISSN 01650157, 15730549.
+\newblock URL \url{http://www.jstor.org/stable/25000995}.
+
+\bibitem[Levisen(2019)]{LEVISEN2019101173}
+Carsten Levisen.
+\newblock Biases we live by: Anglocentrism in linguistics and cognitive
+  sciences.
+\newblock \emph{Language Sciences}, 76:\penalty0 101173, 2019.
+\newblock ISSN 0388-0001.
+\newblock \doi{https://doi.org/10.1016/j.langsci.2018.05.010}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0388000117303558}.
+\newblock Biases in Linguistics.
+
+\bibitem[Damonte and Cohen(2018)]{damonte2018crosslingual}
+Marco Damonte and Shay~B. Cohen.
+\newblock Cross-lingual abstract meaning representation parsing, 2018.
+
+\bibitem[Moens and Steedman(1988)]{moens-steedman-1988-temporal}
+Marc Moens and Mark Steedman.
+\newblock Temporal ontology and temporal reference.
+\newblock \emph{Computational Linguistics}, 14\penalty0 (2):\penalty0 15--28,
+  1988.
+\newblock URL \url{https://aclanthology.org/J88-2003}.
+
+\bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
+  O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
+  Vallejos, and Xue]{umr}
+Jens E.~L. Van~Gysel, Meagan Vigus, Jayeol Chun, Kenneth Lai, Sarah Moeller,
+  Jiarui Yao, Tim O’Gorman, Andrew Cowell, William Croft, Chu-Ren Huang, Jan
+  Hajič, James~H. Martin, Stephan Oepen, Martha Palmer, James Pustejovsky,
+  Rosa Vallejos, and Nianwen Xue.
+\newblock Designing a uniform meaning representation for natural language
+  processing.
+\newblock \emph{KI - K\"{u}nstliche Intelligenz}, 35\penalty0 (3–4):\penalty0
+  343–360, April 2021.
+\newblock ISSN 1610-1987.
+\newblock \doi{10.1007/s13218-021-00722-w}.
+\newblock URL \url{http://dx.doi.org/10.1007/s13218-021-00722-w}.
+
+\bibitem[Banarescu et~al.(2013)Banarescu, Bonial, Cai, Georgescu, Griffitt,
+  Hermjakob, Knight, Koehn, Palmer, and Schneider]{amr}
+L.~Banarescu, Claire Bonial, Shu Cai, M.~Georgescu, K.~Griffitt, U.~Hermjakob,
+  K.~Knight, P.~Koehn, Martha Palmer, and N.~Schneider.
+\newblock Abstract meaning representation for sembanking.
+\newblock \emph{Proceedings of the 7th Linguistic Annotation Workshop and
+  Interoperability with Discourse}, pages 178--186, 01 2013.
+
+\bibitem[Egg(2005)]{egg2005flexible}
+M.~Egg.
+\newblock \emph{Flexible Semantics for Reinterpretation Phenomena}.
+\newblock CSLI Lecture Notes (CSLI- CHUP) Series. CSLI Publications, 2005.
+\newblock ISBN 9781575865027.
+\newblock URL \url{https://books.google.it/books?id=jGVsAAAAIAAJ}.
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,
+  Child, Ramesh, Ziegler, Wu, Winter, Hesse, Chen, Sigler, Litwin, Gray, Chess,
+  Clark, Berner, McCandlish, Radford, Sutskever, and Amodei]{gpt3}
+Tom~B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan,
+  Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda
+  Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan,
+  Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter,
+  Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray,
+  Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford,
+  Ilya Sutskever, and Dario Amodei.
+\newblock Language models are few-shot learners.
+\newblock In \emph{Proceedings of the 34th International Conference on Neural
+  Information Processing Systems}, NIPS'20, Red Hook, NY, USA, 2020. Curran
+  Associates Inc.
+\newblock ISBN 9781713829546.
+
+\end{thebibliography}
