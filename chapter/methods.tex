@@ -10,6 +10,7 @@ The framework I decided on was Uniform Meanign Representation (UMR) \citep{umr}.
 \subsection{UMR}
 UMR \citep{umr} was introduced in order to expand and further generalise the attempt to design an abstract semantic representation, as was most successfully pioneered by \citet{amr} with Abstract Meaning Representation (AMR). In contrast to AMR, UMR aims to be a typologically-informed abstraction away from English structures, making it more suitable for other similar languages, or, in their own words, making it "a practical and cross-linguistically valid meaning representation designed to meet the needs of a wide range of NLP applications" \citep{umr}.
 
+WHY IS UMR IMPORTANT???? Get Apaho English comparison from \citet{bonn-etal-2023-mapping}
 
 \subsection*{Aspect in UMR}
 UMR describes the following 5 corse-grained aspect classes: (descriptions taken from \citet{umr}), also depicted in figure \ref{fig:umr_aspect_tree}:
@@ -54,8 +55,19 @@ activity                       & \multirow{2}{*}{process}   & process predicate 
     \label{table:aspect_classes_comparison}
 \end{table}
 
+\subsection{How does the Slavic Perfective-Imperfective relate to UMR classes}
+
+Habitual = imperfective
+State = imperfective (general imp?)
+Activity = imperfective (see motion verbs)
+endeavour = 
+
+performance = perfective
 
 \section{Use of approximative LMs as sources of linguistic knowledge??}
 \section{Where do LLMs fail?}
 
+\section*{Dataset creation}
+In order to create the dataset for training the model, later to be used for the neural analysis, it is 
 
+Since UMR aspect is an AMR/UMR node parameter, rather than a clausal one (see for example Smith's situation entity types ADD LINK HERE), it is necessary to first parse any sentence into an AMR graph. However, since no parsers are available for Russian, I had to resort to another option. One possibility would be to develop a system, possibly using tools already available for Russian such as syntax parsers ADD EXAMPLE HERE, however since the focus is on one small part of the AMR/UMR graph - nodes describing an event - this could be an unnecessary distraction. In theory at least, AMR graphs should have a strong correlation with the syntax tree representation of the sentence, and since most events are verbal phrases, this fact can be utilised to simpify the problem. I therefore opted to solve the problem by using a dependency parser (OR SYNTAX PARSER???)

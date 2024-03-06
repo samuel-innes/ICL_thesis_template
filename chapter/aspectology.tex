@@ -33,7 +33,7 @@ As noted, one distinction which must be made right away is that between \emph{as
 
 \subsection{Lexical vs grammatical aspect}
 The polysemy of the term “aspect” in the linguistic community is unfortunate. In an area of language which seems to have surprisingly far-reaching interactions with other parts of linguistic systems these ambiguities are particularly unhelpful.\footnote{Among other things, aspect is also intertwined with case, mood and voice \citep{franks2005slavic, Kiparsky2004PartitiveCA}.}
-As already mentioned, aspect\footnote{Boogaart uses the term \emph{aspectuality} to remove the aforementioned ambiguity \citep{Boogaart+2004+1165+1180}. However, I will stick with the term \emph{aspect} due to its prevalence in the literature, further specifying where necessary.} is a term often used to refer to both lexical and grammatical aspect. Lexical aspect (also referred to as \emph{Aktionsart, situation aspect} or \emph{inner aspect}) is the inherent property of a verb or verb phrase which “characterizes the temporal profile of event descriptions” \citep{10.1093/oxfordhb/9780199601264.013.25}. For example, to “crack open an egg” is inherently a short event describing the change of one state (the egg being whole) to another (the egg being cracked). Grammatical aspect (or \emph{viewpoint aspect, outer aspect}), on the other hand, describes the “internal temporal constituency” \citep{comrie1976aspect} of an event, such as its habituality or ongoing nature and can be seen more as an external lens imposed on a verbal phrase. In English, one example of this lens is the progressive, which is formed by the verb \emph{be} + gerund, as in the phrase “Sue was running”. Figure \ref{fig:TimeSitEvent} shows a taxonomy of tense, and grammatical and lexical aspect.
+As already mentioned, aspect\footnote{Boogaart uses the term \emph{aspectuality} to remove the aforementioned ambiguity \citep{Boogaart+2004+1165+1180}. However, I will stick with the term \emph{aspect} due to its prevalence in the literature, further specifying where necessary.} is a term often used to refer to both lexical and grammatical aspect. Lexical aspect (also referred to as \emph{Aktionsart, situation aspect} or \emph{inner aspect}) is the inherent property of a verb or verb phrase which “characterizes the temporal profile of event descriptions” \citep{10.1093/oxfordhb/9780199601264.013.25}. For example, to “crack open an egg” is inherently a short event describing the change of one state (the egg being whole) to another (the egg being cracked). Grammatical aspect (or \emph{viewpoint aspect, outer aspect}), on the other hand, describes the “internal temporal constituency” \citep{comrie1976aspect} XCHANGE THIS!! of an event, such as its habituality or ongoing nature and can be seen more as an external lens imposed on a verbal phrase. In English, one example of this lens is the progressive, which is formed by the verb \emph{be} + gerund, as in the phrase “Sue was running”. Figure \ref{fig:TimeSitEvent} shows a taxonomy of tense, and grammatical and lexical aspect.
 
 The concrete linguistic realisation of these categories is very often unclear or non-existent and exhibits a relatively wide variety of encodings throughout the world’s languages \citep{Dahl1985TenseAA}. It therefore proves tricky to uphold this distinction in empirical studies "in the real world". Nevertheless the theoretical differentiation of these two interrelated subdomains is an important one to make, and each describes a variety of concepts which will be useful later.
 
@@ -235,17 +235,40 @@ Vendler states in his introduction that verbs "presuppose" certain time schemata
 \subsection*{\citet{moens-steedman-1988-temporal}}
 
 \subsection{Grammatical aspect}
-The second 
+Grammatical (or \emph{viewpoint}) aspect provides a lens through which a particular event is viewed and it "is typically expressed by overt grammatical morphemes (hence the label grammatical aspect)" \citep{Chapter1IntroductionCrossLinguisticPerspectivesontheSemanticsofGrammaticalAspect}. \citet{comrie1976aspect} provides a hierarchical classification of aspectual oppositions shown in \ref{fig:comrieaspecttree}, and in the following section I will look at some of the main oppositions described in this classification.
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+        \node {}[sibling distance = 3.5cm, level distance = 1cm]
+        child [black] {node {Perfective} 
+            edge from parent [black] node [left] {}}
+        child {node {Imperfective} 
+            child [black] {node {Habitual}
+                edge from parent [black] node [left] {}}
+            child [black] {node {Continuous}
+                child [black] {node {Nonprogressive}
+                    edge from parent [black] node [left] {}}
+                child [black] {node {Progressive}
+                    edge from parent [black] node [right] {}}
+                edge from parent [black] node [right] {}} 
+            edge from parent [black] node [right] {}};
+    \end{tikzpicture}
+    \caption{Comrie's classification of aspectual oppositions. Reproduced from \citet{comrie1976aspect}.}
+    \label{fig:comrieaspecttree}
+\end{figure}
+
 \subsection*{Perfective vs. Imperfective}
+The main aspectual distinction made by Slavic languages and, as can bee seen in figure \ref{fig:comrieaspecttree}, one of the main distinctions made in theoretical aspectology generally as that between perfective and imperfective. In order to avoid confusion with the concrete realisation of these theoretical categories in the aforementioned Slavic group I will follow the nomenclature used by DAHLL and refer to the theoretical 
 \subsection*{Progressive}
 \subsection*{Iterative}
 
 \section{Aspect in Slavic languages}
-The Slavic language group has a special place on the study of aspectology due to its overt encoding of aspectual phenomena. 
+The Slavic language group has a special place on the study of aspectology due to its overt encoding of aspectual phenomena, otherwise rather uncommon \citep{slavstyleaspect}.\footnote{\citet{slavstyleaspect} also notes that Georgian and Ossetian exhibit some similar properties with preverbs (mostly of spatial origin) used to denote aspectual meaning.}
 
 WE CAN SEE THE DIACHRONICAL DEVELOPMENT FROM LEXICAL ASPECT TO GRAMMATICAL ASPECT
 
-\subsection{Perfective-Imperfective}
+\subsection{Slavic Perfective-Imperfective distinction}
 Show that imf and perf different to telicity/boundedness
 
 \section{Formal models of aspect (or put this in related work?)}

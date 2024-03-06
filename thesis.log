@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  7 FEB 2024 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  6 MAR 2024 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1475,50 +1475,75 @@ Overfull \hbox (49.99994pt too wide) in paragraph at lines 68--174
  [][] 
  []
 
-[6] [7] [8] [9])
-Underfull \hbox (badness 10000) in paragraph at lines 252--75
+[6] [7] [8] [9]
+Overfull \hbox (24.72028pt too wide) in paragraph at lines 267--268
+\T1/lmss/m/n/12 (-20) of as-pec-tual phe-nom-ena, oth-er-wise rather un-com-mon
+ [[]Tomel-leri[], []2010[]].[][][] 
+ []
+
+[10])
+Underfull \hbox (badness 10000) in paragraph at lines 275--75
 
  []
 
-[10]
+[11]
 chapter 3.
 (./chapter/related.tex
-Overfull \hbox (15.45834pt too wide) in paragraph at lines 3--4
+Overfull \hbox (15.45834pt too wide) in paragraph at lines 2--3
 \T1/lmss/m/n/12 (-20) How-ever there have been some works in re-cent years look
 -ing at this area: 
  []
 
-) [11
+) [12
 
 
 
 ]
 chapter 4.
-(./chapter/methods.tex [12
+(./chapter/methods.tex
+Overfull \hbox (96.18225pt too wide) in paragraph at lines 13--14
+[]\T1/lmss/m/n/12 (-20) WHY IS UMR IM-POR-TANT???? Get Apaho En-glish com-par-i
+-son from []Bonn et al.[] [[]2023[]] 
+ []
+
+[13
 
 
 
 ]
-<img/umr_aspct_tree.png, id=402, 1008.76875pt x 568.1225pt>
+<img/umr_aspct_tree.png, id=444, 1008.76875pt x 568.1225pt>
 File: img/umr_aspct_tree.png Graphic file (type png)
 <use img/umr_aspct_tree.png>
-Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 29.
+Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 30.
 (pdftex.def)             Requested size: 469.47052pt x 264.39961pt.
- [13 <./img/umr_aspct_tree.png>]) [14]
+ [14 <./img/umr_aspct_tree.png>] [15]) [16]
 chapter 5.
-(./chapter/experiments.tex) [15
+(./chapter/experiments.tex [17
 
 
 
-]
+] [18]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+5.
+
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [19{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr
+/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]) [20] [2
+1]
 chapter 6.
-(./chapter/discussion.tex) [16
+(./chapter/discussion.tex) [22
 
 
 
 ]
 chapter 7.
-(./chapter/conclusion.tex) [17
+(./chapter/conclusion.tex) [23
 
 
 
@@ -1530,28 +1555,19 @@ Overfull \hbox (29.85915pt too wide) in paragraph at lines 2--3
 in the NLP do-main. 
  []
 
-) [18
+) [24
 
 
 
 ] (./thesis.bbl
 chapter without number
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-4.
-(/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--15
+Underfull \hbox (badness 10000) in paragraph at lines 17--23
 \T1/lmtt/m/n/12 org / media / filer _ public / 94 / 45 / 9445a9b9-[]4cfb-[]4898
 -[]a5cc-[]a89143ab2a2a / umr _
  []
 
-[19
+[25
 
 
 
@@ -1565,37 +1581,39 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [20]
-[21] [22]) [23] (./thesis.aux
+ [26]
+[27]
+Underfull \hbox (badness 3895) in paragraph at lines 282--288
+[]\T1/lmss/m/n/12 (+20) Vittorio S. Tomel-leri.  Slavic^^Ustyle as-pect in the 
+cau-ca-sus.  \T1/lmss/m/sl/12 (+20) Su-vre-mena lingvis-
+ []
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[28] [29]) [30] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34713 strings out of 477476
- 694275 string characters out of 5824244
- 1879388 words of memory out of 5000000
- 53942 multiletter control sequences out of 15000+600000
- 586159 words of font info for 177 fonts, out of 8000000 for 9000
+ 34870 strings out of 477476
+ 697671 string characters out of 5824244
+ 1878388 words of memory out of 5000000
+ 54040 multiletter control sequences out of 15000+600000
+ 587067 words of font info for 185 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 113i,20n,109p,10724b,1130s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></us
-r/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/loc
-al/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/te
-xlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive
-/2023basic/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023b
-asic/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023basi
-c/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2023basic/te
-xmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2023basic/texmf-
-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (30 pages, 399961 bytes).
+ 113i,20n,109p,10724b,1371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></u
+sr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/loc
+al/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/te
+xlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive
+/2023basic/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2023
+basic/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023basic/
+texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023basic/tex
+mf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2023basic/texmf-d
+ist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2023basic/texmf-dist/
+fonts/type1/public/lm/lmtt12.pfb>
+Output written on thesis.pdf (37 pages, 428658 bytes).
 PDF statistics:
- 712 PDF objects out of 1000 (max. 8388607)
- 636 compressed objects within 7 object streams
- 146 named destinations out of 1000 (max. 500000)
- 45850 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 881 PDF objects out of 1000 (max. 8388607)
+ 792 compressed objects within 8 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 45882 words of extra memory for PDF output out of 51595 (max. 10000000)
 

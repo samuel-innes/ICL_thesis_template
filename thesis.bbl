@@ -1,9 +1,17 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Comrie(1976)]{comrie1976aspect}
+B.~Comrie.
+\newblock \emph{Aspect: An Introduction to the Study of Verbal Aspect and
+  Related Problems}.
+\newblock Camb. Textbk. Ling. Cambridge University Press, 1976.
+\newblock ISBN 9780521211093.
+\newblock URL \url{https://books.google.it/books?id=1RVcXZjV0j0C}.
 
 \bibitem[Jens Van~Gysel and Xue(2022)]{umrslides2022}
 Jin~Zhao Jens Van~Gysel, Meagan~Vigus and Nianwen Xue.
@@ -66,14 +74,6 @@ P.H. Matthews.
 \newblock Oxford Paperback Reference. OUP Oxford, 2014.
 \newblock ISBN 9780199675128.
 \newblock URL \url{https://books.google.it/books?id=1mg3BQAAQBAJ}.
-
-\bibitem[Comrie(1976)]{comrie1976aspect}
-B.~Comrie.
-\newblock \emph{Aspect: An Introduction to the Study of Verbal Aspect and
-  Related Problems}.
-\newblock Camb. Textbk. Ling. Cambridge University Press, 1976.
-\newblock ISBN 9780521211093.
-\newblock URL \url{https://books.google.it/books?id=1RVcXZjV0j0C}.
 
 \bibitem[Jespersen(1933)]{jespersen2013essentials}
 Otto Jespersen.
@@ -268,6 +268,24 @@ Marc Moens and Mark Steedman.
   1988.
 \newblock URL \url{https://aclanthology.org/J88-2003}.
 
+\bibitem[Patard et~al.(2019)Patard, Peltola, and
+  Roussel]{Chapter1IntroductionCrossLinguisticPerspectivesontheSemanticsofGrammaticalAspect}
+Adeline Patard, Rea Peltola, and Emmanuelle Roussel.
+\newblock \emph{Chapter 1 Introduction: Cross-Linguistic Perspectives on the
+  Semantics of Grammatical Aspect}, pages 1 -- 9.
+\newblock Brill, Leiden, The Netherlands, 2019.
+\newblock ISBN 9789004401006.
+\newblock \doi{10.1163/9789004401006_002}.
+\newblock URL \url{https://brill.com/view/book/9789004401006/BP000001.xml}.
+
+\bibitem[Tomelleri(2010)]{slavstyleaspect}
+Vittorio~S. Tomelleri.
+\newblock Slavic–style aspect in the caucasus.
+\newblock \emph{Suvremena lingvistika}, 36\penalty0 (69), 2010.
+\newblock URL
+  \url{http://suvlin.ffzg.hr/index.php/en/browse-archive/39-vol-36-no-69-07-2010/432-slavic-style-aspect-in-the-caucasus,
+  pages =}.
+
 \bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
   O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
   Vallejos, and Xue]{umr}
@@ -291,12 +309,122 @@ L.~Banarescu, Claire Bonial, Shu Cai, M.~Georgescu, K.~Griffitt, U.~Hermjakob,
 \newblock \emph{Proceedings of the 7th Linguistic Annotation Workshop and
   Interoperability with Discourse}, pages 178--186, 01 2013.
 
+\bibitem[Bonn et~al.(2023)Bonn, Myers, E.~L. Van~Gysel, Denk, Vigus, Zhao,
+  Cowell, Croft, Haji{\v{c}}, H.~Martin, Palmer, Palmer, Pustejovsky,
+  Ure{\v{s}}ov{\'a}, Vallejos, and Xue]{bonn-etal-2023-mapping}
+Julia Bonn, Skatje Myers, Jens E.~L. Van~Gysel, Lukas Denk, Meagan Vigus, Jin
+  Zhao, Andrew Cowell, William Croft, Jan Haji{\v{c}}, James H.~Martin, Alexis
+  Palmer, Martha Palmer, James Pustejovsky, Zdenka Ure{\v{s}}ov{\'a}, Rosa
+  Vallejos, and Nianwen Xue.
+\newblock Mapping {AMR} to {UMR}: Resources for adapting existing corpora for
+  cross-lingual compatibility.
+\newblock In Daniel Dakota, Kilian Evang, Sandra K{\"u}bler, and Lori Levin,
+  editors, \emph{Proceedings of the 21st International Workshop on Treebanks
+  and Linguistic Theories (TLT, GURT/SyntaxFest 2023)}, pages 74--95,
+  Washington, D.C., March 2023. Association for Computational Linguistics.
+\newblock URL \url{https://aclanthology.org/2023.tlt-1.8}.
+
 \bibitem[Egg(2005)]{egg2005flexible}
 M.~Egg.
 \newblock \emph{Flexible Semantics for Reinterpretation Phenomena}.
 \newblock CSLI Lecture Notes (CSLI- CHUP) Series. CSLI Publications, 2005.
 \newblock ISBN 9781575865027.
 \newblock URL \url{https://books.google.it/books?id=jGVsAAAAIAAJ}.
+
+\bibitem[Friedrich and Gateva(2017)]{friedrich-gateva-2017-classification}
+Annemarie Friedrich and Damyana Gateva.
+\newblock Classification of telicity using cross-linguistic annotation
+  projection.
+\newblock In Martha Palmer, Rebecca Hwa, and Sebastian Riedel, editors,
+  \emph{Proceedings of the 2017 Conference on Empirical Methods in Natural
+  Language Processing}, pages 2559--2565, Copenhagen, Denmark, September 2017.
+  Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/D17-1271}.
+\newblock URL \url{https://aclanthology.org/D17-1271}.
+
+\bibitem[Friedrich and Palmer(2014)]{Friedrich2014AutomaticPO}
+Annemarie Friedrich and Alexis Palmer.
+\newblock Automatic prediction of aspectual class of verbs in context.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, 2014.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:1832412}.
+
+\bibitem[Li(2024)]{li2024comparative}
+Jiyi Li.
+\newblock A comparative study on annotation quality of crowdsourcing and llm
+  via label aggregation, 2024.
+
+\bibitem[Beck(2023)]{Beck2023}
+Jacob Beck.
+\newblock Quality aspects of annotated data: A research synthesis.
+\newblock \emph{AStA Wirtschafts- und Sozialstatistisches Archiv}, 17\penalty0
+  (3–4):\penalty0 331–353, November 2023.
+\newblock ISSN 1863-8163.
+\newblock \doi{10.1007/s11943-023-00332-y}.
+\newblock URL \url{http://dx.doi.org/10.1007/s11943-023-00332-y}.
+
+\bibitem[He et~al.(2023)He, Lin, Gong, Jin, Zhang, Lin, Jiao, Yiu, Duan, and
+  Chen]{he2023annollm}
+Xingwei He, Zhenghao Lin, Yeyun Gong, A-Long Jin, Hang Zhang, Chen Lin, Jian
+  Jiao, Siu~Ming Yiu, Nan Duan, and Weizhu Chen.
+\newblock Annollm: Making large language models to be better crowdsourced
+  annotators, 2023.
+
+\bibitem[Yu et~al.(2023)Yu, Li, Su, and Fuoli]{llmsForPragAndDiscAnalysis}
+Danni Yu, Luyang Li, Hang Su, and Matteo Fuoli.
+\newblock Assessing the potential of llm-assisted annotation for corpus-based
+  pragmatics and discourse analysis: The case of apologies.
+\newblock 05 2023.
+
+\bibitem[Gilardi et~al.(2023)Gilardi, Alizadeh, and Kubli]{Gilardi_2023}
+Fabrizio Gilardi, Meysam Alizadeh, and Maël Kubli.
+\newblock Chatgpt outperforms crowd workers for text-annotation tasks.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 120\penalty0
+  (30), July 2023.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.2305016120}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.2305016120}.
+
+\bibitem[Goel et~al.(2023)Goel, Gueta, Gilon, Liu, Erell, Nguyen, Hao, Jaber,
+  Reddy, Kartha, Steiner, Laish, and Feder]{goel2023llms}
+Akshay Goel, Almog Gueta, Omry Gilon, Chang Liu, Sofia Erell, Lan~Huong Nguyen,
+  Xiaohong Hao, Bolous Jaber, Shashir Reddy, Rupesh Kartha, Jean Steiner, Itay
+  Laish, and Amir Feder.
+\newblock Llms accelerate annotation for medical information extraction, 2023.
+
+\bibitem[Törnberg(2024)]{törnberg2024best}
+Petter Törnberg.
+\newblock Best practices for text annotation with large language models, 2024.
+
+\bibitem[Yuan et~al.(2023)Yuan, Xie, Huang, and
+  Ananiadou]{yuan2023futureTimeLlama}
+Chenhan Yuan, Qianqian Xie, Jimin Huang, and Sophia Ananiadou.
+\newblock Back to the future: Towards explainable temporal reasoning with large
+  language models, 2023.
+
+\bibitem[Touvron et~al.(2023)Touvron, Martin, Stone, Albert, Almahairi, Babaei,
+  Bashlykov, Batra, Bhargava, Bhosale, Bikel, Blecher, Ferrer, Chen, Cucurull,
+  Esiobu, Fernandes, Fu, Fu, Fuller, Gao, Goswami, Goyal, Hartshorn, Hosseini,
+  Hou, Inan, Kardas, Kerkez, Khabsa, Kloumann, Korenev, Koura, Lachaux, Lavril,
+  Lee, Liskovich, Lu, Mao, Martinet, Mihaylov, Mishra, Molybog, Nie, Poulton,
+  Reizenstein, Rungta, Saladi, Schelten, Silva, Smith, Subramanian, Tan, Tang,
+  Taylor, Williams, Kuan, Xu, Yan, Zarov, Zhang, Fan, Kambadur, Narang,
+  Rodriguez, Stojnic, Edunov, and Scialom]{touvron2023llama}
+Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine
+  Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale,
+  Dan Bikel, Lukas Blecher, Cristian~Canton Ferrer, Moya Chen, Guillem
+  Cucurull, David Esiobu, Jude Fernandes, Jeremy Fu, Wenyin Fu, Brian Fuller,
+  Cynthia Gao, Vedanuj Goswami, Naman Goyal, Anthony Hartshorn, Saghar
+  Hosseini, Rui Hou, Hakan Inan, Marcin Kardas, Viktor Kerkez, Madian Khabsa,
+  Isabel Kloumann, Artem Korenev, Punit~Singh Koura, Marie-Anne Lachaux,
+  Thibaut Lavril, Jenya Lee, Diana Liskovich, Yinghai Lu, Yuning Mao, Xavier
+  Martinet, Todor Mihaylov, Pushkar Mishra, Igor Molybog, Yixin Nie, Andrew
+  Poulton, Jeremy Reizenstein, Rashi Rungta, Kalyan Saladi, Alan Schelten, Ruan
+  Silva, Eric~Michael Smith, Ranjan Subramanian, Xiaoqing~Ellen Tan, Binh Tang,
+  Ross Taylor, Adina Williams, Jian~Xiang Kuan, Puxin Xu, Zheng Yan, Iliyan
+  Zarov, Yuchen Zhang, Angela Fan, Melanie Kambadur, Sharan Narang, Aurelien
+  Rodriguez, Robert Stojnic, Sergey Edunov, and Thomas Scialom.
+\newblock Llama 2: Open foundation and fine-tuned chat models, 2023.
 
 \bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
   Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,
