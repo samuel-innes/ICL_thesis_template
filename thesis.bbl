@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -278,6 +278,31 @@ Adeline Patard, Rea Peltola, and Emmanuelle Roussel.
 \newblock \doi{10.1163/9789004401006_002}.
 \newblock URL \url{https://brill.com/view/book/9789004401006/BP000001.xml}.
 
+\bibitem[Friedrich and Palmer(2014)]{Friedrich2014AutomaticPO}
+Annemarie Friedrich and Alexis Palmer.
+\newblock Automatic prediction of aspectual class of verbs in context.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, 2014.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:1832412}.
+
+\bibitem[Gerwien and Herweg(2017)]{https://doi.org/10.11588/huplc.2017.0.37820}
+Johannes Gerwien and Michael Herweg.
+\newblock Aspectual class (under-)specification in the generation of motion
+  event representations – a project outline.
+\newblock \emph{Heidelberg Papers on Language and Cognition}, Bd. 1:\penalty0
+  2017, 2017.
+\newblock \doi{10.11588/HUPLC.2017.0.37820}.
+\newblock URL
+  \url{http://journals.ub.uni-heidelberg.de/index.php/huplc/article/view/37820}.
+
+\bibitem[de~Swart(2019)]{Swart+2019+321+349}
+Henriëtte de~Swart.
+\newblock \emph{10. Mismatches and coercion}, pages 321--349.
+\newblock De Gruyter Mouton, Berlin, Boston, 2019.
+\newblock ISBN 9783110626391.
+\newblock \doi{doi:10.1515/9783110626391-010}.
+\newblock URL \url{https://doi.org/10.1515/9783110626391-010}.
+
 \bibitem[Tomelleri(2010)]{slavstyleaspect}
 Vittorio~S. Tomelleri.
 \newblock Slavic–style aspect in the caucasus.
@@ -285,6 +310,42 @@ Vittorio~S. Tomelleri.
 \newblock URL
   \url{http://suvlin.ffzg.hr/index.php/en/browse-archive/39-vol-36-no-69-07-2010/432-slavic-style-aspect-in-the-caucasus,
   pages =}.
+
+\bibitem[Siegel and McKeown(2000)]{siegel-mckeown-2000-learning}
+Eric~V. Siegel and Kathleen~R. McKeown.
+\newblock Learning methods to combine linguistic indicators:improving aspectual
+  classification and revealing linguistic insights.
+\newblock \emph{Computational Linguistics}, 26\penalty0 (4):\penalty0 595--627,
+  2000.
+\newblock URL \url{https://aclanthology.org/J00-4004}.
+
+\bibitem[Chen et~al.(2021)Chen, Palmer, and Vigus]{chen-etal-2021-autoaspect}
+Daniel Chen, Martha Palmer, and Meagan Vigus.
+\newblock {A}uto{A}spect: Automatic annotation of tense and aspect for uniform
+  meaning representations.
+\newblock In Claire Bonial and Nianwen Xue, editors, \emph{Proceedings of the
+  Joint 15th Linguistic Annotation Workshop (LAW) and 3rd Designing Meaning
+  Representations (DMR) Workshop}, pages 36--45, Punta Cana, Dominican
+  Republic, November 2021. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2021.law-1.4}.
+\newblock URL \url{https://aclanthology.org/2021.law-1.4}.
+
+\bibitem[Metheniti et~al.(2022)Metheniti, Van De~Cruys, and
+  Hathout]{metheniti-etal-2022-time}
+Eleni Metheniti, Tim Van De~Cruys, and Nabil Hathout.
+\newblock About time: Do transformers learn temporal verbal aspect?
+\newblock In Emmanuele Chersoni, Nora Hollenstein, Cassandra Jacobs, Yohei
+  Oseki, Laurent Pr{\'e}vot, and Enrico Santus, editors, \emph{Proceedings of
+  the Workshop on Cognitive Modeling and Computational Linguistics}, pages
+  88--101, Dublin, Ireland, May 2022. Association for Computational
+  Linguistics.
+\newblock \doi{10.18653/v1/2022.cmcl-1.10}.
+\newblock URL \url{https://aclanthology.org/2022.cmcl-1.10}.
+
+\bibitem[Smith(2003)]{Smith_2003}
+Carlota~S. Smith.
+\newblock \emph{Modes of Discourse: The Local Structure of Texts}.
+\newblock Cambridge Studies in Linguistics. Cambridge University Press, 2003.
 
 \bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
   O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
@@ -342,13 +403,6 @@ Annemarie Friedrich and Damyana Gateva.
 \newblock \doi{10.18653/v1/D17-1271}.
 \newblock URL \url{https://aclanthology.org/D17-1271}.
 
-\bibitem[Friedrich and Palmer(2014)]{Friedrich2014AutomaticPO}
-Annemarie Friedrich and Alexis Palmer.
-\newblock Automatic prediction of aspectual class of verbs in context.
-\newblock In \emph{Annual Meeting of the Association for Computational
-  Linguistics}, 2014.
-\newblock URL \url{https://api.semanticscholar.org/CorpusID:1832412}.
-
 \bibitem[Li(2024)]{li2024comparative}
 Jiyi Li.
 \newblock A comparative study on annotation quality of crowdsourcing and llm
@@ -362,6 +416,13 @@ Jacob Beck.
 \newblock ISSN 1863-8163.
 \newblock \doi{10.1007/s11943-023-00332-y}.
 \newblock URL \url{http://dx.doi.org/10.1007/s11943-023-00332-y}.
+
+\bibitem[Goel et~al.(2023)Goel, Gueta, Gilon, Liu, Erell, Nguyen, Hao, Jaber,
+  Reddy, Kartha, Steiner, Laish, and Feder]{goel2023llms}
+Akshay Goel, Almog Gueta, Omry Gilon, Chang Liu, Sofia Erell, Lan~Huong Nguyen,
+  Xiaohong Hao, Bolous Jaber, Shashir Reddy, Rupesh Kartha, Jean Steiner, Itay
+  Laish, and Amir Feder.
+\newblock Llms accelerate annotation for medical information extraction, 2023.
 
 \bibitem[He et~al.(2023)He, Lin, Gong, Jin, Zhang, Lin, Jiao, Yiu, Duan, and
   Chen]{he2023annollm}
@@ -384,13 +445,6 @@ Fabrizio Gilardi, Meysam Alizadeh, and Maël Kubli.
 \newblock ISSN 1091-6490.
 \newblock \doi{10.1073/pnas.2305016120}.
 \newblock URL \url{http://dx.doi.org/10.1073/pnas.2305016120}.
-
-\bibitem[Goel et~al.(2023)Goel, Gueta, Gilon, Liu, Erell, Nguyen, Hao, Jaber,
-  Reddy, Kartha, Steiner, Laish, and Feder]{goel2023llms}
-Akshay Goel, Almog Gueta, Omry Gilon, Chang Liu, Sofia Erell, Lan~Huong Nguyen,
-  Xiaohong Hao, Bolous Jaber, Shashir Reddy, Rupesh Kartha, Jean Steiner, Itay
-  Laish, and Amir Feder.
-\newblock Llms accelerate annotation for medical information extraction, 2023.
 
 \bibitem[Törnberg(2024)]{törnberg2024best}
 Petter Törnberg.
@@ -425,6 +479,28 @@ Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine
   Zarov, Yuchen Zhang, Angela Fan, Melanie Kambadur, Sharan Narang, Aurelien
   Rodriguez, Robert Stojnic, Sergey Edunov, and Thomas Scialom.
 \newblock Llama 2: Open foundation and fine-tuned chat models, 2023.
+
+\bibitem[Kaddour et~al.(2023)Kaddour, Harris, Mozes, Bradley, Raileanu, and
+  McHardy]{kaddour2023challenges}
+Jean Kaddour, Joshua Harris, Maximilian Mozes, Herbie Bradley, Roberta
+  Raileanu, and Robert McHardy.
+\newblock Challenges and applications of large language models, 2023.
+
+\bibitem[Hsieh et~al.(2023)Hsieh, Si, Yu, and Dhillon]{hsieh2023automatic}
+Cho-Jui Hsieh, Si~Si, Felix~X. Yu, and Inderjit~S. Dhillon.
+\newblock Automatic engineering of long prompts, 2023.
+
+\bibitem[Sahoo et~al.(2024)Sahoo, Singh, Saha, Jain, Mondal, and
+  Chadha]{sahoo2024systematic}
+Pranab Sahoo, Ayush~Kumar Singh, Sriparna Saha, Vinija Jain, Samrat Mondal, and
+  Aman Chadha.
+\newblock A systematic survey of prompt engineering in large language models:
+  Techniques and applications, 2024.
+
+\bibitem[Devlin et~al.(2019)Devlin, Chang, Lee, and Toutanova]{devlin2019bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding, 2019.
 
 \bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
   Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,

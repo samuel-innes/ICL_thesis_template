@@ -21,13 +21,13 @@ As noted, one distinction which must be made right away is that between \emph{as
         child [red] {node {Tense} 
             edge from parent [blue] node [left] {external}}
         child {node {Event} 
-            child [red] {node {Lexical aspect}
-                edge from parent [blue] node [left] {external}}
             child [red] {node {Grammatical aspect}
+                edge from parent [blue] node [left] {external}}
+            child [red] {node {Lexical aspect}
                 edge from parent [blue] node [right] {internal}} 
             edge from parent [blue] node [right] {internal}};
     \end{tikzpicture}
-    \caption{A set-theoretical representation of the relationship between time, situation and event \emph{(left)} along with the categorisation of the three tempora phenomena discussed \emph{(right)}.}
+    \caption{A set-theoretical representation of the relationship between time, situation and event \emph{(left)} along with the categorisation of the three temporal phenomena discussed \emph{(right)}.}
     \label{fig:TimeSitEvent}
 \end{figure}
 
@@ -35,7 +35,13 @@ As noted, one distinction which must be made right away is that between \emph{as
 The polysemy of the term “aspect” in the linguistic community is unfortunate. In an area of language which seems to have surprisingly far-reaching interactions with other parts of linguistic systems these ambiguities are particularly unhelpful.\footnote{Among other things, aspect is also intertwined with case, mood and voice \citep{franks2005slavic, Kiparsky2004PartitiveCA}.}
 As already mentioned, aspect\footnote{Boogaart uses the term \emph{aspectuality} to remove the aforementioned ambiguity \citep{Boogaart+2004+1165+1180}. However, I will stick with the term \emph{aspect} due to its prevalence in the literature, further specifying where necessary.} is a term often used to refer to both lexical and grammatical aspect. Lexical aspect (also referred to as \emph{Aktionsart, situation aspect} or \emph{inner aspect}) is the inherent property of a verb or verb phrase which “characterizes the temporal profile of event descriptions” \citep{10.1093/oxfordhb/9780199601264.013.25}. For example, to “crack open an egg” is inherently a short event describing the change of one state (the egg being whole) to another (the egg being cracked). Grammatical aspect (or \emph{viewpoint aspect, outer aspect}), on the other hand, describes the “internal temporal constituency” \citep{comrie1976aspect} XCHANGE THIS!! of an event, such as its habituality or ongoing nature and can be seen more as an external lens imposed on a verbal phrase. In English, one example of this lens is the progressive, which is formed by the verb \emph{be} + gerund, as in the phrase “Sue was running”. Figure \ref{fig:TimeSitEvent} shows a taxonomy of tense, and grammatical and lexical aspect.
 
-The concrete linguistic realisation of these categories is very often unclear or non-existent and exhibits a relatively wide variety of encodings throughout the world’s languages \citep{Dahl1985TenseAA}. It therefore proves tricky to uphold this distinction in empirical studies "in the real world". Nevertheless the theoretical differentiation of these two interrelated subdomains is an important one to make, and each describes a variety of concepts which will be useful later.
+The concrete linguistic realisation of these categories is very often unclear or non-existent and exhibits a relatively wide variety of encodings throughout the world’s languages \citep{Dahl1985TenseAA}. It therefore proves tricky to uphold this distinction in empirical studies "in the real world". This has led some to question to what extent this distinction makes sense \citep{Sasse2002RecentAI}. Those who question the contrast between these two semantic dimensions, described as unidimensionalists in \citet{Sasse2002RecentAI}, claim that aspectual distinctions in both dimensions can be reduced to a common set of semantic primitives, which can be applied to all levels of analysis, i.e. the boundedness of lexical aspect is the same as the boundedness which marks the distinction between the perfective and imperfective parameters. 
+
+I have chosen to introduce this distinction in order to WHAT
+
+WHICH MODEL WOULD I LIKE TO USE IN THE END??
+
+Nevertheless the theoretical differentiation of these two interrelated subdomains is an important one to make, and each describes a variety of concepts which will be useful later.
 
 \subsection{Lexical aspect}
 \subsection*{Telicity}
@@ -214,7 +220,7 @@ Or to use the parameters of lexical aspect introduced above:
         \textbf{Accomplishment} & -      & +        & + \\ \hline
         \textbf{Achievement}    & -      & -        & + \\ \hline
     \end{tabular}
-    \caption{Classification of Vendlerian event types by binary aspectual paramters \citep{Smith1991ThePO}}
+    \caption{Classification of Vendlerian event types by binary aspectual parameters \citep{Smith1991ThePO}.}
 \end{table}
 
 Vendler states in his introduction that verbs "presuppose" certain time schemata and hence assigns a category to each verb (as in \ref{table:vendlerverbs}). However it must also be stated that the true profile of a verb phrase such as those listed in \ref{table:vendlerverbs} depends heavily on the context. Hence a typical semelfactive such as "sneeze" could also be used reinterpreted as a process when combined with a progressive auxiliary as in "Harry was sneezing" \citep{moens-steedman-1988-temporal}. Thus the verbs (or verb phrases) mentioned by Vendler as belonging to a certain category are ones that typically lend themselves to one class or another.
@@ -262,6 +268,22 @@ Grammatical (or \emph{viewpoint}) aspect provides a lens through which a particu
 The main aspectual distinction made by Slavic languages and, as can bee seen in figure \ref{fig:comrieaspecttree}, one of the main distinctions made in theoretical aspectology generally as that between perfective and imperfective. In order to avoid confusion with the concrete realisation of these theoretical categories in the aforementioned Slavic group I will follow the nomenclature used by DAHLL and refer to the theoretical 
 \subsection*{Progressive}
 \subsection*{Iterative}
+
+\section{Aspectual ambiguity}
+While some verb phrases can only express one certain aspect, such as \emph{to tend to}, which implies a habitual event, in many situations they can be ambiguous:
+\begin{exe}
+    \ex Your soul was made to be \textbf{filled} with God Himself. \emph{(Brown corpus, cited by \citet{Friedrich2014AutomaticPO})}
+\end{exe}
+In this example the verb 'filled' can be read as both a stative and a dynamic event.\footnote{Indeed, while not specified in English, this is explicitly encoded in other languages such as German where the former interpretation would use the word \emph{sein} (to be) and the latter \emph{werden} (to become).} Nevertheless, the reader tends to 
+
+This poses a practical problem for annotators, but also an interesting theoretical question for linguists. 
+
+There have been no studies on aspect ambiguity as of yet \citep{friedrich-etal-2023-kind}, despite this being a key feature of aspect systems in practice. 
+
+For simplicity, most studies have assumed that 
+
+\subsection{Coercion or underspecification?}
+In cases where a verb can have several aspect readings depending on the context, a question that currently remains unclear is whether verbs have an inherent aspect class, which is \emph{overwritten} by the features of the context is occurs in (temporal adverbs, other verb phrases forcing a particular class such as \emph{to tend to} etc.), or whether they are simply underspecified in the mental lexicon, and the class is \emph{determined} by these circumstantial features \citep{https://doi.org/10.11588/huplc.2017.0.37820}. The former view, as put forward by \citet{moens-steedman-1988-temporal} and known as \emph{coercion}, is used as an assumption in many previous works (cf. \citet{Swart+2019+321+349}) with little evidence of its validity \citep{https://doi.org/10.11588/huplc.2017.0.37820}.
 
 \section{Aspect in Slavic languages}
 The Slavic language group has a special place on the study of aspectology due to its overt encoding of aspectual phenomena, otherwise rather uncommon \citep{slavstyleaspect}.\footnote{\citet{slavstyleaspect} also notes that Georgian and Ossetian exhibit some similar properties with preverbs (mostly of spatial origin) used to denote aspectual meaning.}

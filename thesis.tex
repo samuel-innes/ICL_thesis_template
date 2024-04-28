@@ -3,7 +3,7 @@
 \begin{document}
 \sffamily
 \pagenumbering{Roman} % große Römische Seitenummerierung
-\pagestyle{empty}
+\pagestyle{plain}
 %\selectlanguage{english}
 
 % Titelseite
@@ -15,8 +15,9 @@
 
 \begin{Huge}
 \vspace{10mm}
-\textbf{Linguistically-informed Computational Approaches to Verbal Aspect}
-\end{Huge}
+\textbf{Identifying and Quantifying Aspectual Ambiguity with LMs}
+\end{Huge}\\[5mm]
+\textbf{\Large Reversing the NLP Pipeline}
 
 
 \vspace{70mm}
@@ -39,7 +40,7 @@ Institut für Computerlinguistik\\ % remove either en or de
 
 \begin{tabular}{ll}
 \textbf{Supervisor} & Prof. Dr. Michael Herweg\\
-\textbf{Reviewer} & Prof. Dr. Anette Frank\\
+\textbf{Reviewer} & Prof. Dr. Katja Markert\\
 \end{tabular}
 \end{center}
 
@@ -80,6 +81,10 @@ Zusammenfasssung auf Deutsch
 \clearpage
 \chapter{Methods}\label{c.methods}
 \input{chapter/methods.tex}
+
+\clearpage
+\chapter{Dataset Creation}\label{c.dataset}
+\input{chapter/dataset.tex}
 
 \clearpage
 \chapter{Experiments}\label{c.experiments}

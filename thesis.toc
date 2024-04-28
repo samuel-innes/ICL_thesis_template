@@ -7,33 +7,44 @@
 \contentsline {subsection}{\numberline {2.1.1}Lexical vs grammatical aspect}{4}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Lexical aspect}{5}{subsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.2.1}Some attempts at event classification}{8}{subsubsection.2.1.2.1}%
-\contentsline {subsection}{\numberline {2.1.3}Grammatical aspect}{9}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Aspect in Slavic languages}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Slavic Perfective-Imperfective distinction}{11}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Formal models of aspect (or put this in related work?)}{11}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Related Work}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Previous computational approaches to modeling aspect}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Situation entities!!}{12}{subsection.3.1.1}%
-\contentsline {chapter}{\numberline {4}Methods}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Which aspect types do I use?}{13}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}UMR}{13}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}How does the Slavic Perfective-Imperfective relate to UMR classes}{15}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Use of approximative LMs as sources of linguistic knowledge??}{16}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Where do LLMs fail?}{16}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Experiments}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Dataset creation}{17}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Dataset annotation with LLMs}{17}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Language model fine-tuning}{21}{subsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.2.1}Ablation (aspectualisation and contextualisation)}{21}{subsubsection.5.1.2.1}%
-\contentsline {subsubsection}{\numberline {5.1.2.2}Combined Rus/Eng model}{21}{subsubsection.5.1.2.2}%
-\contentsline {subsection}{\numberline {5.1.3}Probing}{21}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Aspect latent space}{21}{subsection.5.1.4}%
-\contentsline {subsubsection}{\numberline {5.1.4.1}Verb of motion clustering}{21}{subsubsection.5.1.4.1}%
-\contentsline {subsubsection}{\numberline {5.1.4.2}Prefix clustering}{21}{subsubsection.5.1.4.2}%
-\contentsline {chapter}{\numberline {6}Discussion}{22}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{23}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Appendix}{24}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Experiments with ChatGPT}{24}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Temporal reasoning}{24}{subsection.A.1.1}%
-\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.31}%
+\contentsline {subsection}{\numberline {2.1.3}Grammatical aspect}{10}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Aspectual ambiguity}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Coercion or underspecification?}{12}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Aspect in Slavic languages}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Slavic Perfective-Imperfective distinction}{12}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Formal models of aspect (or put this in related work?)}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Related Work}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aspect classification}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Rules-based aspect class prediction}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}(L)LMs and aspect}{13}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Available datasets}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Formal representations of aspect}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Related areas}{14}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Situation entities}{14}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Methods}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Which aspect types do I use?}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}UMR}{16}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}How does the Slavic Perfective-Imperfective relate to UMR classes}{18}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Use of approximative LMs as sources of linguistic knowledge??}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Where do LLMs fail?}{18}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Dataset Creation}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dataset creation}{19}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Dataset annotation with LLMs}{19}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Ambiguity annotation}{24}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Annotation results}{24}{subsubsection.5.1.2.1}%
+\contentsline {subsection}{\numberline {5.1.3}Larger dataset}{25}{subsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}Ablation (aspectualisation and contextualisation)}{26}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}Combined Rus/Eng model}{26}{subsubsection.5.1.3.2}%
+\contentsline {subsection}{\numberline {5.1.4}Probing}{26}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Aspect latent space}{26}{subsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.5.1}Verb of motion clustering}{26}{subsubsection.5.1.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.5.2}Prefix clustering}{26}{subsubsection.5.1.5.2}%
+\contentsline {chapter}{\numberline {6}Experiments}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Discussion}{28}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusion}{29}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Appendix}{30}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Experiments with ChatGPT}{30}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Temporal reasoning}{30}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Annotation guidelines}{30}{subsection.A.1.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{33}{chapter*.28}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
