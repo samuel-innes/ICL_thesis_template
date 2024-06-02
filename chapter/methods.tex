@@ -25,6 +25,7 @@ UMR \citep{umr} was introduced in order to expand and further generalise the att
 WHY IS UMR IMPORTANT???? Get Apaho English comparison from \citet{bonn-etal-2023-mapping}
 
 \subsection*{Aspect in UMR}
+\label{aspect_in_umr}
 UMR describes the following 5 corse-grained aspect classes: (descriptions taken from \citet{umr}), also depicted in figure \ref{fig:umr_aspect_tree}:
 \begin{itemize}
     \item \textbf{state} - an unspecified type of state
@@ -67,6 +68,11 @@ activity                       & \multirow{2}{*}{process}   & process predicate 
     \label{table:aspect_classes_comparison}
 \end{table}
 
+\subsection*{Difficulties with aspect in UMR}
+Slightly different to other frameworks (one category can encompass imperfective and perfective?) - is this true
+
+Habitual as aspect
+
 \subsection{How does the Slavic Perfective-Imperfective relate to UMR classes}
 
 Habitual = imperfective
@@ -76,10 +82,16 @@ endeavour =
 
 performance = perfective
 
-\section{Use of approximative LMs as sources of linguistic knowledge??}
-\section{Where do LLMs fail?}
+\section{Project outline}
+\subsection{Step 1: Use LLM to create dataset}
+\subsection{Step 2: Identify aspectually ambiguous sentences}
+\subsection{Step 3: Compare aspectual ambiguity cross-lingually}
 
-\section*{Dataset creation}
-In order to create the dataset for training the model, later to be used for the neural analysis, it is 
+\section{Use of approximative LMs as sources of linguistic knowledge?? (Reversing the NLP pipeline)}
+Currently the two main approaches used to develop and validate linguistic hypotheses are through corpora and through introspection, the former being championed by empiricists and the latter by the Chomskyan rationalist tradition \citep{corpus_textbook}. It is clear that corpora, including those used to train LLMs, can only contain a fraction of the famously infinite set of possible grammatical sentences in a language, and this has led Chomsky to decry corpus linguistics as seeking to model language \emph{performance} rather than \emph{competence} \citep{corpus_textbook}. Native speaker introspection, on the other hand, while able to judge the grammaticality of any sentence, is clearly highly subjective and biased. Language models, however, are productive and are able to generalize across their corpora to produce, with some sophistication, sentences not seen before in training, thus blurring the line between the traditional Chomskyan distinction between competence and performance. CHANGE THIS WORDING SO ITS NOT WORD FOR WORD AND CITE IT MAYBE??
+\section{Where do LLMs fail? (CHANGE - expectation management)}
 
-Since UMR aspect is an AMR/UMR node parameter, rather than a clausal one (see for example Smith's situation entity types ADD LINK HERE), it is necessary to first parse any sentence into an AMR graph. However, since no parsers are available for Russian, I had to resort to another option. One possibility would be to develop a system, possibly using tools already available for Russian such as syntax parsers ADD EXAMPLE HERE, however since the focus is on one small part of the AMR/UMR graph - nodes describing an event - this could be an unnecessary distraction. In theory at least, AMR graphs should have a strong correlation with the syntax tree representation of the sentence, and since most events are verbal phrases, this fact can be utilised to simpify the problem. I therefore opted to solve the problem by using a dependency parser (OR SYNTAX PARSER???)
+%\section*{Dataset creation}
+%In order to create the dataset for training the model, later to be used for the neural analysis, it is 
+
+%Since UMR aspect is an AMR/UMR node parameter, rather than a clausal one (see for example Smith's situation entity types ADD LINK HERE), it is necessary to first parse any sentence into an AMR graph. However, since no parsers are available for Russian, I had to resort to another option. One possibility would be to develop a system, possibly using tools already available for Russian such as syntax parsers ADD EXAMPLE HERE, however since the focus is on one small part of the AMR/UMR graph - nodes describing an event - this could be an unnecessary distraction. In theory at least, AMR graphs should have a strong correlation with the syntax tree representation of the sentence, and since most events are verbal phrases, this fact can be utilised to simpify the problem. I therefore opted to solve the problem by using a dependency parser (OR SYNTAX PARSER???)

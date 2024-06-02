@@ -9,17 +9,17 @@ Warning--I'm ignoring McINTOSH+1975+35+42's extra "title" field
 --line 155 of file references.bib
 Warning--I'm ignoring Boogaart+2004+1165+1180's extra "booktitle" field
 --line 220 of file references.bib
-I was expecting a `,' or a `}'---line 585 of file references.bib
+I was expecting a `,' or a `}'---line 617 of file references.bib
  :     pages = "
  :              65--98",
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring hopitime's extra "title" field
---line 625 of file references.bib
-Repeated entry---line 738 of file references.bib
+--line 657 of file references.bib
+Repeated entry---line 770 of file references.bib
  : @inproceedings{Friedrich2014AutomaticPO
  :                                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 746 of file references.bib
+Repeated entry---line 778 of file references.bib
  : @misc{he2023annollm
  :                    ,
 I'm skipping whatever remains of this entry
@@ -30,47 +30,48 @@ Warning--empty booktitle in Dahl1985TenseAA
 Warning--empty booktitle in Krifka1998TheOO
 Warning--empty booktitle in Linguistics2005DowtyD1
 Warning--empty publisher in zucchi
+Warning--empty journal in wiemer2017
 Warning--can't use both author and editor fields in Swart+2019+321+349
 Warning--empty journal in llmsForPragAndDiscAnalysis
-You've used 62 entries,
+You've used 65 entries,
             2481 wiz_defined-function locations,
-            1005 strings with 20963 characters,
-and the built_in function-call counts, 27100 in all, are:
-= -- 2124
-> -- 1820
-< -- 54
-+ -- 685
-- -- 561
-* -- 2172
-:= -- 4541
-add.period$ -- 275
-call.type$ -- 62
-change.case$ -- 111
-chr.to.int$ -- 62
-cite$ -- 71
-duplicate$ -- 1265
-empty$ -- 2221
-format.name$ -- 643
-if$ -- 5714
+            1024 strings with 21528 characters,
+and the built_in function-call counts, 28106 in all, are:
+= -- 2214
+> -- 1865
+< -- 57
++ -- 703
+- -- 573
+* -- 2237
+:= -- 4708
+add.period$ -- 289
+call.type$ -- 65
+change.case$ -- 117
+chr.to.int$ -- 65
+cite$ -- 75
+duplicate$ -- 1324
+empty$ -- 2316
+format.name$ -- 662
+if$ -- 5931
 int.to.chr$ -- 1
-int.to.str$ -- 63
-missing$ -- 63
-newline$ -- 392
-num.names$ -- 200
-pop$ -- 569
+int.to.str$ -- 66
+missing$ -- 66
+newline$ -- 411
+num.names$ -- 211
+pop$ -- 596
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 65
 quote$ -- 0
-skip$ -- 796
+skip$ -- 829
 stack$ -- 0
-substring$ -- 768
-swap$ -- 252
+substring$ -- 774
+swap$ -- 259
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 392
-warning$ -- 9
-while$ -- 186
+type$ -- 413
+warning$ -- 10
+while$ -- 193
 width$ -- 0
-write$ -- 952
+write$ -- 997
 (There were 3 error messages)

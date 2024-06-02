@@ -2,6 +2,7 @@
 RENAME THIS CHAPTER DATASET CREATION??????
 
 \section{Dataset creation}
+\label{sec:dataset_creation}
 In order to carry out further computational analysis of the topic it is helpful to have an annotated dataset. Since no extensive datasets exist beyond for certain aspectual parameters such as telicity \citep{friedrich-gateva-2017-classification} or stativity \citep{Friedrich2014AutomaticPO}, I had to create my own \citep{friedrich-etal-2023-kind}. The traditional route of hand-annotating including has been a standard paradigm for many years however is highly time-intensive. Crowdsourcing is a more time- and cost-effective way of creating data, however has been shown to be of variable quality \citep{li2024comparative}, especially when the task requires more expert knowledge. Furthermore there are a range of biases which can affect data quality \citep{Beck2023}. The huge success of Large Language Models in recent years has prompted some to look at utilising them for dataset annotation either combined with human annotators \citep{goel2023llms} or on their own \citep{he2023annollm, llmsForPragAndDiscAnalysis, Gilardi_2023}, which is what I opted for.
 
 \subsection{Dataset annotation with LLMs}
@@ -14,9 +15,11 @@ There has been an explosion of LMs in recent years .....
 
 While many previous studies looking at LLM capabilities choose to look at ChatGPT models due to their notoriety in recent years and general good performance. However, as \citet{törnberg2024best} notes, these models come with several issues: it is unknown what the training data for the model is, leading to problems with transparency, and ChatGPT models have been shown to evolve over time, meaning reproducability is hindered. For these reasons, and also in order to host the model locally for better control (rather than using an API), I chose to use a different model. Meta's Llama 2 model seemed to offer a good balance between the apparent current trade-off between performance and scientific good practice, performing comparatively well in previous studies \citep{yuan2023futureTimeLlama} + OTHER EXAMPLES
 
-Due to hardware constraints, I had to use a technique to improve the efficiency of the model training process since the smallest Llama 2 model is 7 billion parameters. In this case I chose to use PEFT (Parameter efficint fine-tuning) (ADD CITATION), which leverages the insight that LM fine-tuning usually only updates parameters at the end of the model. This made it possible to fine-tune the model without resorting to the huge amount of computing power usually necessary for fine-tuning LLMs.
+Due to hardware constraints, I had to use a technique to improve the efficiency of the model training process since the smallest Llama model is 7 billion parameters. In this case I chose to use PEFT (Parameter efficint fine-tuning) (ADD CITATION), which leverages the insight that LM fine-tuning usually only updates parameters at the end of the model. This made it possible to fine-tune the model without resorting to the huge amount of computing power usually necessary for fine-tuning LLMs.
 
 I experimented both with the standard \textsf{Llama-2-7b} and \textsf{Llama-2-7b-chat} \citep{touvron2023llama}, however the latter ended up having difficulties responding in a formulaic way and rather added unnecessary or unrelated information, which is to be expected since it has been fine-tuned to fare well in a dialogue environment. This made it often difficult to extract the model's predicted label to use for evaluation. 
+
+During the course of this study, Llama 3 was released to the public CITE LLAMA 3, promising to have better reasoning skills and be better at following instructions effectively, so I therefore tried and compared both models in comparable settings.
 
 \subsubsection*{Training data}
 As the only currently existing data containing UMR aspect classes, I used the example UMR dataset\footnote{ENTER LINK FOR WHERE TO FIND IT!!!!!!} provided by the creators of UMR. It contains HOW MANY sentences in 6 languages (Arapaho, Chinese, English, Kukama, Navajo and Sanapana) annotated according to the UMR schema. The texts come from WHERE 
@@ -76,16 +79,27 @@ followed by the following question:
     Which class does "\emph{\{verb\}}" belong to in this sentence: state, habitual, activity, endeavor, or performance?"
 \end{quotation}
 
-Results: no prompt, normal prompt, prompt alternative ?
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|}\hline
+        \textbf{Prompt type} & \textbf{Llama 2 7B} & \textbf{Llama 3 8B} \\ \hline
+        No definitions & 0.198 & 0.479 \\ \hline
+        Normal  & 0.748 & 0.769 \\\hline
+        Long & 0.688 & 0.740  \\ \hline
+    \end{tabular}
+    \caption{F1 score on test set from fine-tuning Llama 2 7B and 3 8B on different types of prompt}
+\end{table}
 
-The results show that without an explanation of the classes, the model fails, achieving roughly random accuracy (ADD IN TABLE FOR THIS!!!). 
+The results show that without an explanation of the classes, the model fails, achieving roughly random accuracy. WHICH EPOCH ARE THESE RESULTS FORMATINGG
+
+Interestingly the results also show that the extended prompt (WHERE TO LINK THIS) also exhibited poorer performance. This could be due to the fact that it contained more redundant information which is 
 
 \subsubsection*{Quantitative analysis of results}
 
 \begin{table}
     \centering
     \begin{tabular}{|c|c|c|c|c|}\hline
-        Class & Precision & Recall & F1-Score & Support \\ \hline
+        \textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\ \hline
         Performance & 0.90 & 0.56 & 0.69 & 16\\ \hline
         State & 0.00 & 0.00 & 0.00 & 2\\\hline
         Activity & 0.88 & 0.58 & 0.70 & 12\\\hline
@@ -103,7 +117,7 @@ The results show that without an explanation of the classes, the model fails, ac
 \begin{table}
     \centering
     \begin{tabular}{|c|c|c|c|c|}\hline
-        Class & Precision & Recall & F1-Score & Support \\ \hline
+        \textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\ \hline
         Performance & 0.78 & 0.88 & 0.82 & 16\\ \hline
         State & 1.00 & 0.75 & 0.86 & 8\\\hline
         Activity & 1.00 & 0.56 & 0.71 & 9\\\hline
@@ -120,46 +134,47 @@ The results show that without an explanation of the classes, the model fails, ac
 
 The models seemed to learn the aspect classes relatively well and it is clear that in general, manual upsampling improved results across the board, as is to be expected.
 
-\subsection{Ambiguity annotation}
-Since there are no existing datasets for aspectual ambiguity, I decided to annotate the training data I created for the Llama model. This means that I end up with a database of ambiguous sentences which can later be used for testing. This is a relatively hard task for annotation since it is rather open-ended (with $\sum_{i=1}^{5} \binom{5}{i}=31$ different possibilities), and the interpretation of aspect is often rather a subjective process.
+\subsection{(Manual!!) Ambiguity annotation}
+Since there are no existing datasets for aspectual ambiguity, I decided to annotate the training data I created for the Llama model. This means that I end up with a database of ambiguous sentences which can later be used for testing. This is a relatively hard task for annotation since it is rather open-ended (with $\sum_{i=1}^{5} \binom{5}{i}=31$ different possible annotations for a verb-sentence pair), and the interpretation of aspect is often rather a subjective process.
 
-The annotation was done by an English native-speaker with a background in THE HUMANITIES/PHILOSOPHY. The annotator was given a detailed description of the UMR classes and asked to assign a class to each sentence-verb pair. If several readings were possible, the annotator was asked to write down all possibilities, indicating an aspectually ambiguous sentence. The annotator was also given the possibility to indicate when they were unsure on a particular sentence. See \ref{App:annguide} for the exact annotation guidelines.
+The annotation was done by an English native-speaker with a background in philosophy and myself. The annotators were given a detailed description of the UMR classes and asked to assign a class to each sentence-verb pair. If several readings were possible, the annotators were asked to write down all possibilities, indicating an aspectually ambiguous sentence. The annotators were also given the possibility to indicate when they were unsure on a particular sentence. See \ref{App:annguide} for the exact annotation guidelines.
 
-\subsubsection{Annotation results}
+For example, the following sentence-verb pair was annotated as belonging to \texttt{State} and \texttt{Activity} classes and hence has an ambiguous aspectual reading:
+
+\begin{exe}
+    \ex[] {The first footage from the devastated village showed a sea of mud covering what had been lush green valley farmland. \textbf{covering}}
+\end{exe}
+\label{ambigExampleSent}
+
+\subsubsection{(Manual!!) Annotation results}
 
 The results of the annotations can be seen in table \ref{table:annot_results}.
 
 \begin{table}
-    \centering
-    \begin{tabular}{|c|c|c|}\hline
-         & Absolute freq. & Proportion  \\ \hline
-        Agreement with UMR\footnote{This is defined as at least one of the classes labelled being the same as the class in the UMR dataset.} & 202 & 0.706\\ \hline
-        Several labels (ambiguous) & 71 & 0.248 \\\hline
-        Unsure & 28 & 0.098 \\\hline
+    \begin{tabular}{|c|c|c|c|c|}\hline
+        & \multicolumn{2}{|c|}{Annotator 1} & \multicolumn{2}{|c|}{Annotator 2} \\
+         & Absolute freq. & Proportion & Absolute freq. & Proportion  \\ \hline
+        Agreement with UMR\footnotemark & 202 & 0.706 & 202 & 0.706 \\ \hline
+        Several labels (ambiguous) & 71 & 0.248 & 71 & 0.248 \\\hline
+        Unsure & 28 & 0.098 & 28 & 0.098\\\hline
     \end{tabular}
-    \caption{Analysis of annotated data.}
+    \footnotetext{This is defined as at least one of the classes labelled being the same as the class in the UMR dataset.}
+    \caption{Analysis of annotated data. GET FOOTNOTE TO WORK HERE!!! AND UPDATE FOR ANNOTATOR 2}
 \end{table}
 \label{table:annot_results}
 
-It was interesting to note that the majority of occurences of the habitual class (30 out of 34 or 88\%) were also annotated with other labels, empirically motivating the theory that habituality is located in a different level of aspectual distinction than the other classes. This is also exhibited by the UMR aspect lattice (see figure \ref{fig:umr_aspect_tree}), where habituals are on the second highest level of the tree. This presents a problem in how to design the experiment set-up. Since we want to encourage the model to learn prototypical examples of aspect classes to make sure it is not overly confident on ambiguous datapoints, it would make sense to remove the datapoints labelled as having more than one class from training set. However this would lead to the habitual class being almost non-existant in the dataset. One solution would be to leave them in labelled as habituals, but this would lead to WHAT WOULD IT LEAD TO
+It was interesting to note that the majority of occurrences of the habitual class (30 out of 34 or 88\% AND WHAT FOR ANNOTATOR 2) were also annotated with other labels, empirically motivating the theory that habituality is located in a different level of aspectual distinction than the other classes. This is also reflected in the UMR aspect lattice (see figure \ref{fig:umr_aspect_tree}), where habituals are on the second highest level of the tree. 
+
+Almost all (WHAT NUMBER) the sentence-verb pairs marked with several verb classes by annotator 1 were also marked as ambiguous by annotator 2, however only WHAT PERCENTAGE of those classified as ambiguous by the latter were seen as such by annotator 1. This causes a problem with 
+
+(DIFFERENT SETUP NOW)This presents a problem in how to design the experiment set-up. Since we want to encourage the model to learn prototypical examples of aspect classes to make sure it is not overly confident on ambiguous datapoints, it would make sense to remove the datapoints labelled as having more than one class from training set. However, this would lead to the habitual class being almost non-existant in the dataset. One solution would be to leave them in labelled as habituals, but this would lead to WHAT WOULD IT LEAD TO
 
 I therefore chose to keep datapoints which are 
+
+\subsubsection{Consequences for aspectology}
+Habitual on a different level
 
 \subsection{Larger dataset}
 In order to fine-tune the smaller model, a larger dataset is needed than the 209 sentences in the UMR example dataset. The only requirements for this larger dataset are that it is representative, clean and has enough exmaples to train the smaller model. It would also be an advantage if it is a sentence-aligned multilingual corpus, since this would make it possible to test the performance of a multilingual model in other languages where there are no labelled data from the Llama model. 
 
-
-
-\subsubsection*{Examine model stochastisity}
-\subsection*{BERT fine-tuning}
-Due to their size (and the subsequent large amount of data stored in the parameters), it is hard to carry out probing on LLMs, and, due the fact that they appeared recently, there has been less time to develop probing techniques, hence I decided to train a smaller model of the BERT \citep{devlin2019bert} family. These require more data to fine-tune than LLMs, and hence I used the fine-tuned Llama model to generate more training data in a technique known as knowledge distillation (KD). Knowledge distillation involves using a larger 'teacher' model to train a smaller 'student' model, often reaching the same or similar accuracy with a significantly smaller model. While not being able to probe the larger Llama model, smaller models are still an interesting artefact to consider and 
-
-Furthermore the complexity of larger LMs (especially those trained for generation rather than sequence classification (CHECK THIS!!!!)) means that their embedding space is noisier than smaller models that have been fine-tuned.
-
-
-\subsubsection{Ablation (aspectualisation and contextualisation)}
-\subsubsection{Combined Rus/Eng model}
-\subsection{Probing}
-\subsection{Aspect latent space}
-\subsubsection{Verb of motion clustering}
-\subsubsection{Prefix clustering}
+WHY DID WE TAKE OUT HABITUAL? AND NOT ITERATIVE??

@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{65}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -278,12 +278,57 @@ Adeline Patard, Rea Peltola, and Emmanuelle Roussel.
 \newblock \doi{10.1163/9789004401006_002}.
 \newblock URL \url{https://brill.com/view/book/9789004401006/BP000001.xml}.
 
+\bibitem[Östen Dahl and Velupillai(2013)]{wals-65}
+Östen Dahl and Viveka Velupillai.
+\newblock Perfective/imperfective aspect (v2020.3).
+\newblock In Matthew~S. Dryer and Martin Haspelmath, editors, \emph{The World
+  Atlas of Language Structures Online}. Zenodo, 2013.
+\newblock \doi{10.5281/zenodo.7385533}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.7385533}.
+
 \bibitem[Friedrich and Palmer(2014)]{Friedrich2014AutomaticPO}
 Annemarie Friedrich and Alexis Palmer.
 \newblock Automatic prediction of aspectual class of verbs in context.
 \newblock In \emph{Annual Meeting of the Association for Computational
   Linguistics}, 2014.
 \newblock URL \url{https://api.semanticscholar.org/CorpusID:1832412}.
+
+\bibitem[Siegel and McKeown(2000)]{siegel-mckeown-2000-learning}
+Eric~V. Siegel and Kathleen~R. McKeown.
+\newblock Learning methods to combine linguistic indicators:improving aspectual
+  classification and revealing linguistic insights.
+\newblock \emph{Computational Linguistics}, 26\penalty0 (4):\penalty0 595--627,
+  2000.
+\newblock URL \url{https://aclanthology.org/J00-4004}.
+
+\bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
+  O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
+  Vallejos, and Xue]{umr}
+Jens E.~L. Van~Gysel, Meagan Vigus, Jayeol Chun, Kenneth Lai, Sarah Moeller,
+  Jiarui Yao, Tim O’Gorman, Andrew Cowell, William Croft, Chu-Ren Huang, Jan
+  Hajič, James~H. Martin, Stephan Oepen, Martha Palmer, James Pustejovsky,
+  Rosa Vallejos, and Nianwen Xue.
+\newblock Designing a uniform meaning representation for natural language
+  processing.
+\newblock \emph{KI - K\"{u}nstliche Intelligenz}, 35\penalty0 (3–4):\penalty0
+  343–360, April 2021.
+\newblock ISSN 1610-1987.
+\newblock \doi{10.1007/s13218-021-00722-w}.
+\newblock URL \url{http://dx.doi.org/10.1007/s13218-021-00722-w}.
+
+\bibitem[Wiemer and Seržant(2017)]{wiemer2017}
+Björn Wiemer and Ilja Seržant.
+\newblock Diachrony and typology of slavic aspect: What does morphology tell
+  us?
+\newblock 05 2017.
+\newblock \doi{10.5281/zenodo.823246}.
+
+\bibitem[Apresyan(2024)]{errors_in_russian_aspect_apresyan}
+Valentina Apresyan.
+\newblock Errors in foreign language acquisition as a multifaceted phenomenon:
+  the case of russian aspect.
+\newblock \emph{Russian Linguistics}, 48, 01 2024.
+\newblock \doi{10.1007/s11185-023-09287-8}.
 
 \bibitem[Gerwien and Herweg(2017)]{https://doi.org/10.11588/huplc.2017.0.37820}
 Johannes Gerwien and Michael Herweg.
@@ -310,14 +355,6 @@ Vittorio~S. Tomelleri.
 \newblock URL
   \url{http://suvlin.ffzg.hr/index.php/en/browse-archive/39-vol-36-no-69-07-2010/432-slavic-style-aspect-in-the-caucasus,
   pages =}.
-
-\bibitem[Siegel and McKeown(2000)]{siegel-mckeown-2000-learning}
-Eric~V. Siegel and Kathleen~R. McKeown.
-\newblock Learning methods to combine linguistic indicators:improving aspectual
-  classification and revealing linguistic insights.
-\newblock \emph{Computational Linguistics}, 26\penalty0 (4):\penalty0 595--627,
-  2000.
-\newblock URL \url{https://aclanthology.org/J00-4004}.
 
 \bibitem[Chen et~al.(2021)Chen, Palmer, and Vigus]{chen-etal-2021-autoaspect}
 Daniel Chen, Martha Palmer, and Meagan Vigus.
@@ -346,21 +383,6 @@ Eleni Metheniti, Tim Van De~Cruys, and Nabil Hathout.
 Carlota~S. Smith.
 \newblock \emph{Modes of Discourse: The Local Structure of Texts}.
 \newblock Cambridge Studies in Linguistics. Cambridge University Press, 2003.
-
-\bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
-  O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
-  Vallejos, and Xue]{umr}
-Jens E.~L. Van~Gysel, Meagan Vigus, Jayeol Chun, Kenneth Lai, Sarah Moeller,
-  Jiarui Yao, Tim O’Gorman, Andrew Cowell, William Croft, Chu-Ren Huang, Jan
-  Hajič, James~H. Martin, Stephan Oepen, Martha Palmer, James Pustejovsky,
-  Rosa Vallejos, and Nianwen Xue.
-\newblock Designing a uniform meaning representation for natural language
-  processing.
-\newblock \emph{KI - K\"{u}nstliche Intelligenz}, 35\penalty0 (3–4):\penalty0
-  343–360, April 2021.
-\newblock ISSN 1610-1987.
-\newblock \doi{10.1007/s13218-021-00722-w}.
-\newblock URL \url{http://dx.doi.org/10.1007/s13218-021-00722-w}.
 
 \bibitem[Banarescu et~al.(2013)Banarescu, Bonial, Cai, Georgescu, Griffitt,
   Hermjakob, Knight, Koehn, Palmer, and Schneider]{amr}

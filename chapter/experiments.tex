@@ -1,1 +1,19 @@
-Discussing the results.
+Discussing the results of experiments.
+
+\section{BERT aspect class recognition}
+
+\subsection*{BERT fine-tuning}
+Due to their size (and the subsequent large amount of data stored in the parameters), it is hard to carry out probing on LLMs, and, due the fact that they appeared recently, there has been less time to develop probing techniques, hence I decided to train a smaller model of the BERT \citep{devlin2019bert} family. These require more data to fine-tune than LLMs, and hence I used the fine-tuned Llama model to generate more training data in a technique known as knowledge distillation (KD). Knowledge distillation involves using a larger 'teacher' model to train a smaller 'student' model, often reaching the same or similar accuracy with a significantly smaller model. While not being able to probe the larger Llama model, smaller models are still an interesting artefact to consider and 
+
+Furthermore the complexity of larger LMs (especially those trained for generation rather than sequence classification (CHECK THIS!!!!)) means that their embedding space is noisier than smaller models that have been fine-tuned.
+
+\section{Ablation (aspectualisation and contextualisation)}
+
+\section{Ablation (aspectualisation and contextualisation)}
+
+\subsection{Probing}
+\subsection{Aspect latent space}
+\subsubsection{Verb of motion clustering}
+\subsubsection{Prefix clustering}
+
+\section*{Cross-lingual comparison}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  27 APR 2024 17:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  2 JUN 2024 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1505,34 +1505,37 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 [3
 
 
-] [4]
-Overfull \hbox (26.38423pt too wide) in paragraph at lines 44--45
+]
+Overfull \hbox (50.30077pt too wide) in paragraph at lines 40--41
+[]\T1/lmss/m/n/12 (-20) Here each sit-u-a-tion is a union of events ($[] \OT1/l
+mr/m/n/12 (-20) = \OMS/lmsy/m/n/12 P\OT1/lmr/m/n/12 (-20) ([]) \OMS/lmsy/m/n/12
+ n ;$\T1/lmss/m/n/12 (-20) ) and the 
+ []
+
+[4{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
+ocal/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Overfull \hbox (26.38423pt too wide) in paragraph at lines 50--51
 \T1/lmss/m/n/12 (-20) to make, and each de-scribes a va-ri-ety of con-cepts whi
 ch will be use-ful later. 
  []
 
 [5]
-Underfull \hbox (badness 1983) in paragraph at lines 124--124
+Underfull \hbox (badness 1983) in paragraph at lines 130--130
 []|\T1/lmss/m/n/12 (+20) The man was build-ing a
  []
 
 
-Overfull \hbox (49.99994pt too wide) in paragraph at lines 74--180
+Overfull \hbox (49.99994pt too wide) in paragraph at lines 80--186
  [][] 
  []
 
 [6] [7] [8] [9] [10] [11]
-Overfull \hbox (24.93277pt too wide) in paragraph at lines 289--290
-\T1/lmss/m/n/12 (-20) of as-pec-tual phe-nom-ena, oth-er-wise rather un-com-mon
- [[]Tomel-leri[], []2010[]].[][][] 
+Overfull \hbox (84.9444pt too wide) in paragraph at lines 300--301
+[]\T1/lmss/m/n/12 (-20) WHAT ARE THE CIR-CUM-STANCES IN WHICH AM-BI-GU-ITY ARIS
+ES IN EN-GLISH? 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 297--76
-
- []
-
-[12]
+[12] [13]) [14]
 chapter 3.
 (./chapter/related.tex
 Overfull \hbox (14.8121pt too wide) in paragraph at lines 2--3
@@ -1546,13 +1549,19 @@ Overfull \hbox (64.02733pt too wide) in paragraph at lines 7--8
 ing lin-guis-tic con-clu-sions: HERE. 
  []
 
-) [13
+
+Overfull \hbox (1.95576pt too wide) in paragraph at lines 11--12
+[]\T1/lmss/m/n/12 (-20) TALK ABOUT ASp-Ambig - be we have a dif-fer-ent type of
+ am-bi-gu-ity 
+ []
+
+) [15
 
 
 
-] [14]
+] [16]
 chapter 4.
-(./chapter/methods.tex [15
+(./chapter/methods.tex [17
 
 
 
@@ -1562,20 +1571,20 @@ Overfull \hbox (96.18225pt too wide) in paragraph at lines 25--26
 -son from []Bonn et al.[] [[]2023[]] 
  []
 
-<img/umr_aspct_tree.png, id=525, 1008.76875pt x 568.1225pt>
+<img/umr_aspct_tree.png, id=586, 1008.76875pt x 568.1225pt>
 File: img/umr_aspct_tree.png Graphic file (type png)
 <use img/umr_aspct_tree.png>
-Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 42.
+Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 43.
 (pdftex.def)             Requested size: 469.47052pt x 264.39961pt.
-[16] [17 <./img/umr_aspct_tree.png>]) [18]
+[18] [19 <./img/umr_aspct_tree.png>] [20]) [21]
 chapter 5.
-(./chapter/dataset.tex [19
+(./chapter/dataset.tex [22
 
 
 
-] [20]
+] [23]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-4.
+7.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1585,29 +1594,40 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (26.02657pt too wide) in paragraph at lines 44--45
+Overfull \hbox (26.02657pt too wide) in paragraph at lines 47--48
 \T1/lmss/m/n/12 (-20) source sen-tence but also with nouns and ad-jec-tives (se
 e for ex-am-ple []5.1.1[]). 
  []
 
-[21{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/
-local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [22]
-[23] [24{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathex.e
-nc}]) [25] [26]
+[24] [25{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.e
+nc}]
+Overfull \hbox (19.40425pt too wide) in paragraph at lines 93--94
+\T1/lmss/m/n/12 (-20) dom ac-cu-racy. WHICH EPOCH ARE THESE RE-SULTS FOR-MAT-IN
+GG 
+ []
+
+[26] [27{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathex.e
+nc}] [28])
+Overfull \hbox (0.31952pt too wide) in paragraph at lines 180--88
+[]\T1/lmss/m/n/12 (-20) WHY DID WE TAKE OUT HA-BIT-UAL? AND NOT IT-ER-A-TIVE?? 
+ 
+ []
+
+[29]
 chapter 6.
-(./chapter/experiments.tex) [27
+(./chapter/experiments.tex) [30
 
 
 
-]
+] [31]
 chapter 7.
-(./chapter/discussion.tex) [28
+(./chapter/discussion.tex) [32
 
 
 
 ]
 chapter 8.
-(./chapter/conclusion.tex) [29
+(./chapter/conclusion.tex) [33
 
 
 
@@ -1619,7 +1639,7 @@ Overfull \hbox (29.85915pt too wide) in paragraph at lines 2--3
 in the NLP do-main. 
  []
 
-<img/ann_guide.pdf, id=701, 597.432pt x 845.07718pt>
+<img/ann_guide.pdf, id=771, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf>
 Package pdftex.def Info: img/ann_guide.pdf  used on input line 10.
@@ -1628,7 +1648,7 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf>
 Package pdftex.def Info: img/ann_guide.pdf  used on input line 10.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
-<img/ann_guide.pdf, id=704, page=1, 597.432pt x 845.07718pt>
+<img/ann_guide.pdf, id=774, page=1, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
 Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
@@ -1637,7 +1657,7 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
 Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
-[30
+[34
 
 
 
@@ -1654,8 +1674,8 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
 Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
- [31 <./img/ann_guide.pdf>]
-<img/ann_guide.pdf, id=756, page=2, 597.432pt x 845.07718pt>
+ [35 <./img/ann_guide.pdf>]
+<img/ann_guide.pdf, id=825, page=2, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 2>
 Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 10.
@@ -1668,7 +1688,7 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 2>
 Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 10.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
- [32 <./img/ann_guide.pdf>]) (./thesis.bbl
+ [36 <./img/ann_guide.pdf>]) (./thesis.bbl
 chapter without number
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--23
@@ -1676,7 +1696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--23
 -[]a5cc-[]a89143ab2a2a / umr _
  []
 
-[33
+[37
 
 
 
@@ -1690,46 +1710,48 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [34]
-[35]
-Underfull \hbox (badness 3895) in paragraph at lines 307--313
+ [38]
+[39] [40]
+Underfull \hbox (badness 3895) in paragraph at lines 352--358
 []\T1/lmss/m/n/12 (+20) Vittorio S. Tomel-leri.  Slavic^^Ustyle as-pect in the 
 cau-ca-sus.  \T1/lmss/m/sl/12 (+20) Su-vre-mena lingvis-
  []
 
-[36] [37] [38] [39]) [40] (./thesis.aux)
+[41] [42] [43]) [44] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35783 strings out of 477476
- 713531 string characters out of 5824244
- 1879388 words of memory out of 5000000
- 54874 multiletter control sequences out of 15000+600000
- 588283 words of font info for 195 fonts, out of 8000000 for 9000
+ 35842 strings out of 477476
+ 714342 string characters out of 5824244
+ 1880388 words of memory out of 5000000
+ 54902 multiletter control sequences out of 15000+600000
+ 597302 words of font info for 202 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  113i,20n,109p,10724b,1377s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
 t, replaced by a fixed one
 
-</usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr
-/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/loca
-l/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texl
-ive/2023basic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/20
-23basic/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023basic
-/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2023basic/texm
-f-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023basic/texmf-dis
-t/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2023basic/texmf-dist/fon
-ts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/typ
-e1/public/lm/lmssbx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/
-public/lm/lmsso10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/publ
-ic/lm/lmsso12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/l
-m/lmtt12.pfb>
-Output written on thesis.pdf (47 pages, 649981 bytes).
+</usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr
+/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/loca
+l/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/tex
+live/2023basic/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2
+023basic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023bas
+ic/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023basic/texm
+f-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2023basic/texmf-dis
+t/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023basic/texmf-dist/fon
+ts/type1/public/lm/lmss17.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/ty
+pe1/public/lm/lmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/pu
+blic/lm/lmssbx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/publi
+c/lm/lmsso10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm
+/lmsso12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lms
+y10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmtt12.p
+fb>
+Output written on thesis.pdf (51 pages, 689805 bytes).
 PDF statistics:
- 1128 PDF objects out of 1200 (max. 8388607)
- 972 compressed objects within 10 object streams
- 222 named destinations out of 1000 (max. 500000)
- 45995 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1227 PDF objects out of 1440 (max. 8388607)
+ 1062 compressed objects within 11 object streams
+ 241 named destinations out of 1000 (max. 500000)
+ 52179 words of extra memory for PDF output out of 61914 (max. 10000000)
 
