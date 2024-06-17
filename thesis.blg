@@ -9,17 +9,17 @@ Warning--I'm ignoring McINTOSH+1975+35+42's extra "title" field
 --line 155 of file references.bib
 Warning--I'm ignoring Boogaart+2004+1165+1180's extra "booktitle" field
 --line 220 of file references.bib
-I was expecting a `,' or a `}'---line 617 of file references.bib
+I was expecting a `,' or a `}'---line 650 of file references.bib
  :     pages = "
  :              65--98",
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring hopitime's extra "title" field
---line 657 of file references.bib
-Repeated entry---line 770 of file references.bib
+--line 690 of file references.bib
+Repeated entry---line 828 of file references.bib
  : @inproceedings{Friedrich2014AutomaticPO
  :                                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 778 of file references.bib
+Repeated entry---line 836 of file references.bib
  : @misc{he2023annollm
  :                    ,
 I'm skipping whatever remains of this entry
@@ -28,50 +28,53 @@ Warning--empty booktitle in Kiparsky2004PartitiveCA
 Warning--can't use both author and editor fields in Boogaart+2004+1165+1180
 Warning--empty booktitle in Dahl1985TenseAA
 Warning--empty booktitle in Krifka1998TheOO
+Warning--empty booktitle in Freund2016RecentCI
 Warning--empty booktitle in Linguistics2005DowtyD1
 Warning--empty publisher in zucchi
+Warning--empty publisher in prefixation_in_rise_of_slav_asp
+Warning--empty booktitle in Derksen2008EtymologicalDO
 Warning--empty journal in wiemer2017
 Warning--can't use both author and editor fields in Swart+2019+321+349
 Warning--empty journal in llmsForPragAndDiscAnalysis
-You've used 65 entries,
+You've used 70 entries,
             2481 wiz_defined-function locations,
-            1024 strings with 21528 characters,
-and the built_in function-call counts, 28106 in all, are:
-= -- 2214
-> -- 1865
-< -- 57
-+ -- 703
-- -- 573
-* -- 2237
-:= -- 4708
-add.period$ -- 289
-call.type$ -- 65
-change.case$ -- 117
-chr.to.int$ -- 65
-cite$ -- 75
-duplicate$ -- 1324
-empty$ -- 2316
-format.name$ -- 662
-if$ -- 5931
+            1050 strings with 22001 characters,
+and the built_in function-call counts, 29203 in all, are:
+= -- 2341
+> -- 1818
+< -- 63
++ -- 695
+- -- 555
+* -- 2250
+:= -- 4848
+add.period$ -- 311
+call.type$ -- 70
+change.case$ -- 125
+chr.to.int$ -- 70
+cite$ -- 83
+duplicate$ -- 1420
+empty$ -- 2483
+format.name$ -- 655
+if$ -- 6203
 int.to.chr$ -- 1
-int.to.str$ -- 66
-missing$ -- 66
-newline$ -- 411
-num.names$ -- 211
-pop$ -- 596
+int.to.str$ -- 71
+missing$ -- 72
+newline$ -- 443
+num.names$ -- 224
+pop$ -- 658
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 70
 quote$ -- 0
-skip$ -- 829
+skip$ -- 884
 stack$ -- 0
-substring$ -- 774
-swap$ -- 259
+substring$ -- 783
+swap$ -- 270
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 413
-warning$ -- 10
-while$ -- 193
+type$ -- 442
+warning$ -- 13
+while$ -- 201
 width$ -- 0
-write$ -- 997
+write$ -- 1067
 (There were 3 error messages)

@@ -1,32 +1,20 @@
-This is the description of the methods. 
-
-- UMR Dataset creation
-
-- Llama Fine-tuning
-
-- Llama for more training data
-
-- Fine-tune smaller (multilingual model)
-
-- Identifying and examining ambiguous sentences/verbs
-
-- Comparing across languages
+This section will give an overview of the main research questions for this project and how I intend to investigate them.
+CHECK TENSE IN THIS SECTION
 
 \section{Which aspect types do I use?}
-One inherent drawback of computational methods is exactly their one unifying characteristic: their computability. Sadly, the requirement for computability means, in many cases, sacrificing the nuance that comes with more qualitative approaches. In this concrete case this means settling for a single aspect classification system. A consequence of the glut of literature in the field is a glut of classification systems to go with it, each with their own idiosyncrasies and each having their own advantages and drawbacks. I will attempt to discuss what I see as the main candidates before deciding on one system and explaining this decision - NO - this was done in aspectology already!!!!SEE ABOVE
+One inherent drawback of computational methods is exactly their one unifying characteristic: their computability. Sadly, the requirement for computability means, in many cases, sacrificing the nuance that comes with more qualitative approaches. In this concrete case this means settling for a single aspect classification system. A consequence of the glut of literature in the field is a glut of classification systems to go with it, each with their own idiosyncrasies and each having their own advantages and drawbacks.
 
 reason is of course the contribution to the linguistic community: computational approaches to language have SPURRED ON LOTS OF PROGRESS (cf Chomsky!!!). 
 
-The framework I decided on was Uniform Meanign Representation (UMR) \citep{umr}.
+The classification schema I decided on was Uniform Meaning Representation (UMR) \citep{umr}, for several reasons: On (SHOULD THIS BE CAPITALISED??) the one hand the lattice was designed for ease of annotation and usability and thus does away with a lot of the theoretical baggage of other classification systems (such as the insistence on lexical aspect types). On the other hand the schema is part of a larger framework, and hence a classification system using these labels has a practical application. Furthermore, UMR provides a lattice for annotation (see \ref{fig:umr_aspect_tree}) meaning the level of the annotation classes can be ANGEPASST to the needs of the individual contexts.
 
 \subsection{UMR}
 UMR \citep{umr} was introduced in order to expand and further generalise the attempt to design an abstract semantic representation, as was most successfully pioneered by \citet{amr} with Abstract Meaning Representation (AMR). In contrast to AMR, UMR aims to be a typologically-informed abstraction away from English structures, making it more suitable for other similar languages, or, in their own words, making it "a practical and cross-linguistically valid meaning representation designed to meet the needs of a wide range of NLP applications" \citep{umr}.
 
-WHY IS UMR IMPORTANT???? Get Apaho English comparison from \citet{bonn-etal-2023-mapping}
-
+%WHY IS UMR IMPORTANT???? Get Apaho English comparison from \citet{bonn-etal-2023-mapping}
 \subsection*{Aspect in UMR}
 \label{aspect_in_umr}
-UMR describes the following 5 corse-grained aspect classes: (descriptions taken from \citet{umr}), also depicted in figure \ref{fig:umr_aspect_tree}:
+UMR describes the following 5 coarse-grained aspect classes: (descriptions taken from \citet{umr}\footnote{For more detailed descriptions see GUIDELINES LINK!!!!}), also depicted in figure \ref{fig:umr_aspect_tree}:
 \begin{itemize}
     \item \textbf{state} - an unspecified type of state
     \item \textbf{habitual} - an event that occurs regularly in the past or
@@ -41,7 +29,7 @@ UMR describes the following 5 corse-grained aspect classes: (descriptions taken 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{img/umr_aspct_tree.png}
-    \caption{UMR aspect classification tree \citep{umrslides2022}}
+    \caption{UMR aspect classification lattice \citep{umrslides2022}}
     \label{fig:umr_aspect_tree}
 \end{figure}
 
@@ -73,6 +61,8 @@ Slightly different to other frameworks (one category can encompass imperfective 
 
 Habitual as aspect
 
+They are not based on classic parameters such as telicity, punctuality etc.
+
 \subsection{How does the Slavic Perfective-Imperfective relate to UMR classes}
 
 Habitual = imperfective
@@ -81,16 +71,32 @@ Activity = imperfective (see motion verbs)
 endeavour = 
 
 performance = perfective
-
+\section{Research questions}
+\subsection*{RQ1: Can we train a system to identify aspect classes?}
+The first question I aimed to look at is whether we can train a system to automatically classify verbs in context as one of several aspect classes. This has been done before (see \ref{sect:previous_asp_class}), however this is the first time that a large language model has been used for this task (CHECK THIS). If this model works well, it will be possible to use it to look at some linguistic questions, such as whether particular prefixes is Slavic languages tend towards certain aspect classes, or carrying out a typological analysis of aspectual ambiguity (RQ3). 
+\subsection*{RQ2: Can we automatically identify aspectually ambiguous verbs/sentences and which classes they tend towards?}
+Once I have a model which can accurately predict verbal aspect in context, the next question will be the more complex task of predicting aspectual ambiguity, which as far as I am aware, has not been done before. At this stage it is also an interesting question to examine for verb phrases how they are classified without context. This could SHED SOME LIGHT on inherent aspectual readings of verb phrases and thus ANSWER THE QUESTION of whether there are some verb phrases which are perhaps "underspecified" in the model's latent space (see \ref{sect:coerc_or_under}).
+\subsection*{RQ3: How does aspectual ambiguity compare across languages? Can we study the typology of aspectualisation?}
+Finally, I will attempt to investigate and compare aspectual ambiguity across languages, looking at whether languages with more explicit marking for aspect have less aspect ambiguity than those expressing aspect more implicitly. I plan to answer this both by looking at the ambiguity classification of verbs in context and also of the top \emph{n} verbs in the language without context.
 \section{Project outline}
-\subsection{Step 1: Use LLM to create dataset}
-\subsection{Step 2: Identify aspectually ambiguous sentences}
-\subsection{Step 3: Compare aspectual ambiguity cross-lingually}
+\subsection*{Step 1: Fine-tune LLM for aspect classification}
+In order to use language models to investigate aspect, it is necessary to first understand how much current language models know about aspectual phenomena. To this end, I will fine-tune a large language model on a small dataset (since no large datasets are available for the aspect classification scheme I choose, UMR \citep{umr}, or indeed in general for an aspect classification task), testing on a hold-out set. This step of fine-tuning a \emph{large} language model is necessary due to the scarcity of data available, which is not sufficient for fine-tuning a smaller model.
+\subsection*{Step 2: Use fine-tuned LLM to annotate larger dataset}
+The LLM fine-tuned in step 1 can then be used to annotate a larger dataset. Having a larger dataset allows a great more possibilities for analysis than the dataset used for fine-tuning the larger model. For instance, this larger dataset can be used in a sort of knowledge distillation (KD) process to train a smaller (possibly multilingual) model, which is useful for latent space analysis or comparison across languages. Though it must be noted that there is a danger of error propagation at this step.
+\subsection*{Step 3: Compare aspectual systems cross-lingually}
+Once we have training data of good enough quality, we can use this to train a multilingual model and use this to compare between languages. Here we can test the model in different contexts and use this to gain insights about the aspect systems of different languages, both in their own right and in comparison with one another, for example, to see if prevalence of aspectual ambiguity changes depending on how overtly a language marks for aspect, or if certain prefixes in a language mark a particular aspect class. Furthermore, 
+
+EQUATION FOR LANGUAGE LEVEL ENTROPY
+
+\subsection*{Step 4: Fine-tune LLM for aspect ambiguity detection}
+In order to look at aspect ambiguity specifically, I will also fine-tune an LLM in a similar way to above to identify whether a verb in context has an ambiguous aspectual reading or not. However, since there does not yet exist a dataset annotated for aspectual ambiguity, this part requires human annotation. I propose to solve this by requiring annotators to label sentence-verb pairs with any labels they see plausible. This makes it possible to have both a human class annotation and a derived ambiguity annotation for datapoints labelled with several labels. Neural networks are known for being overly confident in their predictions, and I will investigate whether low certainty of the smaller aspect \emph{classification} model (i.e. similar logit values across classes) correlates with the output of the model specially trained for ambiguity recognition.
 
 \section{Use of approximative LMs as sources of linguistic knowledge?? (Reversing the NLP pipeline)}
 Currently the two main approaches used to develop and validate linguistic hypotheses are through corpora and through introspection, the former being championed by empiricists and the latter by the Chomskyan rationalist tradition \citep{corpus_textbook}. It is clear that corpora, including those used to train LLMs, can only contain a fraction of the famously infinite set of possible grammatical sentences in a language, and this has led Chomsky to decry corpus linguistics as seeking to model language \emph{performance} rather than \emph{competence} \citep{corpus_textbook}. Native speaker introspection, on the other hand, while able to judge the grammaticality of any sentence, is clearly highly subjective and biased. Language models, however, are productive and are able to generalize across their corpora to produce, with some sophistication, sentences not seen before in training, thus blurring the line between the traditional Chomskyan distinction between competence and performance. CHANGE THIS WORDING SO ITS NOT WORD FOR WORD AND CITE IT MAYBE??
-\section{Where do LLMs fail? (CHANGE - expectation management)}
+\section{Where do LLMs fail? (CHANGE - expectation management)} WAS KANN ICH WISSEN? WAS DARF ICH HOFFEN? KANT
+It is easy to get 
 
+COPY FROM PAPER?
 %\section*{Dataset creation}
 %In order to create the dataset for training the model, later to be used for the neural analysis, it is 
 

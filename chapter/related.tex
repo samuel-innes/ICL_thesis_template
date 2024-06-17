@@ -1,8 +1,9 @@
 \section{Aspect classification}
-Aspect has received comparatively very little attention from the computational linguistics community\citep{friedrich-etal-2023-kind}, especially from the Natural Language Processing (NLP) part of the field.\footnote{As opposed to those with more emphasis on the \emph{linguistics} part of computational linguistics.} However there have been some works in recent years looking at this area.
+\label{sect:previous_asp_class}
+Aspect has received comparatively very little attention from the computational linguistics community \citep{friedrich-etal-2023-kind}, especially from the Natural Language Processing (NLP) part of the field.\footnote{As opposed to those with more emphasis on the \emph{linguistics} part of computational linguistics.} This is presumably due to the fact that it is a high-level semantic task, whose relevance to downstream applications is perhaps not as immediately obvious as other similarly complex tasks. However, there have been some works in recent years looking at this area and studying how well current models deal with the phenomenon.
 
 \subsection{Rules-based aspect class prediction}
-\citet{siegel-mckeown-2000-learning} develop a rules-based aspect classification of verbs using co-occurrence information from a corpus. The aspect class they aim to predict is an inherent class of a verb (i.e. lexical aspect) and hence they do not take into account the sentence context, which often has an effect on the aspect of the verb considered. This is one of the issues which makes aforementioned distinction between lexical and grammatical aspect so difficult in practice.\footnote{See WHERE IS THIS for a more in-depth discusion on coercion and underspecification and their consequences.} The aspect classification scheme they used was that of \citet{moens-steedman-1988-temporal}, a 5-way class distinction building on \citet{vendler57}.
+\citet{siegel-mckeown-2000-learning} develop a rules-based aspect classification of verbs using co-occurrence information from a corpus. The aspect class they aim to predict is an inherent class of a verb (i.e. lexical aspect), and hence they do not take into account the sentence context, which often has an effect on the aspect of the verb considered. This is one of the issues which makes the aforementioned distinction between lexical and grammatical aspect so difficult in practice. The aspect classification scheme they use was that of \citet{moens-steedman-1988-temporal}, a 5-way class distinction building on \citet{vendler57}.
 
 Interestingly they use their results draw the following linguistic conclusions: HERE.
 
@@ -15,9 +16,24 @@ TALK ABOUT ASp-Ambig - be we have a different type of ambiguity
 \subsection{(L)LMs and aspect}
 \citet{metheniti-etal-2022-time} are bros and it WORKS.
 
+\section*{\citet{katinskaia2024probing}}
+
+\section{Aspectual ambiguity}
+
 \section{Available datasets}
+The available datasets are relatively sparse. 
+
+
+One particularly interesting example is English-Czech InterCorp (GET CITATION CˇermákandRosen, 2012; Rosen and Vavˇrín, 2012), which leverages the fact mentioned in \ref{sec:asp_in_slav_lang} that Slavic languages such as Czech have two forms of each verb, each assigned to a different aspectual reading depending on the context. This makes it possible to extract aspectual information from a Czech translation of an English sentence, assuming an accurate translation, to use as further training data.
 
 \section{Formal representations of aspect}
-\section{Related areas}
+In this section I will briefly mention some of the attempts to formalise aspect
+\section{Related areas of work}
+RED also identified fine-grained aspect claasses (or \emph{Aspectual image schemata} as they termed it) which often hard to distinguish between at first glance, however this is a 
+
+They used this to create a semantic map
+
+The approach is a different one to mine since the goal was to find groupings of semantically similar aspect classes, whereas the classes presented in table \ref{table:asp_amb_contexts_eng} are contexts (syntactic or otherwise) which lead to an ambiguous aspect reading and does not necessarily say anything about the semantics of the aspect classes themselves.
+
 \subsection{Situation entities}
 Situation entities classification is the task of identifying different types of situations, which exist at a clausal level. The task is comes more from the tradition of discourse analysis, since it is important for discourse representation theory (DRT) to know for example which new referents are introduced to a discourse and or also to analyse temporal relationships. Works usually use the original 8 types introduced by \citet{Smith_2003}: events, states, generalizing sentences, generic sentences, facts, propositions, questions and imperatives. While 

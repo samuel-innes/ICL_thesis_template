@@ -1,4 +1,4 @@
-\begin{thebibliography}{65}
+\begin{thebibliography}{70}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -21,15 +21,6 @@ Jin~Zhao Jens Van~Gysel, Meagan~Vigus and Nianwen Xue.
 \newblock URL
   \url{https://lrec2022.lrec-conf.org/media/filer_public/94/45/9445a9b9-4cfb-4898-a5cc-a89143ab2a2a/umr_lrec_tutorial_slides_6.pdf}.
 
-\bibitem[van Hout(2016)]{10.1093/oxfordhb/9780199601264.013.25}
-Angeliek van Hout.
-\newblock {Lexical and Grammatical Aspect}.
-\newblock In \emph{{The Oxford Handbook of Developmental Linguistics}}. Oxford
-  University Press, 07 2016.
-\newblock ISBN 9780199601264.
-\newblock \doi{10.1093/oxfordhb/9780199601264.013.25}.
-\newblock URL \url{https://doi.org/10.1093/oxfordhb/9780199601264.013.25}.
-
 \bibitem[Smith(1991)]{Smith1991ThePO}
 Carlota Smith.
 \newblock The parameter of aspect.
@@ -43,6 +34,15 @@ Zeno Vendler.
   1957.
 \newblock ISSN 00318108, 15581470.
 \newblock URL \url{http://www.jstor.org/stable/2182371}.
+
+\bibitem[van Hout(2016)]{10.1093/oxfordhb/9780199601264.013.25}
+Angeliek van Hout.
+\newblock {Lexical and Grammatical Aspect}.
+\newblock In \emph{{The Oxford Handbook of Developmental Linguistics}}. Oxford
+  University Press, 07 2016.
+\newblock ISBN 9780199601264.
+\newblock \doi{10.1093/oxfordhb/9780199601264.013.25}.
+\newblock URL \url{https://doi.org/10.1093/oxfordhb/9780199601264.013.25}.
 
 \bibitem[Egg et~al.(2019)Egg, Prepens, and
   Roberts]{annotAndAutoClassOfAspectCat}
@@ -156,51 +156,6 @@ Manfred Krifka.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/B978008097086852025X}.
 
-\bibitem[Friedrich et~al.(2023)Friedrich, Xue, and
-  Palmer]{friedrich-etal-2023-kind}
-Annemarie Friedrich, Nianwen Xue, and Alexis Palmer.
-\newblock A kind introduction to lexical and grammatical aspect, with a survey
-  of computational approaches.
-\newblock In Andreas Vlachos and Isabelle Augenstein, editors,
-  \emph{Proceedings of the 17th Conference of the European Chapter of the
-  Association for Computational Linguistics}, pages 599--622, Dubrovnik,
-  Croatia, May 2023. Association for Computational Linguistics.
-\newblock \doi{10.18653/v1/2023.eacl-main.44}.
-\newblock URL \url{https://aclanthology.org/2023.eacl-main.44}.
-
-\bibitem[Lo{\'a}iciga and Grisot(2016)]{loaiciga-grisot-2016-predicting}
-Sharid Lo{\'a}iciga and Cristina Grisot.
-\newblock Predicting and using a pragmatic component of lexical aspect of
-  simple past verbal tenses for improving {E}nglish-to-{F}rench machine
-  translation.
-\newblock \emph{Linguistic Issues in Language Technology}, 13, 2016.
-\newblock URL \url{https://aclanthology.org/2016.lilt-13.3}.
-
-\bibitem[Linguistics et~al.(2005)Linguistics, Carlota, and
-  Jan]{Linguistics2005DowtyD1}
-Pacific Linguistics, Segura Carlota, and Evert Jan.
-\newblock Dowty, david. 1979. word meaning and montague grammar: The semantics
-  of verbs and times in generative semantics and in montague's ptq. dordrecht:
-  Reidel.
-\newblock 2005.
-\newblock URL \url{https://api.semanticscholar.org/CorpusID:57525242}.
-
-\bibitem[Zucchi(2020)]{zucchi}
-Sandro Zucchi.
-\newblock \emph{Progressive: The Imperfective Paradox}, pages 1--32.
-\newblock 11 2020.
-\newblock ISBN 9781118788318.
-\newblock \doi{10.1002/9781118788516.sem138}.
-
-\bibitem[Depraetere(1995)]{6608d9d0-a477-39af-8491-2172df5ae612}
-Ilse Depraetere.
-\newblock On the necessity of distinguishing between (un)boundedness and
-  (a)telicity.
-\newblock \emph{Linguistics and Philosophy}, 18\penalty0 (1):\penalty0 1--19,
-  1995.
-\newblock ISSN 01650157, 15730549.
-\newblock URL \url{http://www.jstor.org/stable/25001576}.
-
 \bibitem[Binnick(1991)]{binnick1991time}
 R.I. Binnick.
 \newblock \emph{Time and the Verb: A Guide to Tense and Aspect}.
@@ -224,6 +179,14 @@ Solveig Granath and Michael Wherrity.
   Literature}, 4\penalty0 (1):\penalty0 6--22, Dec. 2013.
 \newblock \doi{10.13125/rhesis/5575}.
 \newblock URL \url{https://ojs.unica.it/index.php/rhesis/article/view/5575}.
+
+\bibitem[Freund(2016)]{Freund2016RecentCI}
+N~Freund.
+\newblock Recent change in the use of stative verbs in the progressive form in
+  british english : I’m loving it.
+\newblock 2016.
+\newblock URL
+  \url{https://www.reading.ac.uk/elal/-/media/Project/UoR-Main/Schools-Departments/elal/LSWP/LSWP-7/elal_7_Freund.pdf?la=en&hash=C1403C6C7805F3F1CDA6E1F5E5CC4BEE}.
 
 \bibitem[Wilhelm(2007)]{102998}
 Andrea Wilhelm.
@@ -285,6 +248,81 @@ Adeline Patard, Rea Peltola, and Emmanuelle Roussel.
   Atlas of Language Structures Online}. Zenodo, 2013.
 \newblock \doi{10.5281/zenodo.7385533}.
 \newblock URL \url{https://doi.org/10.5281/zenodo.7385533}.
+
+\bibitem[Depraetere(1995)]{6608d9d0-a477-39af-8491-2172df5ae612}
+Ilse Depraetere.
+\newblock On the necessity of distinguishing between (un)boundedness and
+  (a)telicity.
+\newblock \emph{Linguistics and Philosophy}, 18\penalty0 (1):\penalty0 1--19,
+  1995.
+\newblock ISSN 01650157, 15730549.
+\newblock URL \url{http://www.jstor.org/stable/25001576}.
+
+\bibitem[Friedrich et~al.(2023)Friedrich, Xue, and
+  Palmer]{friedrich-etal-2023-kind}
+Annemarie Friedrich, Nianwen Xue, and Alexis Palmer.
+\newblock A kind introduction to lexical and grammatical aspect, with a survey
+  of computational approaches.
+\newblock In Andreas Vlachos and Isabelle Augenstein, editors,
+  \emph{Proceedings of the 17th Conference of the European Chapter of the
+  Association for Computational Linguistics}, pages 599--622, Dubrovnik,
+  Croatia, May 2023. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2023.eacl-main.44}.
+\newblock URL \url{https://aclanthology.org/2023.eacl-main.44}.
+
+\bibitem[Lo{\'a}iciga and Grisot(2016)]{loaiciga-grisot-2016-predicting}
+Sharid Lo{\'a}iciga and Cristina Grisot.
+\newblock Predicting and using a pragmatic component of lexical aspect of
+  simple past verbal tenses for improving {E}nglish-to-{F}rench machine
+  translation.
+\newblock \emph{Linguistic Issues in Language Technology}, 13, 2016.
+\newblock URL \url{https://aclanthology.org/2016.lilt-13.3}.
+
+\bibitem[Linguistics et~al.(2005)Linguistics, Carlota, and
+  Jan]{Linguistics2005DowtyD1}
+Pacific Linguistics, Segura Carlota, and Evert Jan.
+\newblock Dowty, david. 1979. word meaning and montague grammar: The semantics
+  of verbs and times in generative semantics and in montague's ptq. dordrecht:
+  Reidel.
+\newblock 2005.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:57525242}.
+
+\bibitem[Zucchi(2020)]{zucchi}
+Sandro Zucchi.
+\newblock \emph{Progressive: The Imperfective Paradox}, pages 1--32.
+\newblock 11 2020.
+\newblock ISBN 9781118788318.
+\newblock \doi{10.1002/9781118788516.sem138}.
+
+\bibitem[Boneh and Doron(2010)]{10.1093/acprof:oso/9780199544325.003.0016}
+Nora Boneh and Edit Doron.
+\newblock {33816 Modal and Temporal Aspects of Habituality}.
+\newblock In \emph{{Lexical Semantics, Syntax, and Event Structure}}. Oxford
+  University Press, 02 2010.
+\newblock ISBN 9780199544325.
+\newblock \doi{10.1093/acprof:oso/9780199544325.003.0016}.
+\newblock URL \url{https://doi.org/10.1093/acprof:oso/9780199544325.003.0016}.
+
+\bibitem[Tomelleri(2010)]{slavstyleaspect}
+Vittorio~S. Tomelleri.
+\newblock Slavic–style aspect in the caucasus.
+\newblock \emph{Suvremena lingvistika}, 36\penalty0 (69), 2010.
+\newblock URL
+  \url{http://suvlin.ffzg.hr/index.php/en/browse-archive/39-vol-36-no-69-07-2010/432-slavic-style-aspect-in-the-caucasus,
+  pages =}.
+
+\bibitem[Dickey(2017)]{prefixation_in_rise_of_slav_asp}
+Stephen Dickey.
+\newblock \emph{Prefixation in the Rise of Slavic Aspect}, pages 85--102.
+\newblock 01 2017.
+\newblock ISBN 978-88-6453-697-2.
+\newblock \doi{10.36253/978-88-6453-698-9.07}.
+
+\bibitem[Derksen(2008)]{Derksen2008EtymologicalDO}
+Rick Derksen.
+\newblock Etymological dictionary of the slavic inherited lexicon.
+\newblock 2008.
+\newblock URL \url{https://brill.com/display/title/12607?language=en}.
 
 \bibitem[Friedrich and Palmer(2014)]{Friedrich2014AutomaticPO}
 Annemarie Friedrich and Alexis Palmer.
@@ -348,14 +386,6 @@ Henriëtte de~Swart.
 \newblock \doi{doi:10.1515/9783110626391-010}.
 \newblock URL \url{https://doi.org/10.1515/9783110626391-010}.
 
-\bibitem[Tomelleri(2010)]{slavstyleaspect}
-Vittorio~S. Tomelleri.
-\newblock Slavic–style aspect in the caucasus.
-\newblock \emph{Suvremena lingvistika}, 36\penalty0 (69), 2010.
-\newblock URL
-  \url{http://suvlin.ffzg.hr/index.php/en/browse-archive/39-vol-36-no-69-07-2010/432-slavic-style-aspect-in-the-caucasus,
-  pages =}.
-
 \bibitem[Chen et~al.(2021)Chen, Palmer, and Vigus]{chen-etal-2021-autoaspect}
 Daniel Chen, Martha Palmer, and Meagan Vigus.
 \newblock {A}uto{A}spect: Automatic annotation of tense and aspect for uniform
@@ -379,6 +409,11 @@ Eleni Metheniti, Tim Van De~Cruys, and Nabil Hathout.
 \newblock \doi{10.18653/v1/2022.cmcl-1.10}.
 \newblock URL \url{https://aclanthology.org/2022.cmcl-1.10}.
 
+\bibitem[Katinskaia and Yangarber(2024)]{katinskaia2024probing}
+Anisia Katinskaia and Roman Yangarber.
+\newblock Probing the category of verbal aspect in transformer language models,
+  2024.
+
 \bibitem[Smith(2003)]{Smith_2003}
 Carlota~S. Smith.
 \newblock \emph{Modes of Discourse: The Local Structure of Texts}.
@@ -392,27 +427,19 @@ L.~Banarescu, Claire Bonial, Shu Cai, M.~Georgescu, K.~Griffitt, U.~Hermjakob,
 \newblock \emph{Proceedings of the 7th Linguistic Annotation Workshop and
   Interoperability with Discourse}, pages 178--186, 01 2013.
 
-\bibitem[Bonn et~al.(2023)Bonn, Myers, E.~L. Van~Gysel, Denk, Vigus, Zhao,
-  Cowell, Croft, Haji{\v{c}}, H.~Martin, Palmer, Palmer, Pustejovsky,
-  Ure{\v{s}}ov{\'a}, Vallejos, and Xue]{bonn-etal-2023-mapping}
-Julia Bonn, Skatje Myers, Jens E.~L. Van~Gysel, Lukas Denk, Meagan Vigus, Jin
-  Zhao, Andrew Cowell, William Croft, Jan Haji{\v{c}}, James H.~Martin, Alexis
-  Palmer, Martha Palmer, James Pustejovsky, Zdenka Ure{\v{s}}ov{\'a}, Rosa
-  Vallejos, and Nianwen Xue.
-\newblock Mapping {AMR} to {UMR}: Resources for adapting existing corpora for
-  cross-lingual compatibility.
-\newblock In Daniel Dakota, Kilian Evang, Sandra K{\"u}bler, and Lori Levin,
-  editors, \emph{Proceedings of the 21st International Workshop on Treebanks
-  and Linguistic Theories (TLT, GURT/SyntaxFest 2023)}, pages 74--95,
-  Washington, D.C., March 2023. Association for Computational Linguistics.
-\newblock URL \url{https://aclanthology.org/2023.tlt-1.8}.
-
 \bibitem[Egg(2005)]{egg2005flexible}
 M.~Egg.
 \newblock \emph{Flexible Semantics for Reinterpretation Phenomena}.
 \newblock CSLI Lecture Notes (CSLI- CHUP) Series. CSLI Publications, 2005.
 \newblock ISBN 9781575865027.
 \newblock URL \url{https://books.google.it/books?id=jGVsAAAAIAAJ}.
+
+\bibitem[McEnery and Wilson(2001)]{corpus_textbook}
+Tony McEnery and Andrew Wilson.
+\newblock \emph{Corpus Linguistics: An Introduction}.
+\newblock Edinburgh University Press, 2001.
+\newblock ISBN 9780748611652.
+\newblock URL \url{http://www.jstor.org/stable/10.3366/j.ctvxcrjmp}.
 
 \bibitem[Friedrich and Gateva(2017)]{friedrich-gateva-2017-classification}
 Annemarie Friedrich and Damyana Gateva.
