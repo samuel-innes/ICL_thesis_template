@@ -1,19 +1,19 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Classification of Vendlerian event types by binary aspectual parameters \citep {Smith1991ThePO}.}}{7}{table.2.1}%
-\contentsline {table}{\numberline {2}{\ignorespaces Some of the example verb phrases given in \citet {vendler57} for the classification of events.}}{8}{table.2.2}%
-\contentsline {table}{\numberline {3}{\ignorespaces Representation of (\ref {para1}),(\ref {para2}),(\ref {para3}) and (\ref {para4}) with regards to the reference time referred to by the utterance and inherent run-time of the event. Concept adapted from \citet {10.1093/oxfordhb/9780199601264.013.25}.}}{11}{table.2.3}%
-\contentsline {table}{\numberline {4}{\ignorespaces Some common contexts triggering aspectual ambiguity in English.}}{15}{table.2.4}%
+\contentsline {table}{\numberline {1}{\ignorespaces Representation of (\ref {para1}),(\ref {para2}),(\ref {para3}) and (\ref {para4}) with regards to the reference time referred to by the utterance and inherent run-time of the event. Concept adapted from \citet {10.1093/oxfordhb/9780199601264.013.25}.\relax }}{9}{table.caption.17}%
+\contentsline {table}{\numberline {2}{\ignorespaces Classification of Vendlerian event types by binary aspectual parameters \citep {Smith1991ThePO}.\relax }}{11}{table.caption.20}%
+\contentsline {table}{\numberline {3}{\ignorespaces Some example verb phrases given in \citet {vendler57} for the classification of events.\relax }}{11}{table.caption.21}%
+\contentsline {table}{\numberline {4}{\ignorespaces Some common contexts triggering aspectual ambiguity in English.\relax }}{16}{table.caption.24}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5}{\ignorespaces Comparison of aspectual classes. Adapted and extended from \citet *{annotAndAutoClassOfAspectCat}.}}{22}{table.4.5}%
+\contentsline {table}{\numberline {5}{\ignorespaces Comparison of aspectual classes. Adapted and extended from \citet *{annotAndAutoClassOfAspectCat}.\relax }}{23}{table.caption.28}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6}{\ignorespaces Aspect classes of annotated verbal events in the UMR dataset.}}{29}{table.5.6}%
-\contentsline {table}{\numberline {7}{\ignorespaces F1 score on test set from fine-tuning Llama 2 7B and 3 8B on different types of prompt}}{31}{table.5.7}%
-\contentsline {table}{\numberline {8}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes without upsampling. (UPDATE FORMATINGG!!!!!)}}{31}{table.5.8}%
-\contentsline {table}{\numberline {9}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes with upsampling. (UPDATE FORMATINGG!!!!!)}}{32}{table.5.9}%
-\contentsline {table}{\numberline {10}{\ignorespaces Analysis of annotated data. GET FOOTNOTE TO WORK HERE!!! AND UPDATE FOR ANNOTATOR 2}}{33}{table.5.10}%
+\contentsline {table}{\numberline {6}{\ignorespaces Aspect classes of annotated verbal events in the UMR dataset.\relax }}{31}{table.caption.39}%
+\contentsline {table}{\numberline {7}{\ignorespaces F1 score on test set from fine-tuning Llama 2 7B and 3 8B on different types of prompt\relax }}{33}{table.caption.42}%
+\contentsline {table}{\numberline {8}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes without upsampling. (UPDATE FORMATINGG!!!!!)\relax }}{33}{table.caption.44}%
+\contentsline {table}{\numberline {9}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes with upsampling. (UPDATE FORMATINGG!!!!!)\relax }}{34}{table.caption.45}%
+\contentsline {table}{\numberline {10}{\ignorespaces Analysis of annotated data. GET FOOTNOTE TO WORK HERE!!! AND UPDATE FOR ANNOTATOR 2\relax }}{35}{table.caption.46}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

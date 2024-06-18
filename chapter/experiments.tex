@@ -63,7 +63,17 @@ In this way, higher uncertainty (i.e. a more balanced probability across all cla
 
 Using this value it is possible to calculate a correlation coefficient. The measure used was the point-biserial correlation coefficient, a metric mathematically equivalent to Pearson's correlation coefficient, however specialised for the case of one binary and one continuous variable. It is calculated thus:
 
-$$ENTER BPS EQUATION$$
+$$r_{pb} = \frac{\overline{X}_1 - \overline{X}_0}{s} \sqrt{\frac{n_1 n_0}{n^2}}$$
+where:
+\begin{itemize}
+    \item $\overline{X}_1$ is the mean of the continuous variable for the group where the binary variable is 1
+    \item $\overline{X}_1$ is the mean of the continuous variable for the group where the binary variable is 0
+    \item $s$ is the standard deviation of the continuous variable
+    \item $n_1$ is the number of observations in the group where the binary variable is 1
+    \item $n_0$ is the number of observations in the group where the binary variable is 0
+    \item $n$ is the total number of observations
+\end{itemize}
+
 
 
 \subsection{Verb-level ambiguity}

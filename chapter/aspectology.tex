@@ -1,4 +1,4 @@
-Many works on the area begin with the assertion that aspect is one of the most studied areas of linguistics \citep{Sasse2002RecentAI}, particularly Slavic linguistics (for reasons I will discuss later), and hence a thorough theoretical discussion of the linguistic phenomenon which does full justice to the work on the field is not possible within the constraints of this thesis. Nevertheless, in order to give an introduction to the fundamental elements of the following study and make a productive contribution to the area, I will touch on some of the main findings in the area of aspectology.
+Many works on the area begin with the assertion that aspect is one of the most studied areas in linguistics \citep{Sasse2002RecentAI}, particularly Slavic linguistics (for reasons I will discuss later), and hence a thorough theoretical discussion of the linguistic phenomenon which does full justice to the work on the field is not possible within the constraints of this thesis. Nevertheless, in order to give an introduction to the fundamental elements of the following study and make a productive contribution to the area, I will touch on some of the main findings in the area of aspectology.
 \section{A (short) phenomenology of aspect}
 The Concise Oxford Dictionary of Linguistics \citep{matthews2014concise} defines aspect thus: 
 
@@ -9,11 +9,25 @@ The Concise Oxford Dictionary of Linguistics \citep{matthews2014concise} defines
 As noted here, one helpful distinction which must be made right away is that between \emph{aspect}, and another temporal phenomenon \emph{tense}. Many works recall Bernard Comrie's differentiation in his book \emph{Aspect} \citep{comrie1976aspect} between the deictic nature of \emph{tense} and the focus on the "internal temporal constituency of a situation" of \emph{aspect}. In other words: "tense\footnote{In many of the world's languages this is grammaticalised as past, present and future; in others such as English by some accounts \citep{jespersen2013essentials} it is a binary distinction such as past and non-past, whereas some languages such as Greenlandic (Kalaallisut) some linguists have even argued to be tenseless \citet{10.1093/jos/ffh029}. See also the contentious debate about Hopi time \citet{whorf-writings, hopitime}. } relates the time of the situation referred to to some other time, usually to the moment of speaking", and thus by relating the time of the situation to the time of the utterance it is deictic \citep{comrie1976aspect}. Aspect on the other hand gives a \emph{situation-internal} description of the events in that situation, such as how they relate to each other temporally or how an individual event is temporally characterised. This introduces another important distinction: that between lexical and grammatical aspect.
 
 \begin{figure}
+    % \begin{tikzpicture}
+    %     \foreach \x/\z [count=\y] in {Time/yellow,Situation/orange,Event/red} {
+    %         \draw[fill=\z] (0,{\y-4}) circle[radius={4-\y}];
+    %         \node at (0,{-2*(4-\y)+1}) {\x};
+    %     } 
+    % \end{tikzpicture}
     \begin{tikzpicture}
-        \foreach \x/\z [count=\y] in {Time/yellow,Situation/orange,Event/red} {
-            \draw[fill=\z] (0,{\y-4}) circle[radius={4-\y}];
-            \node at (0,{-2*(4-\y)+1}) {\x};
-        } 
+        \draw[draw=yellow, fill=yellow, thin, solid] (-0.50,-2.50) ellipse (3.50 and 3.50);
+        \draw[draw= orange, fill= orange, thin, solid] (-1.50,-0.50) ellipse (0.50 and 0.50);
+        \draw[draw= orange, fill= orange, thin, solid] (0.00,-0.50) ellipse (0.50 and 0.50);
+        \draw[draw= orange, fill= orange, thick, solid] (-1.00,-2.00) ellipse (0.50 and 0.50);
+        \draw[draw=red, thick, dashed] (-0.75,-1.00) ellipse (1.75 and 1.75);
+        \node at (0,-4) {Time};
+        \node at (2,-2.2) {Situation};
+        \node at (-3,-2.2) {Event};
+        \draw[->]        (2,-2)   -- (1.15,-1);
+        \draw[->]         (-3,-2)  -- (-2,-1);
+        \draw[->]         (-3,-2)   -- (-0.6,-1);
+        \draw[->]         (-3,-2)  -- (-1.6,-2);
     \end{tikzpicture}
     \hspace{2cm}
     \begin{tikzpicture}
@@ -27,7 +41,8 @@ As noted here, one helpful distinction which must be made right away is that bet
                 edge from parent [blue] node [right] {internal}} 
             edge from parent [blue] node [right] {internal}};
     \end{tikzpicture}
-    \caption{A visual representation of the relationship between time, situation and event \emph{(left)} along with the categorisation of the three temporal phenomena discussed \emph{(right)}.}
+    \caption[Visual representation of time, situation and event, along with tense, lexical and grammatical aspect]{A visual representation of the relationship between time, situation and event \emph{(left)}, along with the categorisation of the three temporal phenomena discussed \emph{(right)}. Here each situation is a (non-empty) set of events ($\mathbf{situation} \subseteq \mathbf{events}$) and events (and by derivation situations) are anchored in time. In this (very simple) model, timeless statements such as "2+2=4" are also anchored in time, however this time period is infinite. This model serves purely for the visualisation of tense and aspect and will not be further employed.}
+    
     \label{fig:TimeSitEvent}
 \end{figure}
 
@@ -39,7 +54,7 @@ As already mentioned, aspect\footnote{Boogaart uses the term \emph{aspectuality}
     \ex Sue was running.
     \label{sent:sue_running}
 \end{exe}
-Figure \ref{fig:TimeSitEvent} provides a visual representation of the concepts introduced in this section for clarity. Here each situation is a (non-empty) set of events ($\mathbf{situations} = \mathcal{P}(\mathbf{events}) \setminus \emptyset$) and situations are anchored in time.\footnote{In this (very simple) model, timeless statements such as "2+2=4" are also anchored in time, however this time period is infinite.} PUT THIS IN FIGURE DESCRIPTION - LATEX COMPLAINS FOR SOME REASEON??
+Figure \ref{fig:TimeSitEvent} provides a visual representation of the concepts introduced in this section for clarity. Here each situation is a (non-empty) set of events ($\mathbf{situations} = \mathcal{P}(\mathbf{events}) \setminus \emptyset$) and events (and by derivation situations) are anchored in time.\footnote{In this (very simple) model, timeless statements such as "2+2=4" are also anchored in time, however this time period is infinite.}
 
 The concrete linguistic realisation of these categories is very often unclear or not explicit and exhibits a relatively wide variety of encodings throughout the world’s languages \citep{Dahl1985TenseAA}. It therefore proves tricky to uphold this distinction in empirical studies "in the real world". This has led some to question to what extent this distinction makes sense \citep{Sasse2002RecentAI}. Those who question the contrast between these two semantic dimensions, described as unidimensionalists in \citet{Sasse2002RecentAI}, claim that aspectual distinctions in both dimensions can be reduced to a common set of semantic primitives, which can be applied to all levels of analysis, i.e. the boundedness of lexical aspect is the same as the boundedness which marks the distinction between the perfective and imperfective parameters. 
 
@@ -64,53 +79,7 @@ Durativity denotes whether an event takes time (i.e. has duration) or happens in
     \ex[*]{Andrea was reaching the summit for an hour.}
     \ex[?]{Andrea was cracking an egg for an hour.}
 \end{exe}
-\subsubsection{Some attempts at event classification}
-\subsection*{\citet{vendler57}}
-It was the seminal paper \emph{Verbs and Times} \citep{vendler57} of philosopher Zeno Vender which initiated the discussion on inner aspect in the linguistic tradition.\footnote{A similar classification was also developed independently by Anthony Kenny in \emph{Action, Emotion and Will} \citep{Kenny1963-KENAEA}, however combining Achievement and Accomplishment into one single class \citep{19c36731-bdec-362e-9f45-1aaba76109d7}. Hence, it is sometimes referred to as the Vendler-Kenny scheme of verb-types.} Vendler begins his discussion in the paper with the following premise:
 
-\begin{displayquote}
-    Indeed, as I intend to show, if we focus our attention primarily upon the time schemata presupposed by various verbs, we are able to throw light on some of the obscurities which still remain in these matters. [...] There are a few such schemata of very wide application. Once they have been discovered in some typical examples, they may be used as models of comparison in exploring and clarifying the behavior of any verb whatever.
-\end{displayquote}
-That is to say, the "time schema" of any verb can be described through comparison with a set of prototypical classes (see \ref{table:vendlerverbs}), which can be easily identified. In order to arrive at these prototypical "schemata" he uses an analytical method consisting of classifying verbs according to their behaviour regarding certain elements of English grammar, as was also used to outline the aspectual parameters above.\footnote{The issue of anglocentrism is one which has plagued many a linguistic theory throughout the years, with work from Chomsky's generative grammar \citep{LEVISEN2019101173} to Abstract Meaning Representation \citep{damonte2018crosslingual} being criticised for their too heavy focus on English and lack of applicability to other languages.} For example, the first distinction he makes is between English verbs that permit the progressive and those that don't. This signals the first class of events known as 'states'. The article then goes on to outline the other three Vendlerian classes \emph{activity, accomplishment} and \emph{achievement}, and their character is summarised thus: 
-
-\begin{itemize}
-    \item \textbf{State} - non-dynamic, static and durative situation
-    \item \textbf{Activity} - open-ended, dynamic and durative processes without an end-point
-    \item \textbf{Accomplishment} - dynamic and durative processes with a natural end-point
-    \item \textbf{Achievement} - instantaneous or near-instantaneous events (such as semelfactives)
-\end{itemize}
-
-Or to use the parameters of lexical aspect introduced above:
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c||c|c|c|}
-        \hline
-                                & Static & Durative & Telic \\ \hline
-        \textbf{State}          & +      & +        & - \\ \hline
-        \textbf{Activity}       & -      & +        & - \\ \hline
-        \textbf{Accomplishment} & -      & +        & + \\ \hline
-        \textbf{Achievement}    & -      & -        & + \\ \hline
-    \end{tabular}
-    \caption{Classification of Vendlerian event types by binary aspectual parameters \citep{Smith1991ThePO}.}
-\end{table}
-
-Vendler states in his introduction that verbs "presuppose" certain time schemata and hence assigns a category to each verb (as in \ref{table:vendlerverbs}). However it must also be stated that the true profile of a verb phrase such as those listed in \ref{table:vendlerverbs} depends heavily on the context. Hence a typical semelfactive such as "sneeze" could also be used reinterpreted as a process when combined with a progressive auxiliary as in "Harry was sneezing when they took the photo." \citep{moens-steedman-1988-temporal}. Thus, the verbs (or verb phrases) mentioned by Vendler as belonging to a certain category are ones that are prototypical for the particular class. This is a fact that will become important later on (see \ref{sect:coerc_or_under}), since it is not a trivial question whether all verb phrases inherently tend towards one particular lexical aspect which is saved in the mental lexicon, or whether some verb phrases have an under- or unspecified aspectual class. This is a question I will attempt to shed some light on with the experiments in this study.
-
-\begin{table}
-    \centering
-    \begin{tabular}{|c|c|c|c|}
-        
-        \textbf{State} & \textbf{Activity} & \textbf{Accomplishment} & \textbf{Achievement} \\
-        know & running & paint a picture & reach the summit \\
-        understand & pushing & build a house & spot the plane \\
-        love & smoking & deliver a sermon & recognise
-    \end{tabular}
-    \caption{Some of the example verb phrases given in \citet{vendler57} for the classification of events.}
-\end{table}
-\label{table:vendlerverbs}
-
-\subsection*{\citet{moens-steedman-1988-temporal}}
-Moens and Steedman take the Vendlerian classification and 
 \subsection{Grammatical aspect parameters}
 Grammatical (or \emph{viewpoint}) aspect provides a lens through which a particular event is viewed, and it "is typically expressed by overt grammatical morphemes (hence the label grammatical aspect)" \citep{Chapter1IntroductionCrossLinguisticPerspectivesontheSemanticsofGrammaticalAspect}. \citet{comrie1976aspect} provides a hierarchical classification of aspectual oppositions shown in \ref{fig:comrieaspecttree}, and in the following section I will briefly describe some of the main oppositions described in this classification: the perfective vs. imperfective opposition, (un)boundedness and habituality, 
 
@@ -131,7 +100,7 @@ Grammatical (or \emph{viewpoint}) aspect provides a lens through which a particu
                 edge from parent [black] node [right] {}} 
             edge from parent [black] node [right] {}};
     \end{tikzpicture}
-    \caption{Comrie's classification of aspectual oppositions. Reproduced from \citet{comrie1976aspect}.}
+    \caption[Comrie's classification of aspectual oppositions]{Comrie's classification of aspectual oppositions. Reproduced from \citet{comrie1976aspect}.}
     \label{fig:comrieaspecttree}
 \end{figure}
 
@@ -139,7 +108,14 @@ Grammatical (or \emph{viewpoint}) aspect provides a lens through which a particu
 \label{sec:perfectivity}
 The main aspectual distinction made by Slavic languages and, as can bee seen in figure \ref{fig:comrieaspecttree}, one of the main distinctions made in theoretical aspectology generally as that between perfective and imperfective. As noted by \citet{Dahl1985TenseAA}, the theoretical distinction between perfectivity and imperfectivity is different to their concrete realisation in the Slavic language group. To avoid confusion, I will therefore henceforth use the terms to 'perfective' and 'imperfective' to refer to the theoretical binary opposition, and only refer to the Slavic (im-)perfectivity explicitly.
 
-Returning to the definition of grammatical aspect as \emph{situation-internal} but \emph{event-external} (REFERENCE), perfectivity can be seen as a focus on the event as a whole indivisible entity (i.e. its result), and imperfectivity implies a focus on its internal temporal constituency \citep{comrie1976aspect, wals-65}. In practice this often means that perfective verbs refer to "completed" events (EXAMPLE), and imperfective verbs to incomplete or long-lasting events (EXAMPLE), however note that this is not always the case.
+Returning to the definition of grammatical aspect as \emph{situation-internal} but \emph{event-external} \citep{kibort2008aspect}, perfectivity can be seen as a focus on the event as a whole indivisible entity (i.e. its result), and imperfectivity implies a focus on its internal temporal constituency \citep{comrie1976aspect, wals-65}. In practice this often means that perfective verbs refer to "completed" events such as \ref*{sent:walk_camino_santiago}, and imperfective verbs to incomplete or long-lasting events like \ref{sent:raining_for_weeks}, however note that this is not always the case.
+
+\begin{exe}
+    \ex We walked the Camino de Santiago.
+    \label{sent:walk_camino_santiago}
+    \ex It was raining for weeks.
+    \label{sent:raining_for_weeks}
+\end{exe}
 
 \subsection{Boundedness}
 \label{sect:boundedness}
@@ -151,7 +127,7 @@ Returning to the definition of grammatical aspect as \emph{situation-internal} b
     \ex We had crossed the road yesterday, when [...].
     \label{sent:cross_road_bounded}
 \end{exe}
-Boundedness must be distinguished from telicity\footnote{\citet{friedrich-etal-2023-kind} seem to mistakenly conflate the two, stating that "[t]elicity is also sometimes referred to as boundedness (e.g., by Loáiciga and Grisot, 2016)" referring to \citet{loaiciga-grisot-2016-predicting}, which, however, clearly distinguishes between the two notions.} in order to avoid the so-called 'Imperfective Paradox' highlighted by \citet{Linguistics2005DowtyD1}, here verbalised by \citet{zucchi}:
+Boundedness must be distinguished from telicity\footnote{\citet{friedrich-etal-2023-kind} seem to mistakenly conflate the two, stating that "[t]elicity is also sometimes referred to as boundedness (e.g., by Loáiciga and Grisot, 2016)" referring to \citet{loaiciga-grisot-2016-predicting}, which, however, clearly distinguishes between the two notions.} in order to avoid the so-called 'Imperfective Paradox' highlighted by \citet{dowty2012word}, here verbalised by \citet{zucchi}:
 
 \begin{quotation}
     How is it possible that a statement of the form \emph{x was F-ing} is true and yet there
@@ -294,27 +270,87 @@ Habitual events refer to events which happen with regularity or often. They are 
 
 While usually still coming under the broad umbrella of aspectual phenomena,\footnote{However, \citet{10.1093/acprof:oso/9780199544325.003.0016} argue that it is a first and foremost a \emph{modal} category "which can only indirectly be characterized in aspectual terms".} habituality is generally considered to be located at a different level to other aspect features. \citet{Dahl1985TenseAA} notes that the prevalence of habituals in his questionnaire was low, which corroborates my findings in the dataset I used (see table \ref{umr_aspect_data}), and that most languages that explicitly mark it use periphrastic means.
 
+\subsection{Some attempts at event classification}
+\subsection*{\citet{vendler57}}
+It was the seminal paper \emph{Verbs and Times} \citep{vendler57} of philosopher Zeno Vender which initiated the discussion on inner aspect in the linguistic tradition.\footnote{A similar classification was also developed independently by Anthony Kenny in \emph{Action, Emotion and Will} \citep{Kenny1963-KENAEA}, however combining Achievement and Accomplishment into one single class \citep{19c36731-bdec-362e-9f45-1aaba76109d7}. Hence, it is sometimes referred to as the Vendler-Kenny scheme of verb-types.} Vendler begins his discussion in the paper with the following premise:
+
+\begin{displayquote}
+    Indeed, as I intend to show, if we focus our attention primarily upon the time schemata presupposed by various verbs, we are able to throw light on some of the obscurities which still remain in these matters. [...] There are a few such schemata of very wide application. Once they have been discovered in some typical examples, they may be used as models of comparison in exploring and clarifying the behavior of any verb whatever.
+\end{displayquote}
+That is to say, the "time schema" of any verb can be described through comparison with a set of prototypical classes (see \ref{table:vendlerverbs}), which can be easily identified. In order to arrive at these prototypical "schemata" he uses an analytical method consisting of classifying verbs according to their behaviour regarding certain elements of English grammar, as was also used to outline the aspectual parameters above.\footnote{The issue of anglocentrism is one which has plagued many a linguistic theory throughout the years, with work from Chomsky's generative grammar \citep{LEVISEN2019101173} to Abstract Meaning Representation \citep{damonte2018crosslingual} being criticised for their too heavy focus on English and lack of applicability to other languages.} For example, the first distinction he makes is between English verbs that permit the progressive and those that don't. This signals the first class of events known as 'states'. The article then goes on to outline the other three Vendlerian classes \emph{activity, accomplishment} and \emph{achievement}, and their character is summarised thus: 
+
+\begin{itemize}
+    \item \textbf{State} - non-dynamic, static and durative situation
+    \item \textbf{Activity} - open-ended, dynamic and durative processes without an end-point
+    \item \textbf{Accomplishment} - dynamic and durative processes with a natural end-point
+    \item \textbf{Achievement} - instantaneous or near-instantaneous events (such as semelfactives)
+\end{itemize}
+
+Or to use the parameters of lexical aspect introduced above:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c||c|c|c|}
+        \hline
+                                & Static & Durative & Telic \\ \hline
+        \textbf{State}          & +      & +        & - \\ \hline
+        \textbf{Activity}       & -      & +        & - \\ \hline
+        \textbf{Accomplishment} & -      & +        & + \\ \hline
+        \textbf{Achievement}    & -      & -        & + \\ \hline
+    \end{tabular}
+    \caption{Classification of Vendlerian event types by binary aspectual parameters \citep{Smith1991ThePO}.}
+\end{table}
+
+Vendler states in his introduction that verbs "presuppose" certain time schemata and hence assigns a category to each verb (as in \ref{table:vendlerverbs}). However it must also be stated that the true profile of a verb phrase such as those listed in \ref{table:vendlerverbs} depends heavily on the context. Hence a typical semelfactive such as "sneeze" could also be used reinterpreted as a process when combined with a progressive auxiliary as in "Harry was sneezing when they took the photo." \citep{moens-steedman-1988-temporal}. Thus, the verbs (or verb phrases) mentioned by Vendler as belonging to a certain category are ones that are prototypical for the particular class. This is a fact that will become important later on (see \ref{sect:coerc_or_under}), since it is not a trivial question whether all verb phrases inherently tend towards one particular lexical aspect which is saved in the mental lexicon, or whether some verb phrases have an under- or unspecified aspectual class. This is a question I will attempt to shed some light on with the experiments in this study.
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        
+        \textbf{State} & \textbf{Activity} & \textbf{Accomplishment} & \textbf{Achievement} \\
+        know & running & paint a picture & reach the summit \\
+        understand & pushing & build a house & spot the plane \\
+        love & smoking & deliver a sermon & recognise
+    \end{tabular}
+    \caption{Some example verb phrases given in \citet{vendler57} for the classification of events.}
+\end{table}
+\label{table:vendlerverbs}
+
+\subsection*{\citet{moens-steedman-1988-temporal}}
+Moens and Steedman take a slightly different approach, focussing on the sentence level, where each sentence has a predicative \emph{nucleus}, either a state or a process. While the former has no definitive start of end point, in the latter these are present and processes can be divided up into four classes by whether they are atomic or extended, and whether they imply a consequent state, i.e. the state after the action is different to the one before (see table \ref{table:aspect_classes_comparison} for the relationship between these classes and other classification schemata). Figure 
+
+\begin{figure}[h]
+    \includegraphics[width=\textwidth]{img/moens_steedman_figure.png}
+    \caption{A visualisation of event- and process types with their corresponding transitions \citep{moens-steedman-1988-temporal}}
+    \label{fig:moens_steedman_figure}
+\end{figure}
+
 \section{Aspect in Slavic languages}
 \label{sec:asp_in_slav_lang}
-The Slavic language group has a special place on the study of aspectology due to its overt encoding of aspectual phenomena, otherwise rather uncommon \citep{slavstyleaspect}.\footnote{\citet{slavstyleaspect} also notes that Georgian and Ossetian exhibit some similar properties with preverbs (mostly of spatial origin) used to denote aspectual meaning.} Verbs in Slavic languages, with few exceptions,\footnote{Note that there is a small group of Polish verbs which can be used as either imperfective or perfective (for more details see PHD DISS KIPKA)} are either perfective or imperfective, meaning the speaker must explicitly state the aspect of the verb event referenced. Consider the following sentences:
+The Slavic language group has a special place on the study of aspectology due to its overt encoding of aspectual phenomena, otherwise rather uncommon \citep{slavstyleaspect}.\footnote{\citet{slavstyleaspect} also notes that Georgian and Ossetian exhibit some similar properties with preverbs (mostly of spatial origin) used to denote aspectual meaning.} Verbs in Slavic languages, with few exceptions,\footnote{Note that there is a small group of Polish verbs which can be used as either imperfective or perfective (for more details see \citet{kipka1990slavic})} are either perfective or imperfective, meaning the speaker must explicitly state the aspect of the verb event referenced. Consider the following sentences:
 
 \begin{exe}
-    \ex Ja proCCitaju Etu knigu.
+    \ex \gll Ja pročita-ju ėtu knig-u.\\
+                I read.PERF-FUT this book-ACC\\
+                \glt `I will read this book.'
     \label{sent:japrocit}
-    \ex Ja budu Citat' Etu knigu.
+    \ex \gll Ja budu čita-t' ėtu knig-u.\\
+            I will read.IMPF-INF this book-ACC\\
+            \glt `I will read (be reading) this book.'
     \label{sent:jabuducitat}
 \end{exe}
 
 While both are in the future tense, the former uses the perfective form of the verb to read, implying that the speaker will read the book \emph{and} finish it (i.e. read it from the beginning to the end), whereas the second uses the imperfective form and thus expresses that the speaker will be reading the book at some point in the future, but not necessarily finish it.
 
-(HOW DO I DO THE GLOSSING HERE)
-
 As mentioned, the opposition between these two lexical categories differs slightly from the "purer" theoretical distinction discussed in \ref{sec:perfectivity}. A classic example where the Slavic categories do not correspond to the semantic ones is the pair \ref{oknoperf} and \ref{oknoimp}, where the former is a prototypical usage of the perfective to denote a whole completed event, the latter imperfective form denotes that the event has since been undone \citep{franks2005slavic}.
 
 \begin{exe}
-    \ex Kto otkryl okno?
+    \ex \gll Kto otkry-l okno? \\
+            Who open.PERF-PST.SG.MASC window? \\
+        \glt `Who opened the window?'
     \label{oknoperf}
-    \ex Kto otkryval okno?
+    \ex \gll Kto otkryva-l okno? \\
+            Who open.IMPF-PST.SG.MASC window? \\
+        \glt `Who opened the window?'
     \label{oknoimp}
 \end{exe}
 
@@ -336,12 +372,12 @@ In this example the verb 'filled' can be read as both a stative and a dynamic ev
     \label{walktoschoolsent2}
 \end{exe}
 
-This poses a practical problem for annotators when asked to provide a single class for a sentence (or sometimes even just for a verb phrase as in \citet{siegel-mckeown-2000-learning}), but also an interesting theoretical question for linguists. For simplicity, most studies have assumed that aspect is unambiguous. There have been no studies on aspect ambiguity as of yet IS THIS TRUE??? CHECK RED PAPER \citep{friedrich-etal-2023-kind}, despite this being a not too uncommon occurrence in language (see \ref{sec:dataset_creation}). Some, such as \citet{umr} (see \ref{aspect_in_umr}), have got around this problem by classifying aspect in a lattice structure, allowing for more coarse grained categories when necessary. While perhaps doable in practice, this is in unsatisfactory solution to describe several semantically distinct interpretations of a particular utterance.
+This poses a practical problem for annotators when asked to provide a single class for a sentence (or sometimes even just for a verb phrase as in \citet{siegel-mckeown-2000-learning}), but also an interesting theoretical question for linguists. For simplicity, most studies have assumed that aspect is unambiguous. While some have mentioned the topic as problem during annotation (cf. \citet{croft-etal-2016-annotation, Friedrich2014AutomaticPO}), there have been no studies to date looking aspect ambiguity \citep{friedrich-etal-2023-kind}, despite this being a not too uncommon occurrence in language (see \ref{sec:dataset_creation}). Some, such as \citet{umr} (see \ref{aspect_in_umr}), have got around this problem by classifying aspect in a lattice structure, allowing for more coarse grained categories when necessary. While perhaps doable in practice, this is in unsatisfactory solution to describe several semantically distinct interpretations of a particular utterance.
 
 \subsection{Contexts frequently triggering aspectual ambiguity in English}
 While possessing an inventory of tools to specify aspectual features, there are many times in English where the aspectual interpretation of a verb phrase is less evident. This section aims to outline the most common contexts where some English verb phrases as ambiguous with respect to their aspectual reading.
 
-Since, as mentioned above in \ref{sec:habituality}, habituality operates on a different level to the majority of aspectual phenomena discussed so far, the question of when a habitual interpretation is possible is a slightly different one. The number of utterances where a habitual interpretation is feasible (if less likely) is large,\footnote{This is supported by the findings of the manual annotation (see MANUAL ANNOTATION), where WHAT PERCENT-WHAT PERCENT of sentence-verb pairs had a possible habitual interpretation.} and indeed, \citep{Dahl1985TenseAA} finds that, when overtly marked, in many languages habituality is expressed by the simplest, least marked verb form (as in the English present simple), however that this is rarely unequivocal and shares several uses. This further supports the hypothesis of the high general feasibility of a habitual interpretation, and I therefore chose not to cover it in table \ref{table:asp_amb_contexts_eng}. For example, sentence \ref{sent:habitual_wide_application_ex} exhibits the wide applicability of a habitual reading, even if it is not the most likely interpretation.
+Since, as mentioned above in \ref{sec:habituality}, habituality operates on a different level to the majority of aspectual phenomena discussed so far, the question of when a habitual interpretation is possible is a slightly different one. The number of utterances where a habitual interpretation is feasible (if less likely) is large,\footnote{This is supported by the findings of the manual annotation (see \ref{sect:manual_amb_annotation}), where 24.8-42.7\% of sentence-verb pairs had a possible habitual interpretation.} and indeed, \citep{Dahl1985TenseAA} finds that, when overtly marked, in many languages habituality is expressed by the simplest, least marked verb form (as in the English present simple), however that this is rarely unequivocal and shares several uses. This further supports the hypothesis of the high general feasibility of a habitual interpretation, and I therefore chose not to cover it in table \ref{table:asp_amb_contexts_eng}. For example, sentence \ref{sent:habitual_wide_application_ex} exhibits the wide applicability of a habitual reading, even if it is not the most likely interpretation.
 
 \begin{exe}
     \ex They also said this court did not give the lawyers for the defense due procedure. \emph{give}
@@ -363,7 +399,7 @@ RELATED WORK - Coercion and underspecification integrated: The state-event ambig
 \end{table}
 \label{table:asp_amb_contexts_eng}
 
-There are other cases such as \ref{sent:rob_twice_in_ny}, where the aspect is less clear. Here we have a verb which would usually have a clear stative interpretation, however with a more "holistic" interpretation, i.e. the event is portioned into several bounded events (what HERWEG WHERE calles po-fective).
+There are other cases such as \ref{sent:rob_twice_in_ny}, where the aspect is less clear. Here we have a verb which would usually have a clear stative interpretation, however with a more "holistic" interpretation, i.e. the event is portioned into several bounded events (what \citet{10.1093/jos/8.4.363} calls "po-fective").
 
 \begin{exe}
     \ex Robert was in New York twice this year.
@@ -371,7 +407,7 @@ There are other cases such as \ref{sent:rob_twice_in_ny}, where the aspect is le
 \end{exe}
 
 
-While not directly encoding dynamicity, telicity or iterativity, the choice of perfective / imperfective in Slavic languages is strongly influenced by boundedness and whether an event is a single situation or repeated \citep{wiemer2017}. While the latter equates to iterativity, boundedness is also highly correlated with telicity and stativity (?), and hence the (obligatory) choice of PERF/IMPF forces one of the two possible interpretations in each case. \citet{errors_in_russian_aspect_apresyan} also finds that L2 Russian speakers are more likely to choose the incorrect aspect if their L1 does not differentiate between these two interpretations in a particular case, corroborating intuition.
+While not directly encoding dynamicity, telicity or iterativity, the choice of perfective/imperfective in Slavic languages is strongly influenced by boundedness and whether an event is a single situation or repeated \citep{wiemer2017}. While the latter equates to iterativity, boundedness is also highly correlated with telicity and stativity (?), and hence the (obligatory) binary choice of aspect forces one of the two possible interpretations in each case. \citet{errors_in_russian_aspect_apresyan} also finds that L2 Russian speakers are more likely to choose the incorrect aspect if their L1 does not differentiate between these two interpretations in a particular case, corroborating intuition.
 
 \subsection{Coercion or underspecification?}
 \label{sect:coerc_or_under}

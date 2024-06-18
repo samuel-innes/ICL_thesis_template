@@ -97,6 +97,14 @@ Currently the two main approaches used to develop and validate linguistic hypoth
 It is easy to get 
 
 COPY FROM PAPER?
+
+In light of the current hype surrounding deep learning it is important to highlight the limitations of such techniques and what language models \emph{cannot} do. 
+
+It is well-known that training the LMs discussed in this paper requires a large amount of data and computing resources. While pre-trained models mean that LMs trained on relatively large amounts of data are now available for general use, for less well-resourced languages this is a problem, and their performance suffers drastically. While this does not rule out the use of LMs on such languages (see \citep{kholodna2024llms}), it certainly limits the applicability of some of the uses highlighted in this article, such as for annotation or acceptability analysis.
+
+Furthermore, it must also be noted that LMs take on any biases present in the training data, meaning the language they approximate should be treated with caution. Examining these biases, as has often been done before, can, however, be an area of study in its own right and can produce valuable data for sociolinguistics. However, it must also be noted that it cannot be guaranteed that characteristics of a model's latent space can be transferred to a more general linguistic space, since human linguistic competence and LM competence differ in some aspects. Further research is therefore needed in this area.
+
+Finally, since LMs are trained to minimize error on one variety of a language, they are less well-suited to study linguistic variation, whether geographical or temporal. This makes their use less suitable for languages without an accepted standard variant, such as Swiss German. In these cases, however, an approach using word embeddings such as \citet{hamilton-etal-2016-diachronic} could still be useful. CHANGE WORDING HERE
 %\section*{Dataset creation}
 %In order to create the dataset for training the model, later to be used for the neural analysis, it is 
 

@@ -1,17 +1,16 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{76}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Comrie(1976)]{comrie1976aspect}
-B.~Comrie.
-\newblock \emph{Aspect: An Introduction to the Study of Verbal Aspect and
-  Related Problems}.
-\newblock Camb. Textbk. Ling. Cambridge University Press, 1976.
-\newblock ISBN 9780521211093.
-\newblock URL \url{https://books.google.it/books?id=1RVcXZjV0j0C}.
+\bibitem[Moens and Steedman(1988)]{moens-steedman-1988-temporal}
+Marc Moens and Mark Steedman.
+\newblock Temporal ontology and temporal reference.
+\newblock \emph{Computational Linguistics}, 14\penalty0 (2):\penalty0 15--28,
+  1988.
+\newblock URL \url{https://aclanthology.org/J88-2003}.
 
 \bibitem[Jens Van~Gysel and Xue(2022)]{umrslides2022}
 Jin~Zhao Jens Van~Gysel, Meagan~Vigus and Nianwen Xue.
@@ -20,6 +19,15 @@ Jin~Zhao Jens Van~Gysel, Meagan~Vigus and Nianwen Xue.
 \newblock Tutorial, 2022.
 \newblock URL
   \url{https://lrec2022.lrec-conf.org/media/filer_public/94/45/9445a9b9-4cfb-4898-a5cc-a89143ab2a2a/umr_lrec_tutorial_slides_6.pdf}.
+
+\bibitem[van Hout(2016)]{10.1093/oxfordhb/9780199601264.013.25}
+Angeliek van Hout.
+\newblock {Lexical and Grammatical Aspect}.
+\newblock In \emph{{The Oxford Handbook of Developmental Linguistics}}. Oxford
+  University Press, 07 2016.
+\newblock ISBN 9780199601264.
+\newblock \doi{10.1093/oxfordhb/9780199601264.013.25}.
+\newblock URL \url{https://doi.org/10.1093/oxfordhb/9780199601264.013.25}.
 
 \bibitem[Smith(1991)]{Smith1991ThePO}
 Carlota Smith.
@@ -34,15 +42,6 @@ Zeno Vendler.
   1957.
 \newblock ISSN 00318108, 15581470.
 \newblock URL \url{http://www.jstor.org/stable/2182371}.
-
-\bibitem[van Hout(2016)]{10.1093/oxfordhb/9780199601264.013.25}
-Angeliek van Hout.
-\newblock {Lexical and Grammatical Aspect}.
-\newblock In \emph{{The Oxford Handbook of Developmental Linguistics}}. Oxford
-  University Press, 07 2016.
-\newblock ISBN 9780199601264.
-\newblock \doi{10.1093/oxfordhb/9780199601264.013.25}.
-\newblock URL \url{https://doi.org/10.1093/oxfordhb/9780199601264.013.25}.
 
 \bibitem[Egg et~al.(2019)Egg, Prepens, and
   Roberts]{annotAndAutoClassOfAspectCat}
@@ -74,6 +73,14 @@ P.H. Matthews.
 \newblock Oxford Paperback Reference. OUP Oxford, 2014.
 \newblock ISBN 9780199675128.
 \newblock URL \url{https://books.google.it/books?id=1mg3BQAAQBAJ}.
+
+\bibitem[Comrie(1976)]{comrie1976aspect}
+B.~Comrie.
+\newblock \emph{Aspect: An Introduction to the Study of Verbal Aspect and
+  Related Problems}.
+\newblock Camb. Textbk. Ling. Cambridge University Press, 1976.
+\newblock ISBN 9780521211093.
+\newblock URL \url{https://books.google.it/books?id=1RVcXZjV0j0C}.
 
 \bibitem[Jespersen(1933)]{jespersen2013essentials}
 Otto Jespersen.
@@ -196,41 +203,6 @@ Andrea Wilhelm.
 \newblock ISBN 9780415976459.
 \newblock Includes bibliographical references (p. 315-325) and indexes.
 
-\bibitem[Kenny(1963)]{Kenny1963-KENAEA}
-Anthony Kenny.
-\newblock \emph{Action, Emotion and Will}.
-\newblock Humanities Press, Ny, 1963.
-
-\bibitem[Mourelatos(1978)]{19c36731-bdec-362e-9f45-1aaba76109d7}
-Alexander P.~D. Mourelatos.
-\newblock Events, processes, and states.
-\newblock \emph{Linguistics and Philosophy}, 2\penalty0 (3):\penalty0 415--434,
-  1978.
-\newblock ISSN 01650157, 15730549.
-\newblock URL \url{http://www.jstor.org/stable/25000995}.
-
-\bibitem[Levisen(2019)]{LEVISEN2019101173}
-Carsten Levisen.
-\newblock Biases we live by: Anglocentrism in linguistics and cognitive
-  sciences.
-\newblock \emph{Language Sciences}, 76:\penalty0 101173, 2019.
-\newblock ISSN 0388-0001.
-\newblock \doi{https://doi.org/10.1016/j.langsci.2018.05.010}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0388000117303558}.
-\newblock Biases in Linguistics.
-
-\bibitem[Damonte and Cohen(2018)]{damonte2018crosslingual}
-Marco Damonte and Shay~B. Cohen.
-\newblock Cross-lingual abstract meaning representation parsing, 2018.
-
-\bibitem[Moens and Steedman(1988)]{moens-steedman-1988-temporal}
-Marc Moens and Mark Steedman.
-\newblock Temporal ontology and temporal reference.
-\newblock \emph{Computational Linguistics}, 14\penalty0 (2):\penalty0 15--28,
-  1988.
-\newblock URL \url{https://aclanthology.org/J88-2003}.
-
 \bibitem[Patard et~al.(2019)Patard, Peltola, and
   Roussel]{Chapter1IntroductionCrossLinguisticPerspectivesontheSemanticsofGrammaticalAspect}
 Adeline Patard, Rea Peltola, and Emmanuelle Roussel.
@@ -240,6 +212,12 @@ Adeline Patard, Rea Peltola, and Emmanuelle Roussel.
 \newblock ISBN 9789004401006.
 \newblock \doi{10.1163/9789004401006_002}.
 \newblock URL \url{https://brill.com/view/book/9789004401006/BP000001.xml}.
+
+\bibitem[Kibort(2008)]{kibort2008aspect}
+Anna Kibort.
+\newblock Aspect, 2008.
+\newblock URL \url{http://www.grammaticalfeatures.net/features/aspect.html}.
+\newblock Grammatical Features, 7 January 2008.
 
 \bibitem[Östen Dahl and Velupillai(2013)]{wals-65}
 Östen Dahl and Viveka Velupillai.
@@ -278,14 +256,13 @@ Sharid Lo{\'a}iciga and Cristina Grisot.
 \newblock \emph{Linguistic Issues in Language Technology}, 13, 2016.
 \newblock URL \url{https://aclanthology.org/2016.lilt-13.3}.
 
-\bibitem[Linguistics et~al.(2005)Linguistics, Carlota, and
-  Jan]{Linguistics2005DowtyD1}
-Pacific Linguistics, Segura Carlota, and Evert Jan.
-\newblock Dowty, david. 1979. word meaning and montague grammar: The semantics
-  of verbs and times in generative semantics and in montague's ptq. dordrecht:
-  Reidel.
-\newblock 2005.
-\newblock URL \url{https://api.semanticscholar.org/CorpusID:57525242}.
+\bibitem[Dowty(2012)]{dowty2012word}
+D.R. Dowty.
+\newblock \emph{Word Meaning and Montague Grammar: The Semantics of Verbs and
+  Times in Generative Semantics and in Montague's PTQ}.
+\newblock Studies in Linguistics and Philosophy. Springer Netherlands, 2012.
+\newblock ISBN 9789400994737.
+\newblock URL \url{https://link.springer.com/book/10.1007/978-94-009-9473-7}.
 
 \bibitem[Zucchi(2020)]{zucchi}
 Sandro Zucchi.
@@ -303,6 +280,34 @@ Nora Boneh and Edit Doron.
 \newblock \doi{10.1093/acprof:oso/9780199544325.003.0016}.
 \newblock URL \url{https://doi.org/10.1093/acprof:oso/9780199544325.003.0016}.
 
+\bibitem[Kenny(1963)]{Kenny1963-KENAEA}
+Anthony Kenny.
+\newblock \emph{Action, Emotion and Will}.
+\newblock Humanities Press, Ny, 1963.
+
+\bibitem[Mourelatos(1978)]{19c36731-bdec-362e-9f45-1aaba76109d7}
+Alexander P.~D. Mourelatos.
+\newblock Events, processes, and states.
+\newblock \emph{Linguistics and Philosophy}, 2\penalty0 (3):\penalty0 415--434,
+  1978.
+\newblock ISSN 01650157, 15730549.
+\newblock URL \url{http://www.jstor.org/stable/25000995}.
+
+\bibitem[Levisen(2019)]{LEVISEN2019101173}
+Carsten Levisen.
+\newblock Biases we live by: Anglocentrism in linguistics and cognitive
+  sciences.
+\newblock \emph{Language Sciences}, 76:\penalty0 101173, 2019.
+\newblock ISSN 0388-0001.
+\newblock \doi{https://doi.org/10.1016/j.langsci.2018.05.010}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0388000117303558}.
+\newblock Biases in Linguistics.
+
+\bibitem[Damonte and Cohen(2018)]{damonte2018crosslingual}
+Marco Damonte and Shay~B. Cohen.
+\newblock Cross-lingual abstract meaning representation parsing, 2018.
+
 \bibitem[Tomelleri(2010)]{slavstyleaspect}
 Vittorio~S. Tomelleri.
 \newblock Slavic–style aspect in the caucasus.
@@ -310,6 +315,13 @@ Vittorio~S. Tomelleri.
 \newblock URL
   \url{http://suvlin.ffzg.hr/index.php/en/browse-archive/39-vol-36-no-69-07-2010/432-slavic-style-aspect-in-the-caucasus,
   pages =}.
+
+\bibitem[Kipka(1990)]{kipka1990slavic}
+P.F. Kipka.
+\newblock \emph{Slavic Aspect and Its Implications}.
+\newblock MIT working papers in linguistics. Massachusetts Institute of
+  Technology, Department of Linguistics and Philosophy, 1990.
+\newblock URL \url{https://dspace.mit.edu/handle/1721.1/13649}.
 
 \bibitem[Dickey(2017)]{prefixation_in_rise_of_slav_asp}
 Stephen Dickey.
@@ -339,6 +351,17 @@ Eric~V. Siegel and Kathleen~R. McKeown.
   2000.
 \newblock URL \url{https://aclanthology.org/J00-4004}.
 
+\bibitem[Croft et~al.(2016)Croft, Pe{\v{s}}kov{\'a}, and
+  Regan]{croft-etal-2016-annotation}
+William Croft, Pavlina Pe{\v{s}}kov{\'a}, and Michael Regan.
+\newblock Annotation of causal and aspectual structure of events in {RED}: a
+  preliminary report.
+\newblock In Martha Palmer, Ed~Hovy, Teruko Mitamura, and Tim O{'}Gorman,
+  editors, \emph{Proceedings of the Fourth Workshop on Events}, pages 8--17,
+  San Diego, California, June 2016. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/W16-1002}.
+\newblock URL \url{https://aclanthology.org/W16-1002}.
+
 \bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
   O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
   Vallejos, and Xue]{umr}
@@ -353,6 +376,15 @@ Jens E.~L. Van~Gysel, Meagan Vigus, Jayeol Chun, Kenneth Lai, Sarah Moeller,
 \newblock ISSN 1610-1987.
 \newblock \doi{10.1007/s13218-021-00722-w}.
 \newblock URL \url{http://dx.doi.org/10.1007/s13218-021-00722-w}.
+
+\bibitem[HERWEG(1991)]{10.1093/jos/8.4.363}
+MICHAEL HERWEG.
+\newblock {A Critical Examination of Two Classical Approaches to Aspect}.
+\newblock \emph{Journal of Semantics}, 8\penalty0 (4):\penalty0 363--402, 11
+  1991.
+\newblock ISSN 0167-5133.
+\newblock \doi{10.1093/jos/8.4.363}.
+\newblock URL \url{https://doi.org/10.1093/jos/8.4.363}.
 
 \bibitem[Wiemer and Seržant(2017)]{wiemer2017}
 Björn Wiemer and Ilja Seržant.
@@ -440,6 +472,25 @@ Tony McEnery and Andrew Wilson.
 \newblock Edinburgh University Press, 2001.
 \newblock ISBN 9780748611652.
 \newblock URL \url{http://www.jstor.org/stable/10.3366/j.ctvxcrjmp}.
+
+\bibitem[Kholodna et~al.(2024)Kholodna, Julka, Khodadadi, Gumus, and
+  Granitzer]{kholodna2024llms}
+Nataliia Kholodna, Sahib Julka, Mohammad Khodadadi, Muhammed~Nurullah Gumus,
+  and Michael Granitzer.
+\newblock Llms in the loop: Leveraging large language model annotations for
+  active learning in low-resource languages, 2024.
+
+\bibitem[Hamilton et~al.(2016)Hamilton, Leskovec, and
+  Jurafsky]{hamilton-etal-2016-diachronic}
+William~L. Hamilton, Jure Leskovec, and Dan Jurafsky.
+\newblock Diachronic word embeddings reveal statistical laws of semantic
+  change.
+\newblock In Katrin Erk and Noah~A. Smith, editors, \emph{Proceedings of the
+  54th Annual Meeting of the Association for Computational Linguistics (Volume
+  1: Long Papers)}, pages 1489--1501, Berlin, Germany, August 2016. Association
+  for Computational Linguistics.
+\newblock \doi{10.18653/v1/P16-1141}.
+\newblock URL \url{https://aclanthology.org/P16-1141}.
 
 \bibitem[Friedrich and Gateva(2017)]{friedrich-gateva-2017-classification}
 Annemarie Friedrich and Damyana Gateva.
