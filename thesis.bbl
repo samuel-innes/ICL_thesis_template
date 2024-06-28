@@ -1,4 +1,4 @@
-\begin{thebibliography}{76}
+\begin{thebibliography}{108}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -131,6 +131,21 @@ Ronny Boogaart.
 \newblock \doi{doi:10.1515/9783110172782.2.14.1165}.
 \newblock URL \url{https://doi.org/10.1515/9783110172782.2.14.1165}.
 
+\bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
+  O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
+  Vallejos, and Xue]{umr}
+Jens E.~L. Van~Gysel, Meagan Vigus, Jayeol Chun, Kenneth Lai, Sarah Moeller,
+  Jiarui Yao, Tim O’Gorman, Andrew Cowell, William Croft, Chu-Ren Huang, Jan
+  Hajič, James~H. Martin, Stephan Oepen, Martha Palmer, James Pustejovsky,
+  Rosa Vallejos, and Nianwen Xue.
+\newblock Designing a uniform meaning representation for natural language
+  processing.
+\newblock \emph{KI - K\"{u}nstliche Intelligenz}, 35\penalty0 (3–4):\penalty0
+  343–360, April 2021.
+\newblock ISSN 1610-1987.
+\newblock \doi{10.1007/s13218-021-00722-w}.
+\newblock URL \url{http://dx.doi.org/10.1007/s13218-021-00722-w}.
+
 \bibitem[Dahl(1985)]{Dahl1985TenseAA}
 {\"O}sten Dahl.
 \newblock Tense and aspect systems.
@@ -227,6 +242,15 @@ Anna Kibort.
 \newblock \doi{10.5281/zenodo.7385533}.
 \newblock URL \url{https://doi.org/10.5281/zenodo.7385533}.
 
+\bibitem[Boneh and Doron(2010)]{10.1093/acprof:oso/9780199544325.003.0016}
+Nora Boneh and Edit Doron.
+\newblock {33816 Modal and Temporal Aspects of Habituality}.
+\newblock In \emph{{Lexical Semantics, Syntax, and Event Structure}}. Oxford
+  University Press, 02 2010.
+\newblock ISBN 9780199544325.
+\newblock \doi{10.1093/acprof:oso/9780199544325.003.0016}.
+\newblock URL \url{https://doi.org/10.1093/acprof:oso/9780199544325.003.0016}.
+
 \bibitem[Depraetere(1995)]{6608d9d0-a477-39af-8491-2172df5ae612}
 Ilse Depraetere.
 \newblock On the necessity of distinguishing between (un)boundedness and
@@ -271,15 +295,6 @@ Sandro Zucchi.
 \newblock ISBN 9781118788318.
 \newblock \doi{10.1002/9781118788516.sem138}.
 
-\bibitem[Boneh and Doron(2010)]{10.1093/acprof:oso/9780199544325.003.0016}
-Nora Boneh and Edit Doron.
-\newblock {33816 Modal and Temporal Aspects of Habituality}.
-\newblock In \emph{{Lexical Semantics, Syntax, and Event Structure}}. Oxford
-  University Press, 02 2010.
-\newblock ISBN 9780199544325.
-\newblock \doi{10.1093/acprof:oso/9780199544325.003.0016}.
-\newblock URL \url{https://doi.org/10.1093/acprof:oso/9780199544325.003.0016}.
-
 \bibitem[Kenny(1963)]{Kenny1963-KENAEA}
 Anthony Kenny.
 \newblock \emph{Action, Emotion and Will}.
@@ -293,6 +308,26 @@ Alexander P.~D. Mourelatos.
 \newblock ISSN 01650157, 15730549.
 \newblock URL \url{http://www.jstor.org/stable/25000995}.
 
+\bibitem[Chomsky(1965)]{chomsky1965aspects}
+Noam Chomsky.
+\newblock \emph{Aspects of the Theory of Syntax}.
+\newblock MIT Press, Cambridge, MA, 1965.
+
+\bibitem[Searle(1969)]{searle1969speech}
+John~R. Searle.
+\newblock \emph{Speech Acts: An Essay in the Philosophy of Language}.
+\newblock Cambridge University Press, Cambridge, UK, 1969.
+
+\bibitem[Austin(1962)]{austin1962how}
+J.~L. Austin.
+\newblock \emph{How to Do Things with Words}.
+\newblock Clarendon Press, Oxford, 1962.
+
+\bibitem[Grice(1975)]{grice1975logic}
+H.P. Grice.
+\newblock Logic and conversation.
+\newblock \emph{Syntax and Semantics}, 3:\penalty0 41--58, 1975.
+
 \bibitem[Levisen(2019)]{LEVISEN2019101173}
 Carsten Levisen.
 \newblock Biases we live by: Anglocentrism in linguistics and cognitive
@@ -304,9 +339,11 @@ Carsten Levisen.
   \url{https://www.sciencedirect.com/science/article/pii/S0388000117303558}.
 \newblock Biases in Linguistics.
 
-\bibitem[Damonte and Cohen(2018)]{damonte2018crosslingual}
-Marco Damonte and Shay~B. Cohen.
-\newblock Cross-lingual abstract meaning representation parsing, 2018.
+\bibitem[Filip(2012)]{hana_filip_lexasp}
+Hana Filip.
+\newblock \emph{Lexical Aspect}, pages 721--751.
+\newblock 01 2012.
+\newblock \doi{10.1093/oxfordhb/9780195381979.013.0025}.
 
 \bibitem[Tomelleri(2010)]{slavstyleaspect}
 Vittorio~S. Tomelleri.
@@ -362,23 +399,8 @@ William Croft, Pavlina Pe{\v{s}}kov{\'a}, and Michael Regan.
 \newblock \doi{10.18653/v1/W16-1002}.
 \newblock URL \url{https://aclanthology.org/W16-1002}.
 
-\bibitem[Van~Gysel et~al.(2021)Van~Gysel, Vigus, Chun, Lai, Moeller, Yao,
-  O’Gorman, Cowell, Croft, Huang, Hajič, Martin, Oepen, Palmer, Pustejovsky,
-  Vallejos, and Xue]{umr}
-Jens E.~L. Van~Gysel, Meagan Vigus, Jayeol Chun, Kenneth Lai, Sarah Moeller,
-  Jiarui Yao, Tim O’Gorman, Andrew Cowell, William Croft, Chu-Ren Huang, Jan
-  Hajič, James~H. Martin, Stephan Oepen, Martha Palmer, James Pustejovsky,
-  Rosa Vallejos, and Nianwen Xue.
-\newblock Designing a uniform meaning representation for natural language
-  processing.
-\newblock \emph{KI - K\"{u}nstliche Intelligenz}, 35\penalty0 (3–4):\penalty0
-  343–360, April 2021.
-\newblock ISSN 1610-1987.
-\newblock \doi{10.1007/s13218-021-00722-w}.
-\newblock URL \url{http://dx.doi.org/10.1007/s13218-021-00722-w}.
-
-\bibitem[HERWEG(1991)]{10.1093/jos/8.4.363}
-MICHAEL HERWEG.
+\bibitem[Herweg(1991)]{10.1093/jos/8.4.363}
+Michael Herweg.
 \newblock {A Critical Examination of Two Classical Approaches to Aspect}.
 \newblock \emph{Journal of Semantics}, 8\penalty0 (4):\penalty0 363--402, 11
   1991.
@@ -418,6 +440,27 @@ Henriëtte de~Swart.
 \newblock \doi{doi:10.1515/9783110626391-010}.
 \newblock URL \url{https://doi.org/10.1515/9783110626391-010}.
 
+\bibitem[Lukassek et~al.(2017)Lukassek, Prysłopska, Hörnig, and
+  Maienborn]{semantic_processing_of_motion_verbs}
+Julia Lukassek, Anna Prysłopska, Robin Hörnig, and Claudia Maienborn.
+\newblock The semantic processing of motion verbs: Coercion or
+  underspecification?
+\newblock \emph{Journal of Psycholinguistic Research}, 46, 08 2017.
+\newblock \doi{10.1007/s10936-016-9466-7}.
+
+\bibitem[Kennedy and Levin(2008)]{Kennedy2008MeasureOC}
+Christopher Kennedy and Beth Levin.
+\newblock Measure of change: The adjectival core of degree achievements.
+\newblock In \emph{Adjectives and Adverbs}, 2008.
+\newblock URL
+  \url{https://semantics.uchicago.edu/kennedy/docs/kl07-measure.pdf}.
+
+\bibitem[Styler et~al.(2014)Styler, Crooks, O’Gorman, and
+  Hamang]{styler2014a}
+W.~Styler, K.~Crooks, T.~O’Gorman, and M.~Hamang.
+\newblock {Richer Event Description (RED) Annotation Guidelines}, 2014.
+\newblock Unpublished manuscript, University of Colorado at Boulder.
+
 \bibitem[Chen et~al.(2021)Chen, Palmer, and Vigus]{chen-etal-2021-autoaspect}
 Daniel Chen, Martha Palmer, and Meagan Vigus.
 \newblock {A}uto{A}spect: Automatic annotation of tense and aspect for uniform
@@ -428,6 +471,17 @@ Daniel Chen, Martha Palmer, and Meagan Vigus.
   Republic, November 2021. Association for Computational Linguistics.
 \newblock \doi{10.18653/v1/2021.law-1.4}.
 \newblock URL \url{https://aclanthology.org/2021.law-1.4}.
+
+\bibitem[Friedrich and Gateva(2017)]{friedrich-gateva-2017-classification}
+Annemarie Friedrich and Damyana Gateva.
+\newblock Classification of telicity using cross-linguistic annotation
+  projection.
+\newblock In Martha Palmer, Rebecca Hwa, and Sebastian Riedel, editors,
+  \emph{Proceedings of the 2017 Conference on Empirical Methods in Natural
+  Language Processing}, pages 2559--2565, Copenhagen, Denmark, September 2017.
+  Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/D17-1271}.
+\newblock URL \url{https://aclanthology.org/D17-1271}.
 
 \bibitem[Metheniti et~al.(2022)Metheniti, Van De~Cruys, and
   Hathout]{metheniti-etal-2022-time}
@@ -446,10 +500,180 @@ Anisia Katinskaia and Roman Yangarber.
 \newblock Probing the category of verbal aspect in transformer language models,
   2024.
 
+\bibitem[Kuratov and Arkhipov(2019)]{kuratov2019adaptation}
+Yuri Kuratov and Mikhail Arkhipov.
+\newblock Adaptation of deep bidirectional multilingual transformers for
+  russian language, 2019.
+
+\bibitem[Rezaee et~al.(2021)Rezaee, Darvish, Kebe, and
+  Ferraro]{rezaee2021discriminative}
+Mehdi Rezaee, Kasra Darvish, Gaoussou~Youssouf Kebe, and Francis Ferraro.
+\newblock Discriminative and generative transformer-based models for situation
+  entity classification, 2021.
+
+\bibitem[Mathew and Katz(2009)]{mathew2009supervised}
+Thomas~A. Mathew and E.~Graham Katz.
+\newblock Supervised categorization of habitual and episodic sentences.
+\newblock In \emph{Sixth Midwest Computational Linguistics Colloquium},
+  Bloomington, Indiana, 2009. Indiana University.
+
+\bibitem[Ikuta et~al.(2014)Ikuta, Styler, Hamang, O{'}Gorman, and
+  Palmer]{ikuta-etal-2014-challenges}
+Rei Ikuta, Will Styler, Mariah Hamang, Tim O{'}Gorman, and Martha Palmer.
+\newblock Challenges of adding causation to richer event descriptions.
+\newblock In Teruko Mitamura, Eduard Hovy, and Martha Palmer, editors,
+  \emph{Proceedings of the Second Workshop on {EVENTS}: Definition, Detection,
+  Coreference, and Representation}, pages 12--20, Baltimore, Maryland, USA,
+  June 2014. Association for Computational Linguistics.
+\newblock \doi{10.3115/v1/W14-2903}.
+\newblock URL \url{https://aclanthology.org/W14-2903}.
+
+\bibitem[Kober et~al.(2020)Kober, Alikhani, Stone, and
+  Steedman]{kober-etal-2020-aspectuality}
+Thomas Kober, Malihe Alikhani, Matthew Stone, and Mark Steedman.
+\newblock Aspectuality across genre: A distributional semantics approach.
+\newblock In Donia Scott, Nuria Bel, and Chengqing Zong, editors,
+  \emph{Proceedings of the 28th International Conference on Computational
+  Linguistics}, pages 4546--4562, Barcelona, Spain (Online), December 2020.
+  International Committee on Computational Linguistics.
+\newblock \doi{10.18653/v1/2020.coling-main.401}.
+\newblock URL \url{https://aclanthology.org/2020.coling-main.401}.
+
+\bibitem[Zarcone and Lenci(2008)]{zarcone-lenci-2008-computational}
+Alessandra Zarcone and Alessandro Lenci.
+\newblock Computational models for event type classification in context.
+\newblock In Nicoletta Calzolari, Khalid Choukri, Bente Maegaard, Joseph
+  Mariani, Jan Odijk, Stelios Piperidis, and Daniel Tapias, editors,
+  \emph{Proceedings of the Sixth International Conference on Language Resources
+  and Evaluation ({LREC}'08)}, Marrakech, Morocco, May 2008. European Language
+  Resources Association (ELRA).
+\newblock URL
+  \url{http://www.lrec-conf.org/proceedings/lrec2008/pdf/315_paper.pdf}.
+
+\bibitem[Hermes et~al.(2015)Hermes, Richter, and Neuefeind]{hermes_2015}
+Jürgen Hermes, Michael Richter, and Claes Neuefeind.
+\newblock Automatic induction of german aspectual verb classes in a
+  distributional framework.
+\newblock 09 2015.
+
+\bibitem[Zellers and Choi(2017)]{zellers-choi-2017-zero}
+Rowan Zellers and Yejin Choi.
+\newblock Zero-shot activity recognition with verb attribute induction.
+\newblock In Martha Palmer, Rebecca Hwa, and Sebastian Riedel, editors,
+  \emph{Proceedings of the 2017 Conference on Empirical Methods in Natural
+  Language Processing}, pages 946--958, Copenhagen, Denmark, September 2017.
+  Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/D17-1099}.
+\newblock URL \url{https://aclanthology.org/D17-1099}.
+
+\bibitem[Kondratyuk and Straka(2019)]{kondratyuk-straka-2019-75}
+Dan Kondratyuk and Milan Straka.
+\newblock 75 languages, 1 model: Parsing {U}niversal {D}ependencies
+  universally.
+\newblock In Kentaro Inui, Jing Jiang, Vincent Ng, and Xiaojun Wan, editors,
+  \emph{Proceedings of the 2019 Conference on Empirical Methods in Natural
+  Language Processing and the 9th International Joint Conference on Natural
+  Language Processing (EMNLP-IJCNLP)}, pages 2779--2795, Hong Kong, China,
+  November 2019. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/D19-1279}.
+\newblock URL \url{https://aclanthology.org/D19-1279}.
+
 \bibitem[Smith(2003)]{Smith_2003}
 Carlota~S. Smith.
 \newblock \emph{Modes of Discourse: The Local Structure of Texts}.
 \newblock Cambridge Studies in Linguistics. Cambridge University Press, 2003.
+
+\bibitem[Palmer et~al.(2007)Palmer, Ponvert, Baldridge, and
+  Smith]{palmer-etal-2007-sequencing}
+Alexis Palmer, Elias Ponvert, Jason Baldridge, and Carlota Smith.
+\newblock A sequencing model for situation entity classification.
+\newblock In Annie Zaenen and Antal van~den Bosch, editors, \emph{Proceedings
+  of the 45th Annual Meeting of the Association of Computational Linguistics},
+  pages 896--903, Prague, Czech Republic, June 2007. Association for
+  Computational Linguistics.
+\newblock URL \url{https://aclanthology.org/P07-1113}.
+
+\bibitem[Friedrich et~al.(2016)Friedrich, Palmer, and
+  Pinkal]{friedrich-etal-2016-situation}
+Annemarie Friedrich, Alexis Palmer, and Manfred Pinkal.
+\newblock Situation entity types: automatic classification of clause-level
+  aspect.
+\newblock In Katrin Erk and Noah~A. Smith, editors, \emph{Proceedings of the
+  54th Annual Meeting of the Association for Computational Linguistics (Volume
+  1: Long Papers)}, pages 1757--1768, Berlin, Germany, August 2016. Association
+  for Computational Linguistics.
+\newblock \doi{10.18653/v1/P16-1166}.
+\newblock URL \url{https://aclanthology.org/P16-1166}.
+
+\bibitem[Becker et~al.(2017)Becker, Staniek, Nastase, Palmer, and
+  Frank]{becker-etal-2017-classifying}
+Maria Becker, Michael Staniek, Vivi Nastase, Alexis Palmer, and Anette Frank.
+\newblock Classifying semantic clause types: Modeling context and genre
+  characteristics with recurrent neural networks and attention.
+\newblock In Nancy Ide, Aur{\'e}lie Herbelot, and Llu{\'\i}s M{\`a}rquez,
+  editors, \emph{Proceedings of the 6th Joint Conference on Lexical and
+  Computational Semantics (*{SEM} 2017)}, pages 230--240, Vancouver, Canada,
+  August 2017. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/S17-1027}.
+\newblock URL \url{https://aclanthology.org/S17-1027}.
+
+\bibitem[Friedrich(2017)]{friedrich2017states}
+Annemarie~Silke Friedrich.
+\newblock States, events, and generics: computational modeling of situation
+  entity types.
+\newblock 2017.
+
+\bibitem[Dai and Huang(2018)]{dai-huang-2018-building}
+Zeyu Dai and Ruihong Huang.
+\newblock Building context-aware clause representations for situation entity
+  type classification.
+\newblock In Ellen Riloff, David Chiang, Julia Hockenmaier, and Jun{'}ichi
+  Tsujii, editors, \emph{Proceedings of the 2018 Conference on Empirical
+  Methods in Natural Language Processing}, pages 3305--3315, Brussels, Belgium,
+  October-November 2018. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/D18-1368}.
+\newblock URL \url{https://aclanthology.org/D18-1368}.
+
+\bibitem[Costa and Branco(2012)]{costa-branco-2012-aspectual}
+Francisco Costa and Ant{\'o}nio Branco.
+\newblock Aspectual type and temporal relation classification.
+\newblock In Walter Daelemans, editor, \emph{Proceedings of the 13th Conference
+  of the {E}uropean Chapter of the Association for Computational Linguistics},
+  pages 266--275, Avignon, France, April 2012. Association for Computational
+  Linguistics.
+\newblock URL \url{https://aclanthology.org/E12-1027}.
+
+\bibitem[Derczynski and Gaizauskas(2015)]{Derczynski2015TemporalRC}
+Leon Derczynski and Robert~J. Gaizauskas.
+\newblock Temporal relation classification using a model of tense and aspect.
+\newblock In \emph{Recent Advances in Natural Language Processing}, 2015.
+\newblock URL \url{https://aclanthology.org/R15-1017.pdf}.
+
+\bibitem[Allen and UzZaman(2012)]{Allen2012InterpretingTT}
+James~F. Allen and Naushad UzZaman.
+\newblock Interpreting the temporal aspects of language.
+\newblock 2012.
+\newblock URL
+  \url{https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=f0b9a86a80a5bc09e448db250a97ade218e4d529}.
+
+\bibitem[Kamp and Reyle(1993)]{Kamp1993}
+Hans Kamp and Uwe Reyle.
+\newblock \emph{Tense and Aspect}, pages 483--689.
+\newblock Springer Netherlands, Dordrecht, 1993.
+\newblock ISBN 978-94-017-1616-1.
+\newblock \doi{10.1007/978-94-017-1616-1_6}.
+\newblock URL \url{https://doi.org/10.1007/978-94-017-1616-1_6}.
+
+\bibitem[Kober et~al.(2019)Kober, Bijl~de Vroe, and
+  Steedman]{kober-etal-2019-temporal}
+Thomas Kober, Sander Bijl~de Vroe, and Mark Steedman.
+\newblock Temporal and aspectual entailment.
+\newblock In Simon Dobnik, Stergios Chatzikyriakidis, and Vera Demberg,
+  editors, \emph{Proceedings of the 13th International Conference on
+  Computational Semantics - Long Papers}, pages 103--119, Gothenburg, Sweden,
+  May 2019. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/W19-0409}.
+\newblock URL \url{https://aclanthology.org/W19-0409}.
 
 \bibitem[Banarescu et~al.(2013)Banarescu, Bonial, Cai, Georgescu, Griffitt,
   Hermjakob, Knight, Koehn, Palmer, and Schneider]{amr}
@@ -473,6 +697,18 @@ Tony McEnery and Andrew Wilson.
 \newblock ISBN 9780748611652.
 \newblock URL \url{http://www.jstor.org/stable/10.3366/j.ctvxcrjmp}.
 
+\bibitem[Tenney et~al.(2019)Tenney, Das, and Pavlick]{tenney2019bert}
+Ian Tenney, Dipanjan Das, and Ellie Pavlick.
+\newblock Bert rediscovers the classical nlp pipeline, 2019.
+
+\bibitem[Church and Liberman(2021)]{Church2021}
+Kenneth Church and Mark Liberman.
+\newblock The future of computational linguistics: On beyond alchemy.
+\newblock \emph{Frontiers in Artificial Intelligence}, 4, April 2021.
+\newblock ISSN 2624-8212.
+\newblock \doi{10.3389/frai.2021.625341}.
+\newblock URL \url{http://dx.doi.org/10.3389/frai.2021.625341}.
+
 \bibitem[Kholodna et~al.(2024)Kholodna, Julka, Khodadadi, Gumus, and
   Granitzer]{kholodna2024llms}
 Nataliia Kholodna, Sahib Julka, Mohammad Khodadadi, Muhammed~Nurullah Gumus,
@@ -491,17 +727,6 @@ William~L. Hamilton, Jure Leskovec, and Dan Jurafsky.
   for Computational Linguistics.
 \newblock \doi{10.18653/v1/P16-1141}.
 \newblock URL \url{https://aclanthology.org/P16-1141}.
-
-\bibitem[Friedrich and Gateva(2017)]{friedrich-gateva-2017-classification}
-Annemarie Friedrich and Damyana Gateva.
-\newblock Classification of telicity using cross-linguistic annotation
-  projection.
-\newblock In Martha Palmer, Rebecca Hwa, and Sebastian Riedel, editors,
-  \emph{Proceedings of the 2017 Conference on Empirical Methods in Natural
-  Language Processing}, pages 2559--2565, Copenhagen, Denmark, September 2017.
-  Association for Computational Linguistics.
-\newblock \doi{10.18653/v1/D17-1271}.
-\newblock URL \url{https://aclanthology.org/D17-1271}.
 
 \bibitem[Li(2024)]{li2024comparative}
 Jiyi Li.
@@ -550,12 +775,6 @@ Fabrizio Gilardi, Meysam Alizadeh, and Maël Kubli.
 Petter Törnberg.
 \newblock Best practices for text annotation with large language models, 2024.
 
-\bibitem[Yuan et~al.(2023)Yuan, Xie, Huang, and
-  Ananiadou]{yuan2023futureTimeLlama}
-Chenhan Yuan, Qianqian Xie, Jimin Huang, and Sophia Ananiadou.
-\newblock Back to the future: Towards explainable temporal reasoning with large
-  language models, 2023.
-
 \bibitem[Touvron et~al.(2023)Touvron, Martin, Stone, Albert, Almahairi, Babaei,
   Bashlykov, Batra, Bhargava, Bhosale, Bikel, Blecher, Ferrer, Chen, Cucurull,
   Esiobu, Fernandes, Fu, Fu, Fuller, Gao, Goswami, Goyal, Hartshorn, Hosseini,
@@ -580,6 +799,25 @@ Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine
   Rodriguez, Robert Stojnic, Sergey Edunov, and Thomas Scialom.
 \newblock Llama 2: Open foundation and fine-tuned chat models, 2023.
 
+\bibitem[Yuan et~al.(2023)Yuan, Xie, Huang, and
+  Ananiadou]{yuan2023futureTimeLlama}
+Chenhan Yuan, Qianqian Xie, Jimin Huang, and Sophia Ananiadou.
+\newblock Back to the future: Towards explainable temporal reasoning with large
+  language models, 2023.
+
+\bibitem[Mangrulkar et~al.(2022)Mangrulkar, Gugger, Debut, Belkada, Paul, and
+  Bossan]{peft}
+Sourab Mangrulkar, Sylvain Gugger, Lysandre Debut, Younes Belkada, Sayak Paul,
+  and Benjamin Bossan.
+\newblock Peft: State-of-the-art parameter-efficient fine-tuning methods.
+\newblock \url{https://github.com/huggingface/peft}, 2022.
+
+\bibitem[{Meta LLaMA Team}(2024)]{meta2024llama3}
+{Meta LLaMA Team}.
+\newblock Introducing meta llama 3: The most capable openly available llm to
+  date.
+\newblock \url{https://ai.meta.com/blog/meta-llama-3/}, 2024.
+
 \bibitem[Kaddour et~al.(2023)Kaddour, Harris, Mozes, Bradley, Raileanu, and
   McHardy]{kaddour2023challenges}
 Jean Kaddour, Joshua Harris, Maximilian Mozes, Herbie Bradley, Roberta
@@ -601,6 +839,19 @@ Pranab Sahoo, Ayush~Kumar Singh, Sriparna Saha, Vinija Jain, Samrat Mondal, and
 Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
 \newblock Bert: Pre-training of deep bidirectional transformers for language
   understanding, 2019.
+
+\bibitem[Flier(1975)]{0a0c5a60-a736-3226-b927-03ba8af4fd75}
+Michael~S. Flier.
+\newblock Remarks on russian verbal prefixation.
+\newblock \emph{The Slavic and East European Journal}, 19\penalty0
+  (2):\penalty0 218--229, 1975.
+\newblock ISSN 00376752.
+\newblock URL \url{http://www.jstor.org/stable/306777}.
+
+\bibitem[Cohen(1988)]{cohen1988spa}
+J.~Cohen.
+\newblock \emph{{Statistical Power Analysis for the Behavioral Sciences}}.
+\newblock Lawrence Erlbaum Associates, 1988.
 
 \bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
   Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,

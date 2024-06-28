@@ -3,14 +3,15 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces Visual representation of time, situation and event, along with tense, lexical and grammatical aspect}}{4}{figure.caption.11}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Comrie's classification of aspectual oppositions}}{7}{figure.caption.15}%
-\contentsline {figure}{\numberline {3}{\ignorespaces A visualisation of event- and process types with their corresponding transitions \citep {moens-steedman-1988-temporal}\relax }}{12}{figure.caption.23}%
+\contentsline {figure}{\numberline {3}{\ignorespaces \citep {moens-steedman-1988-temporal} event types}}{13}{figure.caption.23}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4}{\ignorespaces Semantic map of common aspectual ambiguities}}{19}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4}{\ignorespaces UMR aspect classification lattice \citep {umrslides2022}\relax }}{23}{figure.caption.27}%
+\contentsline {figure}{\numberline {5}{\ignorespaces UMR aspect classification lattice \citep {umrslides2022}\relax }}{25}{figure.caption.29}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5}{\ignorespaces UMR graph of \emph {200 dead, 1,500 feared missing in Philippines landslide.}\relax }}{32}{figure.caption.40}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces \texttt {[CLS]} embedding space of a BERT model fine-tuned on English verbs annotated for aspect in context, reduced to 2 dimensions by t-SNE.\relax }}{38}{figure.caption.47}%
+\contentsline {figure}{\numberline {6}{\ignorespaces UMR graph of \emph {200 dead, 1,500 feared missing in Philippines landslide.}\relax }}{34}{figure.caption.43}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \texttt {[CLS]} embedding space of a BERT model fine-tuned on English verbs annotated for aspect in context, reduced to 2 dimensions by t-SNE.\relax }}{39}{figure.caption.50}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Look at this graph\relax }}{42}{figure.caption.54}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

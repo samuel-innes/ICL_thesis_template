@@ -6,20 +6,20 @@ Database file #1: references.bib
 Warning--I'm ignoring XiaoMcenery+2006+1+21's extra "title" field
 --line 25 of file references.bib
 Warning--I'm ignoring McINTOSH+1975+35+42's extra "title" field
---line 155 of file references.bib
+--line 356 of file references.bib
 Warning--I'm ignoring Boogaart+2004+1165+1180's extra "booktitle" field
---line 220 of file references.bib
-I was expecting a `,' or a `}'---line 694 of file references.bib
+--line 421 of file references.bib
+I was expecting a `,' or a `}'---line 937 of file references.bib
  :     pages = "
  :              65--98",
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring hopitime's extra "title" field
---line 734 of file references.bib
-Repeated entry---line 907 of file references.bib
+--line 977 of file references.bib
+Repeated entry---line 1257 of file references.bib
  : @inproceedings{Friedrich2014AutomaticPO
  :                                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 915 of file references.bib
+Repeated entry---line 1265 of file references.bib
  : @misc{he2023annollm
  :                    ,
 I'm skipping whatever remains of this entry
@@ -30,50 +30,54 @@ Warning--empty booktitle in Dahl1985TenseAA
 Warning--empty booktitle in Krifka1998TheOO
 Warning--empty booktitle in Freund2016RecentCI
 Warning--empty publisher in zucchi
+Warning--empty publisher in hana_filip_lexasp
 Warning--empty publisher in prefixation_in_rise_of_slav_asp
 Warning--empty booktitle in Derksen2008EtymologicalDO
 Warning--empty journal in wiemer2017
 Warning--can't use both author and editor fields in Swart+2019+321+349
+Warning--empty booktitle in hermes_2015
+Warning--empty journal in friedrich2017states
+Warning--empty booktitle in Allen2012InterpretingTT
 Warning--empty journal in llmsForPragAndDiscAnalysis
-You've used 76 entries,
+You've used 108 entries,
             2481 wiz_defined-function locations,
-            1091 strings with 23417 characters,
-and the built_in function-call counts, 31658 in all, are:
-= -- 2575
-> -- 1922
-< -- 69
-+ -- 737
-- -- 585
-* -- 2425
-:= -- 5238
-add.period$ -- 342
-call.type$ -- 76
-change.case$ -- 135
-chr.to.int$ -- 76
-cite$ -- 88
-duplicate$ -- 1544
-empty$ -- 2703
-format.name$ -- 691
-if$ -- 6748
+            1297 strings with 31079 characters,
+and the built_in function-call counts, 45543 in all, are:
+= -- 3819
+> -- 2600
+< -- 101
++ -- 994
+- -- 778
+* -- 3411
+:= -- 7378
+add.period$ -- 480
+call.type$ -- 108
+change.case$ -- 193
+chr.to.int$ -- 108
+cite$ -- 124
+duplicate$ -- 2286
+empty$ -- 3952
+format.name$ -- 938
+if$ -- 9834
 int.to.chr$ -- 1
-int.to.str$ -- 77
-missing$ -- 78
-newline$ -- 482
-num.names$ -- 246
-pop$ -- 709
+int.to.str$ -- 109
+missing$ -- 111
+newline$ -- 672
+num.names$ -- 364
+pop$ -- 1040
 preamble$ -- 1
-purify$ -- 76
+purify$ -- 108
 quote$ -- 0
-skip$ -- 964
+skip$ -- 1437
 stack$ -- 0
-substring$ -- 875
-swap$ -- 301
-text.length$ -- 15
+substring$ -- 1387
+swap$ -- 495
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 478
-warning$ -- 12
-while$ -- 222
+type$ -- 684
+warning$ -- 16
+while$ -- 336
 width$ -- 0
-write$ -- 1167
+write$ -- 1651
 (There were 3 error messages)

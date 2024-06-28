@@ -7,8 +7,8 @@
 %\selectlanguage{english}
 
 % Titelseite
-\clearscrheadings\clearscrplain
-
+%\clearscrheadings\clearscrplain
+\thispagestyle{empty}
 
 
 \begin{center}
@@ -67,11 +67,12 @@ Zusammenfasssung auf Deutsch
 
 % richtiger Inhalt
 \clearpage
+\pagestyle{scrplain}
 \pagenumbering{arabic} % ab jetzt die normale arabische Nummerierung
 \chapter{Introduction}\label{c.introduction}
 \input{chapter/introduction.tex}
 
-\chapter{Aspectology: an introduction}\label{c.aspectology}
+\chapter{Aspectology: An Introduction}\label{c.aspectology}
 \input{chapter/aspectology.tex}
 
 \clearpage
@@ -82,12 +83,12 @@ Zusammenfasssung auf Deutsch
 \chapter{Methods}\label{c.methods}
 \input{chapter/methods.tex}
 
-\clearpage
-\chapter{Dataset Creation}\label{c.dataset}
-\input{chapter/dataset.tex}
+% \clearpage
+% \chapter{Dataset Creation}\label{c.dataset}
+% \input{chapter/dataset.tex}
 
 \clearpage
-\chapter{Experiments}\label{c.experiments}
+\chapter{Experiments and Results}\label{c.experiments}
 \input{chapter/experiments.tex}
 
 \clearpage
@@ -98,14 +99,15 @@ Zusammenfasssung auf Deutsch
 \chapter{Conclusion}\label{c.conclusion}
 \input{chapter/conclusion.tex}
 
-% Anhang
+% % Anhang
+
 \clearpage
 \appendix
 \chapter{Appendix}
 \input{chapter/appendix.tex}
 
 \clearpage
-%\bibliographystyle{natbib}
+%%\bibliographystyle{natbib}
 \bibliography{references}
 
 \end{document}

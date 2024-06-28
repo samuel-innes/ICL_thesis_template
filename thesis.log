@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  18 JUN 2024 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  28 JUN 2024 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -213,6 +213,17 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 \c@definition=\count273
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/base/fontenc.sty
@@ -890,7 +901,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count324
 \LT@p@ftn=\toks41
 )
-Class scrreprt Info: longtable captions redefined on input line 59.
+Class scrreprt Info: longtable captions redefined on input line 60.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/threeparttable/threeparttabl
 e.sty
@@ -953,7 +964,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 )
 
 Package caption Warning: Ignoring optional argument [c] of \setcapwidth
-(caption)                 on input line 84.
+(caption)                 on input line 85.
 See the caption package documentation for explanation.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/listings/listings.sty
@@ -1253,7 +1264,7 @@ Package chngcntr Info: \counterwithout already defined.
 \lcommentsep=\skip92
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 12
-8.
+9.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1274,7 +1285,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 62.9806pt
 (typearea)              \baselineskip   = 17.99446pt
-(typearea)              on input line 128.
+(typearea)              on input line 129.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1284,7 +1295,11 @@ ef
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count373
 \l__pdf_internal_box=\box135
-) (./thesis.aux)
+) (./thesis.aux
+
+LaTeX Warning: Label `fig:fine-tuned_aspect_latent_space' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1322,8 +1337,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-
-(/usr/local/texlive/2023basic/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: subfigure package is loaded.
@@ -1399,19 +1413,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-Package scrlayer-scrpage Warning: replacing deprecated \clearscrheading by
-(scrlayer-scrpage)                \clearmainofpairofpagestyles on input line 10
-.
-
-
-Package scrlayer-scrpage Warning: replacing deprecated \clearscrplain by
-(scrlayer-scrpage)                \clearplainofpairofpagestyles on input line 1
-0.
-
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
 1.
+
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1439,7 +1443,25 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 41.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 41.
- [1
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+
+
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+
+
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+[1
 
 {/usr/local/texlive/2023basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/us
 r/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
@@ -1469,25 +1491,20 @@ Package babel Info: Importing basic data for ngerman
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 62
 .
- (./thesis.toc
-Overfull \hbox (3.38896pt too wide) detected at line 3
- \T1/lmss/m/n/14.4 VIII
- []
-
-[4
+ (./thesis.toc [4
 
 
 
-] [5])
+])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [6]
+ [5]
 Package tocbasic Info: character protrusion at lof deactivated on input line 64
 .
  (./thesis.lof
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 3.
 
@@ -1502,7 +1519,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [7
+ [6
 
 
 
@@ -1514,7 +1531,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 66
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [8
+ [7
 
 
 
@@ -1574,165 +1591,169 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 ] [4{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr
 /local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 [5] [6] [7] [8]
-Underfull \hbox (badness 1983) in paragraph at lines 202--202
+Underfull \hbox (badness 1983) in paragraph at lines 212--212
 []|\T1/lmss/m/n/12 (+20) The man was build-ing a
  []
 
 
-Overfull \hbox (49.99994pt too wide) in paragraph at lines 152--258
+Overfull \hbox (49.99994pt too wide) in paragraph at lines 162--268
  [][] 
  []
 
 [9] [10] [11]
-<img/moens_steedman_figure.png, id=518, 841.1425pt x 621.32124pt>
+<img/moens_steedman_figure.png, id=527, 841.1425pt x 621.32124pt>
 File: img/moens_steedman_figure.png Graphic file (type png)
 <use img/moens_steedman_figure.png>
 Package pdftex.def Info: img/moens_steedman_figure.png  used on input line 322.
 
 (pdftex.def)             Requested size: 469.47052pt x 346.7809pt.
- [12 <./img/moens_steedman_figure.png>] [13] [14]
-Overfull \hbox (37.59995pt too wide) in paragraph at lines 391--398
- [][] 
- []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] [16]) [17]
+[12] [13 <./img/moens_steedman_figure.png>]
+Overfull \hbox (5.41489pt too wide) in paragraph at lines 362--364
+\T1/lmss/m/n/12 (-20) this case a \T1/lmss/m/sl/12 (-20) ha-bit-ual \T1/lmss/m/
+n/12 (-20) event), in many sit-u-a-tions they can be am-bigu-ous: 
+ []
+
+[14] [15]
+Overfull \hbox (37.59995pt too wide) in paragraph at lines 385--392
+ [][] 
+ []
+
+[16]) [17]
 chapter 3.
 (./chapter/related.tex
-Overfull \hbox (64.02733pt too wide) in paragraph at lines 8--9
-[]\T1/lmss/m/n/12 (-20) Interestingly they use their re-sults draw the fol-low-
-ing lin-guis-tic con-clu-sions: HERE. 
- []
 
+LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <12> not available
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 8.
 
-Overfull \hbox (1.95576pt too wide) in paragraph at lines 12--13
-[]\T1/lmss/m/n/12 (-20) TALK ABOUT ASp-Ambig - be we have a dif-fer-ent type of
- am-bi-gu-ity 
- []
-
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
 [18
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-27.
- (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Overfull \hbox (2.92441pt too wide) in paragraph at lines 27--28
-[]\T1/lmss/m/n/12 (-20) One par-tic-u-larly in-ter-est-ing ex-am-ple is English
--Czech In-ter-Corp (GET CI-TA-TION C\TS1/lmss/m/n/12 (-20) Å\T1/lmss/m/n/12 (-2
-0) erm·kandRosen,
- []
-
-
-Overfull \hbox (34.01123pt too wide) in paragraph at lines 30--31
-\T1/lmss/m/n/12 (-20) In this sec-tion I will briefly men-tion some of the at-t
-empts to for-malise as-pect 
- []
-
-
-Overfull \hbox (12.86955pt too wide) in paragraph at lines 32--33
-\T1/lmss/m/n/12 (-20) which of-ten hard to dis-tin-guish be-tween at first glan
-ce, how-ever this is a 
- []
-
-) [19] [20]
+<img/semantic_map.png, id=679, 516.93124pt x 366.36874pt>
+File: img/semantic_map.png Graphic file (type png)
+<use img/semantic_map.png>
+Package pdftex.def Info: img/semantic_map.png  used on input line 13.
+(pdftex.def)             Requested size: 234.73526pt x 166.36821pt.
+ [19 <./img/semantic_map.png>] [20{/usr/local/texlive/2023basic/texmf-dist/font
+s/enc/dvips/lm/lm-mathit.enc}] [21]) [22]
 chapter 4.
-(./chapter/methods.tex [21
+(./chapter/methods.tex [23
 
 
 
 ]
-<img/umr_aspct_tree.png, id=700, 1008.76875pt x 568.1225pt>
+Overfull \hbox (25.95728pt too wide) in paragraph at lines 14--15
+\T1/lmss/m/n/12 (-20) et al.[] [[]2021[]] and the []UMR an-no-ta-tion guide-lin
+es[]), also de-picted in fig-ure []5[]: 
+ []
+
+<img/umr_aspct_tree.png, id=824, 1008.76875pt x 568.1225pt>
 File: img/umr_aspct_tree.png Graphic file (type png)
 <use img/umr_aspct_tree.png>
-Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 31.
+Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 27.
 (pdftex.def)             Requested size: 469.47052pt x 264.39961pt.
- [22]
-Overfull \hbox (16.87798pt too wide) in paragraph at lines 64--65
-[]\T1/lmss/m/n/12 (-20) They are not based on clas-sic pa-ram-e-ters such as te
-lic-ity, punc-tu-al-ity etc. 
+
+Overfull \hbox (58.03503pt too wide) in paragraph at lines 32--33
+[]\T1/lmss/m/n/12 (-20) How these re-late to other as-pec-tual clas-si-fi-ca-ti
+on schemata can be seen in ta-ble []5[]. 
  []
 
-[23 <./img/umr_aspct_tree.png>] [24] [25] [26]
-Overfull \hbox (47.50244pt too wide) in paragraph at lines 96--98
-\T1/lmss/m/n/12 (-20) WAS KANN ICH WIS-SEN? WAS DARF ICH HOF-FEN? KANT It is ea
-sy to get 
+[24] [25 <./img/umr_aspct_tree.png>]
+Overfull \hbox (81.56232pt too wide) in paragraph at lines 60--61
+\T1/lmss/m/n/12 (-20) This sec-tion de-scribes the re-search ques-tions which t
+he fol-low-ing study aims to an-swer. 
  []
 
-) [27] [28]
+[26] [27]
+
+LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10> not available
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 76.
+
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+[28]
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 85.
+ [29]) [30]
 chapter 5.
-(./chapter/dataset.tex [29
+(./chapter/experiments.tex [31
 
 
 
-] [30]
-Overfull \hbox (26.02657pt too wide) in paragraph at lines 47--48
+] [32]
+Overfull \hbox (26.02657pt too wide) in paragraph at lines 40--41
 \T1/lmss/m/n/12 (-20) source sen-tence but also with nouns and ad-jec-tives (se
 e for ex-am-ple []5.1.1[]). 
  []
 
-[31] [32{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.e
-nc}]
-Overfull \hbox (19.40425pt too wide) in paragraph at lines 93--94
+[33]
+Overfull \hbox (19.40425pt too wide) in paragraph at lines 86--87
 \T1/lmss/m/n/12 (-20) dom ac-cu-racy. WHICH EPOCH ARE THESE RE-SULTS FOR-MAT-IN
 GG 
  []
 
-[33] [34{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathex.e
-nc}] [35])
-Overfull \hbox (0.31952pt too wide) in paragraph at lines 181--88
-[]\T1/lmss/m/n/12 (-20) WHY DID WE TAKE OUT HA-BIT-UAL? AND NOT IT-ER-A-TIVE?? 
- 
- []
-
-[36]
-chapter 6.
-(./chapter/experiments.tex
-Overfull \hbox (6.20416pt too wide) in paragraph at lines 1--2
-\T1/lmss/m/n/12 (-20) Discussing the re-sults of ex-per-i-ments. PUT DATASET IN
--SIDE HERE 
- []
-
-<img/aspect_latent_space.jpeg, id=895, 3513.125pt x 2509.375pt>
+[34] [35] [36{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mat
+hex.enc}] [37]
+<img/aspect_latent_space.jpeg, id=1030, 3513.125pt x 2509.375pt>
 File: img/aspect_latent_space.jpeg Graphic file (type jpg)
 <use img/aspect_latent_space.jpeg>
-Package pdftex.def Info: img/aspect_latent_space.jpeg  used on input line 15.
+Package pdftex.def Info: img/aspect_latent_space.jpeg  used on input line 189.
 (pdftex.def)             Requested size: 469.47052pt x 335.30492pt.
-[37
+ [38] [39 <./img/aspect_latent_space.jpeg>] [40]
+
+LaTeX Warning: Float too large for page by 5.67812pt on input line 352.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-] [38 <./img/aspect_latent_space.jpeg>] [39]
-Overfull \hbox (91.55067pt too wide) in paragraph at lines 55--57
+<img/aspect_prediction_by_prefix.png, id=1052, 1237.62375pt x 858.20625pt>
+File: img/aspect_prediction_by_prefix.png Graphic file (type png)
+<use img/aspect_prediction_by_prefix.png>
+Package pdftex.def Info: img/aspect_prediction_by_prefix.png  used on input lin
+e 365.
+(pdftex.def)             Requested size: 469.47052pt x 325.54558pt.
+[41] [42 <./img/aspect_prediction_by_prefix.png>]
+Overfull \hbox (91.55067pt too wide) in paragraph at lines 376--378
 \T1/lmss/m/n/12 (-20) are of-ten too con-fi-dent of their pre-dic-tions, even w
 hen wrong IN-SERT CI-TA-TION HERE 
  []
 
-[40]) [41]
-chapter 7.
-(./chapter/discussion.tex) [42
+[43]) [44] [45]
+chapter 6.
+(./chapter/discussion.tex) [46
 
 
 
 ]
-chapter 8.
+chapter 7.
 (./chapter/conclusion.tex
-Overfull \hbox (67.3305pt too wide) in paragraph at lines 3--4
-\T1/lmss/m/n/12 (-20) clas-si-fi-ca-tion schema taken from a larger mean-ing re
-p-re-sen-ta-tion frame-work: UMR. 
+Overfull \hbox (35.875pt too wide) in paragraph at lines 1--2
+\T1/lmss/m/n/12 (-20) Verbal as-pect is a promi-nent lin-guis-tic phe-nomenon, 
+but also highly com-plex. 
  []
 
-) [43
+
+Overfull \hbox (123.32646pt too wide) in paragraph at lines 3--4
+[]\T1/lmss/m/n/12 (-20) Attempts to clas-sify it are of-ten ei-ther too coarse-
+grained ARE UN-SAT-IS-FAC-TORY OR SMTH 
+ []
+
+
+Overfull \hbox (21.77686pt too wide) in paragraph at lines 5--6
+\T1/lmss/m/n/12 (-20) deal with as-pec-tual am-bi-gu-ity, and what we can learn
+ from this be-haviour. 
+ []
+
+) [47
 
 
 
@@ -1744,7 +1765,7 @@ Overfull \hbox (29.85915pt too wide) in paragraph at lines 2--3
 in the NLP do-main. 
  []
 
-<img/ann_guide.pdf, id=933, 597.432pt x 845.07718pt>
+<img/ann_guide.pdf, id=1093, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf>
 Package pdftex.def Info: img/ann_guide.pdf  used on input line 10.
@@ -1753,7 +1774,7 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf>
 Package pdftex.def Info: img/ann_guide.pdf  used on input line 10.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
-<img/ann_guide.pdf, id=936, page=1, 597.432pt x 845.07718pt>
+<img/ann_guide.pdf, id=1096, page=1, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
 Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
@@ -1762,7 +1783,7 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
 Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
-[44
+[48
 
 
 
@@ -1779,8 +1800,8 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
 Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
- [45 <./img/ann_guide.pdf>]
-<img/ann_guide.pdf, id=987, page=2, 597.432pt x 845.07718pt>
+ [49 <./img/ann_guide.pdf>]
+<img/ann_guide.pdf, id=1148, page=2, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 2>
 Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 10.
@@ -1793,7 +1814,7 @@ File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 2>
 Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 10.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
- [46 <./img/ann_guide.pdf>]) (./thesis.bbl
+ [50 <./img/ann_guide.pdf>]) (./thesis.bbl
 chapter without number
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--22
@@ -1801,58 +1822,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--22
 -[]a5cc-[]a89143ab2a2a / umr _
  []
 
-[47
+[51
 
 
 
-] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 191--197
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
+129.
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [52]
+Underfull \hbox (badness 10000) in paragraph at lines 206--212
 \T1/lmtt/m/n/12 UoR-[]Main / Schools-[]Departments / elal / LSWP / LSWP-[]7 / e
 lal _ 7 _ Freund . pdf ? la = en &
  []
 
-[49]
-Underfull \hbox (badness 3895) in paragraph at lines 312--318
+[53] [54]
+Underfull \hbox (badness 3895) in paragraph at lines 349--355
 []\T1/lmss/m/n/12 (+20) Vittorio S. Tomel-leri.  Slavic^^Ustyle as-pect in the 
 cau-ca-sus.  \T1/lmss/m/sl/12 (+20) Su-vre-mena lingvis-
  []
 
-[50] [51] [52] [53] [54]) [55] (./thesis.aux)
+[55] [56] [57] [58] [59] [60] [61]) [62] (./thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37293 strings out of 477476
- 743610 string characters out of 5824244
- 1882388 words of memory out of 5000000
- 56266 multiletter control sequences out of 15000+600000
- 608060 words of font info for 217 fonts, out of 8000000 for 9000
+ 38063 strings out of 477476
+ 755586 string characters out of 5824244
+ 1899388 words of memory out of 5000000
+ 56914 multiletter control sequences out of 15000+600000
+ 621122 words of font info for 254 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 113i,20n,109p,10669b,1418s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,19n,109p,10669b,1418s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exis
+pdfTeX warning (dest): name{Hfootnote.25} has been referenced but does not exis
 t, replaced by a fixed one
 
+
+pdfTeX warning (dest): name{https://umr4nlp.github.io/web/data.html} has been r
+eferenced but does not exist, replaced by a fixed one
+
 </usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr
-/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/loca
-l/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/tex
-live/2023basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/
-2023basic/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023ba
-sic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023basic/te
-xmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023basic/texmf-dis
-t/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2023basic/texmf-dist/fon
-ts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/ty
-pe1/public/lm/lmss17.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/p
-ublic/lm/lmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/
-lm/lmssbx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/
-lmsso10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss
-o12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmsy10.p
-fb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></
-usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (63 pages, 1640570 bytes).
+/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/loc
+al/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/te
+xlive/2023basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive
+/2023basic/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023b
+asic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023basic/t
+exmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023basic/texmf-di
+st/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2023basic/texmf-dist/fo
+nts/type1/public/lm/lmss10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/t
+ype1/public/lm/lmss12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/
+public/lm/lmss17.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/publi
+c/lm/lmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/l
+mssbo10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss
+bx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmsso10
+.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmsso12.pfb
+></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></us
+r/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/loc
+al/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/te
+xlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on thesis.pdf (69 pages, 1934702 bytes).
 PDF statistics:
- 1438 PDF objects out of 1440 (max. 8388607)
- 1250 compressed objects within 13 object streams
- 290 named destinations out of 1000 (max. 500000)
- 58877 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1638 PDF objects out of 1728 (max. 8388607)
+ 1431 compressed objects within 15 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 64975 words of extra memory for PDF output out of 74296 (max. 10000000)
 
