@@ -9,20 +9,21 @@ Warning--I'm ignoring McINTOSH+1975+35+42's extra "title" field
 --line 356 of file references.bib
 Warning--I'm ignoring Boogaart+2004+1165+1180's extra "booktitle" field
 --line 421 of file references.bib
-I was expecting a `,' or a `}'---line 937 of file references.bib
+I was expecting a `,' or a `}'---line 1057 of file references.bib
  :     pages = "
  :              65--98",
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring hopitime's extra "title" field
---line 977 of file references.bib
-Repeated entry---line 1257 of file references.bib
+--line 1097 of file references.bib
+Repeated entry---line 1377 of file references.bib
  : @inproceedings{Friedrich2014AutomaticPO
  :                                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1265 of file references.bib
+Repeated entry---line 1385 of file references.bib
  : @misc{he2023annollm
  :                    ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 Warning--empty booktitle in Smith1991ThePO
 Warning--empty booktitle in Kiparsky2004PartitiveCA
 Warning--can't use both author and editor fields in Boogaart+2004+1165+1180
@@ -39,45 +40,46 @@ Warning--empty booktitle in hermes_2015
 Warning--empty journal in friedrich2017states
 Warning--empty booktitle in Allen2012InterpretingTT
 Warning--empty journal in llmsForPragAndDiscAnalysis
-You've used 108 entries,
+Warning--empty publisher in wee_wrtched_words_article
+You've used 119 entries,
             2481 wiz_defined-function locations,
-            1297 strings with 31079 characters,
-and the built_in function-call counts, 45543 in all, are:
-= -- 3819
-> -- 2600
-< -- 101
-+ -- 994
-- -- 778
-* -- 3411
-:= -- 7378
-add.period$ -- 480
-call.type$ -- 108
-change.case$ -- 193
-chr.to.int$ -- 108
-cite$ -- 124
-duplicate$ -- 2286
-empty$ -- 3952
-format.name$ -- 938
-if$ -- 9834
+            1356 strings with 33271 characters,
+and the built_in function-call counts, 49646 in all, are:
+= -- 4165
+> -- 2806
+< -- 111
++ -- 1077
+- -- 839
+* -- 3701
+:= -- 8036
+add.period$ -- 522
+call.type$ -- 119
+change.case$ -- 212
+chr.to.int$ -- 119
+cite$ -- 136
+duplicate$ -- 2500
+empty$ -- 4328
+format.name$ -- 1014
+if$ -- 10722
 int.to.chr$ -- 1
-int.to.str$ -- 109
-missing$ -- 111
-newline$ -- 672
-num.names$ -- 364
-pop$ -- 1040
+int.to.str$ -- 120
+missing$ -- 122
+newline$ -- 734
+num.names$ -- 399
+pop$ -- 1145
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 119
 quote$ -- 0
-skip$ -- 1437
+skip$ -- 1577
 stack$ -- 0
-substring$ -- 1387
-swap$ -- 495
-text.length$ -- 27
+substring$ -- 1512
+swap$ -- 539
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 684
-warning$ -- 16
-while$ -- 336
+type$ -- 752
+warning$ -- 17
+while$ -- 367
 width$ -- 0
-write$ -- 1651
+write$ -- 1805
 (There were 3 error messages)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{108}
+\begin{thebibliography}{119}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -805,6 +805,13 @@ Chenhan Yuan, Qianqian Xie, Jimin Huang, and Sophia Ananiadou.
 \newblock Back to the future: Towards explainable temporal reasoning with large
   language models, 2023.
 
+\bibitem[Li et~al.(2023)Li, Li, Liu, Xie, Li, lee Wang, Li, and
+  Zhong]{li2023labelsupervisedllamafinetuning}
+Zongxi Li, Xianming Li, Yuzhang Liu, Haoran Xie, Jing Li, Fu~lee Wang, Qing Li,
+  and Xiaoqin Zhong.
+\newblock Label supervised llama finetuning, 2023.
+\newblock URL \url{https://arxiv.org/abs/2310.01208}.
+
 \bibitem[Mangrulkar et~al.(2022)Mangrulkar, Gugger, Debut, Belkada, Paul, and
   Bossan]{peft}
 Sourab Mangrulkar, Sylvain Gugger, Lysandre Debut, Younes Belkada, Sayak Paul,
@@ -817,6 +824,13 @@ Sourab Mangrulkar, Sylvain Gugger, Lysandre Debut, Younes Belkada, Sayak Paul,
 \newblock Introducing meta llama 3: The most capable openly available llm to
   date.
 \newblock \url{https://ai.meta.com/blog/meta-llama-3/}, 2024.
+
+\bibitem[Qi et~al.(2020)Qi, Zhang, Zhang, Bolton, and
+  Manning]{qi2020stanzapythonnaturallanguage}
+Peng Qi, Yuhao Zhang, Yuhui Zhang, Jason Bolton, and Christopher~D. Manning.
+\newblock Stanza: A python natural language processing toolkit for many human
+  languages, 2020.
+\newblock URL \url{https://arxiv.org/abs/2003.07082}.
 
 \bibitem[Kaddour et~al.(2023)Kaddour, Harris, Mozes, Bradley, Raileanu, and
   McHardy]{kaddour2023challenges}
@@ -835,6 +849,12 @@ Pranab Sahoo, Ayush~Kumar Singh, Sriparna Saha, Vinija Jain, Samrat Mondal, and
 \newblock A systematic survey of prompt engineering in large language models:
   Techniques and applications, 2024.
 
+\bibitem[Bird et~al.(2009)Bird, Klein, and Loper]{bird2009natural}
+Steven Bird, Ewan Klein, and Edward Loper.
+\newblock \emph{Natural language processing with Python: analyzing text with
+  the natural language toolkit}.
+\newblock " O'Reilly Media, Inc.", 2009.
+
 \bibitem[Devlin et~al.(2019)Devlin, Chang, Lee, and Toutanova]{devlin2019bert}
 Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
 \newblock Bert: Pre-training of deep bidirectional transformers for language
@@ -848,10 +868,67 @@ Michael~S. Flier.
 \newblock ISSN 00376752.
 \newblock URL \url{http://www.jstor.org/stable/306777}.
 
+\bibitem[Dickey(2000)]{dickey2000parameters}
+S.M. Dickey.
+\newblock \emph{Parameters of Slavic Aspect: A Cognitive Approach}.
+\newblock Dissertations in Linguistics. Cambridge University Press, 2000.
+\newblock ISBN 9781575862361.
+\newblock URL
+  \url{https://web.stanford.edu/group/cslipublications/cslipublications/site/1575862360.shtml}.
+
+\bibitem[Iacobini(2009)]{iacobini_ital_phrasal_verbs}
+Claudio Iacobini.
+\newblock Phrasal verbs between syntax and lexicon.
+\newblock \emph{Italian Journal of Linguistics}, 21:\penalty0 97--117, 01 2009.
+
+\bibitem[Cappelle(2007)]{wee_wrtched_words_article}
+Bert Cappelle.
+\newblock \emph{When “wee wretched words” wield weight: The impact of
+  verbal particles on transitivity}, pages 41--54.
+\newblock 01 2007.
+
+\bibitem[Walková(2017)]{Walková+2017+589+616}
+Milada Walková.
+\newblock Particle verbs in english: Telicity or scalarity?
+\newblock \emph{Linguistics}, 55\penalty0 (3):\penalty0 589--616, 2017.
+\newblock \doi{doi:10.1515/ling-2017-0005}.
+\newblock URL \url{https://doi.org/10.1515/ling-2017-0005}.
+
+\bibitem[Filip(2004)]{telicity_parameter_revisited}
+Hana Filip.
+\newblock The telicity parameter revisited.
+\newblock \emph{Semantics and Linguistic Theory}, 14, 09 2004.
+\newblock \doi{10.3765/salt.v0i0.2909}.
+
+\bibitem[Janssen and Borik(2012)]{Janssen2012ADO}
+Maarten Janssen and Olga Borik.
+\newblock A database of russian verbal aspect.
+\newblock \emph{Oslo Studies in Language}, 4, 2012.
+\newblock URL \url{http://ru.oslin.org/?action=aspect}.
+
 \bibitem[Cohen(1988)]{cohen1988spa}
 J.~Cohen.
 \newblock \emph{{Statistical Power Analysis for the Behavioral Sciences}}.
 \newblock Lawrence Erlbaum Associates, 1988.
+
+\bibitem[Tiedemann(2012)]{tiedemann-2012-parallel}
+J{\"o}rg Tiedemann.
+\newblock Parallel data, tools and interfaces in {OPUS}.
+\newblock In Nicoletta Calzolari, Khalid Choukri, Thierry Declerck,
+  Mehmet~U{\u{g}}ur Do{\u{g}}an, Bente Maegaard, Joseph Mariani, Asuncion
+  Moreno, Jan Odijk, and Stelios Piperidis, editors, \emph{Proceedings of the
+  Eighth International Conference on Language Resources and Evaluation
+  ({LREC}'12)}, pages 2214--2218, Istanbul, Turkey, May 2012. European Language
+  Resources Association (ELRA).
+\newblock URL
+  \url{http://www.lrec-conf.org/proceedings/lrec2012/pdf/463_Paper.pdf}.
+
+\bibitem[Reimers and
+  Gurevych(2020)]{reimers2020makingmonolingualsentenceembeddings}
+Nils Reimers and Iryna Gurevych.
+\newblock Making monolingual sentence embeddings multilingual using knowledge
+  distillation, 2020.
+\newblock URL \url{https://arxiv.org/abs/2004.09813}.
 
 \bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
   Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  28 JUN 2024 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.30)  1 JUL 2024 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,6 +224,9 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
 \c@definition=\count273
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/base/fontenc.sty
@@ -901,7 +904,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count324
 \LT@p@ftn=\toks41
 )
-Class scrreprt Info: longtable captions redefined on input line 60.
+Class scrreprt Info: longtable captions redefined on input line 62.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/threeparttable/threeparttabl
 e.sty
@@ -964,7 +967,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 )
 
 Package caption Warning: Ignoring optional argument [c] of \setcapwidth
-(caption)                 on input line 85.
+(caption)                 on input line 87.
 See the caption package documentation for explanation.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/listings/listings.sty
@@ -1263,8 +1266,8 @@ Package chngcntr Info: \counterwithout already defined.
 \c@rxnumiv=\count372
 \lcommentsep=\skip92
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 12
-9.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
+1.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1285,7 +1288,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 62.9806pt
 (typearea)              \baselineskip   = 17.99446pt
-(typearea)              on input line 129.
+(typearea)              on input line 131.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1502,20 +1505,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 62
  [5]
 Package tocbasic Info: character protrusion at lof deactivated on input line 64
 .
- (./thesis.lof
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 12.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-3.
-
-(/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-)
+ (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
@@ -1526,8 +1516,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 66
 .
-
-(./thesis.lot)
+ (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
@@ -1535,7 +1524,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 66
 
 
 
-]
+{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1574,6 +1563,8 @@ Overfull \hbox (66.7865pt too wide) in paragraph at lines 3--4
 thews[], []2014[]] de-fines as-pect thus: 
  []
 
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 9.
 
 Overfull \hbox (1.33105pt too wide) in paragraph at lines 31--44
 [][]   [] 
@@ -1588,9 +1579,8 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 [3
 
 
-] [4{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr
-/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-[5] [6] [7] [8]
+] [4{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+ [5] [6] [7] [8]
 Underfull \hbox (badness 1983) in paragraph at lines 212--212
 []|\T1/lmss/m/n/12 (+20) The man was build-ing a
  []
@@ -1601,7 +1591,7 @@ Overfull \hbox (49.99994pt too wide) in paragraph at lines 162--268
  []
 
 [9] [10] [11]
-<img/moens_steedman_figure.png, id=527, 841.1425pt x 621.32124pt>
+<img/moens_steedman_figure.png, id=531, 841.1425pt x 621.32124pt>
 File: img/moens_steedman_figure.png Graphic file (type png)
 <use img/moens_steedman_figure.png>
 Package pdftex.def Info: img/moens_steedman_figure.png  used on input line 322.
@@ -1637,7 +1627,7 @@ Package microtype Info: Character `029' is missing
 
 
 ]
-<img/semantic_map.png, id=679, 516.93124pt x 366.36874pt>
+<img/semantic_map.png, id=683, 516.93124pt x 366.36874pt>
 File: img/semantic_map.png Graphic file (type png)
 <use img/semantic_map.png>
 Package pdftex.def Info: img/semantic_map.png  used on input line 13.
@@ -1650,24 +1640,30 @@ chapter 4.
 
 
 ]
-Overfull \hbox (25.95728pt too wide) in paragraph at lines 14--15
+Overfull \hbox (65.80194pt too wide) in paragraph at lines 12--16
+\T1/lmss/m/n/12 (-20) (NODES + EDGES) - SEN-TENCE LEVEL and DOC LEVEL - EX-AM-P
+LE GRAPH 
+ []
+
+
+Overfull \hbox (25.95728pt too wide) in paragraph at lines 19--20
 \T1/lmss/m/n/12 (-20) et al.[] [[]2021[]] and the []UMR an-no-ta-tion guide-lin
 es[]), also de-picted in fig-ure []5[]: 
  []
 
-<img/umr_aspct_tree.png, id=824, 1008.76875pt x 568.1225pt>
+<img/umr_aspct_tree.png, id=828, 1008.76875pt x 568.1225pt>
 File: img/umr_aspct_tree.png Graphic file (type png)
 <use img/umr_aspct_tree.png>
-Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 27.
+Package pdftex.def Info: img/umr_aspct_tree.png  used on input line 32.
 (pdftex.def)             Requested size: 469.47052pt x 264.39961pt.
 
-Overfull \hbox (58.03503pt too wide) in paragraph at lines 32--33
+Overfull \hbox (58.03503pt too wide) in paragraph at lines 37--38
 []\T1/lmss/m/n/12 (-20) How these re-late to other as-pec-tual clas-si-fi-ca-ti
 on schemata can be seen in ta-ble []5[]. 
  []
 
 [24] [25 <./img/umr_aspct_tree.png>]
-Overfull \hbox (81.56232pt too wide) in paragraph at lines 60--61
+Overfull \hbox (81.56232pt too wide) in paragraph at lines 65--66
 \T1/lmss/m/n/12 (-20) This sec-tion de-scribes the re-search ques-tions which t
 he fol-low-ing study aims to an-swer. 
  []
@@ -1675,14 +1671,14 @@ he fol-low-ing study aims to an-swer.
 [26] [27]
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 76.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 81.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 [28]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 85.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 90.
  [29]) [30]
 chapter 5.
 (./chapter/experiments.tex [31
@@ -1690,46 +1686,92 @@ chapter 5.
 
 
 ] [32]
-Overfull \hbox (26.02657pt too wide) in paragraph at lines 40--41
-\T1/lmss/m/n/12 (-20) source sen-tence but also with nouns and ad-jec-tives (se
-e for ex-am-ple []5.1.1[]). 
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+9.
+
+(/usr/local/texlive/2023basic/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [33] [34]
+[35]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 132.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 132.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 132.
+
+Overfull \hbox (7.92496pt too wide) in paragraph at lines 136--137
+\T1/lmss/m/n/12 (-20) and \T1/lmr/m/sc/12 (-20) Ac-tiv-ity \T1/lmss/m/n/12 (-20
+) classes and hence has an am-bigu-ous as-pec-tual read-ing: 
  []
 
-[33]
-Overfull \hbox (19.40425pt too wide) in paragraph at lines 86--87
-\T1/lmss/m/n/12 (-20) dom ac-cu-racy. WHICH EPOCH ARE THESE RE-SULTS FOR-MAT-IN
-GG 
+[36{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+[37]
+Overfull \hbox (6.61838pt too wide) in paragraph at lines 184--185
+\T1/lmss/m/n/12 (-20) TRANS[], which pri-mar-ily con-sists of news ar-ti-cles a
+nd le-gal doc-u-ments. 
  []
 
-[34] [35] [36{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/lm/lm-mat
-hex.enc}] [37]
-<img/aspect_latent_space.jpeg, id=1030, 3513.125pt x 2509.375pt>
+[38]
+<img/aspect_latent_space.jpeg, id=1072, 3513.125pt x 2509.375pt>
 File: img/aspect_latent_space.jpeg Graphic file (type jpg)
 <use img/aspect_latent_space.jpeg>
-Package pdftex.def Info: img/aspect_latent_space.jpeg  used on input line 189.
+Package pdftex.def Info: img/aspect_latent_space.jpeg  used on input line 195.
 (pdftex.def)             Requested size: 469.47052pt x 335.30492pt.
- [38] [39 <./img/aspect_latent_space.jpeg>] [40]
-
-LaTeX Warning: Float too large for page by 5.67812pt on input line 352.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/aspect_prediction_by_prefix.png, id=1052, 1237.62375pt x 858.20625pt>
+[39] [40 <./img/aspect_latent_space.jpeg>]
+
+LaTeX Warning: Float too large for page by 5.67812pt on input line 348.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41]
+<img/aspect_prediction_by_prefix.png, id=1105, 1237.62375pt x 858.20625pt>
 File: img/aspect_prediction_by_prefix.png Graphic file (type png)
 <use img/aspect_prediction_by_prefix.png>
 Package pdftex.def Info: img/aspect_prediction_by_prefix.png  used on input lin
-e 365.
+e 363.
 (pdftex.def)             Requested size: 469.47052pt x 325.54558pt.
-[41] [42 <./img/aspect_prediction_by_prefix.png>]
-Overfull \hbox (91.55067pt too wide) in paragraph at lines 376--378
-\T1/lmss/m/n/12 (-20) are of-ten too con-fi-dent of their pre-dic-tions, even w
-hen wrong IN-SERT CI-TA-TION HERE 
+ [42] [43 <./img/aspect_prediction_by_prefix.png>]
+
+Package natbib Warning: Citation `' on page 44 undefined on input line 375.
+
+[44] [45]
+Overfull \hbox (78.89224pt too wide) in paragraph at lines 413--414
+[]\T1/lmss/m/n/12 (-20) Finnish - rich verb mor-phol-ogy (con-trast to Viet-nam
+ese), sim-i-larly to Slavic lan-guages 
  []
 
-[43]) [44] [45]
+[46] [47]
+<img/lang_level.jpeg, id=1171, 1011.78pt x 578.16pt>
+File: img/lang_level.jpeg Graphic file (type jpg)
+<use img/lang_level.jpeg>
+Package pdftex.def Info: img/lang_level.jpeg  used on input line 423.
+(pdftex.def)             Requested size: 623.81168pt x 356.47054pt.
+<img/lang_level_2020.jpeg, id=1172, 867.24pt x 578.16pt>
+File: img/lang_level_2020.jpeg Graphic file (type jpg)
+<use img/lang_level_2020.jpeg>
+Package pdftex.def Info: img/lang_level_2020.jpeg  used on input line 430.
+(pdftex.def)             Requested size: 623.81168pt x 415.89554pt.
+ [48 <./img/lang_level.jpeg>] [49 <./img/lang_level_2020.jpeg>])
 chapter 6.
-(./chapter/discussion.tex) [46
+(./chapter/discussion.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 5--97
+
+ []
+
+[50
+
+
 
 
 
@@ -1753,7 +1795,7 @@ Overfull \hbox (21.77686pt too wide) in paragraph at lines 5--6
  from this be-haviour. 
  []
 
-) [47
+) [51
 
 
 
@@ -1765,56 +1807,57 @@ Overfull \hbox (29.85915pt too wide) in paragraph at lines 2--3
 in the NLP do-main. 
  []
 
-<img/ann_guide.pdf, id=1093, 597.432pt x 845.07718pt>
+<img/ann_guide.pdf, id=1192, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf>
-Package pdftex.def Info: img/ann_guide.pdf  used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf  used on input line 15.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf>
-Package pdftex.def Info: img/ann_guide.pdf  used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf  used on input line 15.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
-<img/ann_guide.pdf, id=1096, page=1, 597.432pt x 845.07718pt>
+<img/ann_guide.pdf, id=1195, page=1, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
-Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 15.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
-Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 15.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
-[48
+[52
 
 
 
 ]
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
-Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 15.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
-Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 15.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 1>
-Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf , page1 used on input line 15.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
- [49 <./img/ann_guide.pdf>]
-<img/ann_guide.pdf, id=1148, page=2, 597.432pt x 845.07718pt>
+ [53 <./img/ann_guide.pdf>]
+<img/ann_guide.pdf, id=1246, page=2, 597.432pt x 845.07718pt>
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 2>
-Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 10.
-(pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
-File: img/ann_guide.pdf Graphic file (type pdf)
-<use img/ann_guide.pdf, page 2>
-Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 15.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: img/ann_guide.pdf Graphic file (type pdf)
 <use img/ann_guide.pdf, page 2>
-Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 10.
+Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 15.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
- [50 <./img/ann_guide.pdf>]) (./thesis.bbl
+File: img/ann_guide.pdf Graphic file (type pdf)
+<use img/ann_guide.pdf, page 2>
+Package pdftex.def Info: img/ann_guide.pdf , page2 used on input line 15.
+(pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
+ [54 <./img/ann_guide.pdf>]) [55] [56]
+(./thesis.bbl
 chapter without number
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--22
@@ -1822,7 +1865,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--22
 -[]a5cc-[]a89143ab2a2a / umr _
  []
 
-[51
+[57
 
 
 
@@ -1836,19 +1879,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [52]
+ [58]
 Underfull \hbox (badness 10000) in paragraph at lines 206--212
 \T1/lmtt/m/n/12 UoR-[]Main / Schools-[]Departments / elal / LSWP / LSWP-[]7 / e
 lal _ 7 _ Freund . pdf ? la = en &
  []
 
-[53] [54]
+[59] [60]
 Underfull \hbox (badness 3895) in paragraph at lines 349--355
 []\T1/lmss/m/n/12 (+20) Vittorio S. Tomel-leri.  Slavic^^Ustyle as-pect in the 
 cau-ca-sus.  \T1/lmss/m/sl/12 (+20) Su-vre-mena lingvis-
  []
 
-[55] [56] [57] [58] [59] [60] [61]) [62] (./thesis.aux)
+[61] [62] [63] [64] [65] [66] [67] [68])
+
+Package natbib Warning: There were undefined citations.
+
+[69] (./thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1856,44 +1903,50 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 38063 strings out of 477476
- 755586 string characters out of 5824244
+ 38270 strings out of 477476
+ 759854 string characters out of 5824244
  1899388 words of memory out of 5000000
- 56914 multiletter control sequences out of 15000+600000
- 621122 words of font info for 254 fonts, out of 8000000 for 9000
+ 57031 multiletter control sequences out of 15000+600000
+ 646971 words of font info for 297 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 113i,19n,109p,10669b,1418s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,20n,109p,10669b,1418s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{Hfootnote.25} has been referenced but does not exis
-t, replaced by a fixed one
+pdfTeX warning (dest): name{https://cordis.europa.eu/project/id/23845/reporting
+} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{https://umr4nlp.github.io/web/data.html} has been r
 eferenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr
-/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/loc
-al/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/te
-xlive/2023basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive
-/2023basic/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023b
-asic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023basic/t
-exmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023basic/texmf-di
-st/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2023basic/texmf-dist/fo
-nts/type1/public/lm/lmss10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/t
-ype1/public/lm/lmss12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/
-public/lm/lmss17.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/publi
-c/lm/lmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/l
-mssbo10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss
-bx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmsso10
-.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmsso12.pfb
-></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></us
-r/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/loc
-al/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/te
-xlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on thesis.pdf (69 pages, 1934702 bytes).
+/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/loca
+l/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/te
+xlive/2023basic/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive
+/2023basic/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023
+basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023basic
+/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023basic/texmf
+-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023basic/texmf-dist/
+fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/
+type1/public/lm/lmr12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/
+public/lm/lmr6.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/
+lm/lmr8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmro
+12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss10.pf
+b></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss12.pfb></u
+sr/local/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/lo
+cal/texlive/2023basic/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/te
+xlive/2023basic/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/local/texli
+ve/2023basic/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/
+2023basic/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2023
+basic/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2023basi
+c/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023basic/tex
+mf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023basic/texmf-dis
+t/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023basic/texmf-dist/fon
+ts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb>
+Output written on thesis.pdf (76 pages, 2710926 bytes).
 PDF statistics:
- 1638 PDF objects out of 1728 (max. 8388607)
- 1431 compressed objects within 15 object streams
- 336 named destinations out of 1000 (max. 500000)
- 64975 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1787 PDF objects out of 2073 (max. 8388607)
+ 1558 compressed objects within 16 object streams
+ 362 named destinations out of 1000 (max. 500000)
+ 79313 words of extra memory for PDF output out of 89155 (max. 10000000)
 

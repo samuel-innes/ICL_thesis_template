@@ -10,15 +10,17 @@
 \contentsline {table}{\numberline {5}{\ignorespaces (Approximate) Comparison of aspectual classes. Adapted and extended from \citet *{annotAndAutoClassOfAspectCat}.\relax }}{25}{table.caption.30}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6}{\ignorespaces Aspect classes of annotated verbal events in the UMR dataset.\relax }}{33}{table.caption.42}%
-\contentsline {table}{\numberline {7}{\ignorespaces F1 score on test set from fine-tuning Llama 2 7B and 3 8B on different types of prompt\relax }}{34}{table.caption.45}%
-\contentsline {table}{\numberline {8}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes without upsampling. (UPDATE FORMATINGG!!!!!)\relax }}{35}{table.caption.47}%
-\contentsline {table}{\numberline {9}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes with upsampling. (UPDATE FORMATINGG!!!!!)\relax }}{35}{table.caption.48}%
-\contentsline {table}{\numberline {10}{\ignorespaces Analysis of annotated data. GET FOOTNOTE TO WORK HERE!!! AND UPDATE FOR ANNOTATOR 2\relax }}{37}{table.caption.49}%
-\contentsline {table}{\numberline {11}{\ignorespaces Model performance on English and French test sets after training on English training set.\relax }}{40}{table.caption.51}%
-\contentsline {table}{\numberline {12}{\ignorespaces Model output of 3 example Russian sentences with motion verbs.\relax }}{41}{table.caption.52}%
-\contentsline {table}{\numberline {13}{\ignorespaces CHANGE THIS\relax }}{45}{table.caption.53}%
+\contentsline {table}{\numberline {7}{\ignorespaces F1 score on test set from fine-tuning Llama 2 7B and 3 8B on different types of prompt after $1000$ training steps.\relax }}{35}{table.caption.45}%
+\contentsline {table}{\numberline {8}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes without upsampling.\relax }}{35}{table.caption.47}%
+\contentsline {table}{\numberline {9}{\ignorespaces Results on test set from fine-tuning Llama 2 on UMR aspect classes with upsampling.\relax }}{36}{table.caption.48}%
+\contentsline {table}{\numberline {10}{\ignorespaces Analysis of annotated data.\relax }}{37}{table.caption.50}%
+\contentsline {table}{\numberline {11}{\ignorespaces Model performance on English and French test sets after training on English training set.\relax }}{41}{table.caption.52}%
+\contentsline {table}{\numberline {12}{\ignorespaces Model output of 3 example Russian sentences with motion verbs.\relax }}{41}{table.caption.53}%
+\contentsline {table}{\numberline {13}{\ignorespaces CHANGE THIS\relax }}{47}{table.caption.54}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {14}{\ignorespaces Language-level Entropy on TED2013 dataset\relax }}{55}{table.caption.58}%
+\contentsline {table}{\numberline {15}{\ignorespaces Language-level Entropy on TED2020 dataset\relax }}{56}{table.caption.59}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

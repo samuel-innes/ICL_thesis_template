@@ -9,9 +9,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5}{\ignorespaces UMR aspect classification lattice \citep {umrslides2022}\relax }}{25}{figure.caption.29}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces UMR graph of \emph {200 dead, 1,500 feared missing in Philippines landslide.}\relax }}{34}{figure.caption.43}%
-\contentsline {figure}{\numberline {7}{\ignorespaces \texttt {[CLS]} embedding space of a BERT model fine-tuned on English verbs annotated for aspect in context, reduced to 2 dimensions by t-SNE.\relax }}{39}{figure.caption.50}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Look at this graph\relax }}{42}{figure.caption.54}%
+\contentsline {figure}{\numberline {6}{\ignorespaces UMR graph of the sentence "200 dead, 1,500 feared missing in Philippines landslide." in PENMAN notation.\relax }}{34}{figure.caption.43}%
+\contentsline {figure}{\numberline {7}{\ignorespaces BERT aspect latent space}}{40}{figure.caption.51}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Look at this graph\relax }}{43}{figure.caption.55}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Look at this graph\relax }}{48}{figure.caption.56}%
+\contentsline {figure}{\numberline {10}{\ignorespaces DESCRIPTION. The grey bars represent the mean entropy of each language family.\relax }}{49}{figure.caption.57}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

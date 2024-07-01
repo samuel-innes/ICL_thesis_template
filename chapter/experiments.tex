@@ -6,38 +6,37 @@ In order to carry out further computational analysis of the topic it is helpful 
 \citet{törnberg2024best} formulated a set of best practices when using LLMs as text annotators, which I aim to be guided by. The paper provides guidelines for those wishing to use LLMs as text annotators, in the absence of labelled data. However, this differs from my situation, where there already exist annotation guidelines and limited labelled data, hence the iterative systematic coding procedure described in the paper is not necessary. Nevertheless, \citet{törnberg2024best} provides a well-needed framework for this relatively new approach. 
 
 \subsubsection*{Choice of LM model}
-While many previous studies looking at LLM capabilities choose to look at ChatGPT models due to their notoriety in recent years and general good performance, these models come with several issues, as \citet{törnberg2024best} notes: it is unknown what the training data for the model is, leading to problems with transparency, and ChatGPT models have been shown to evolve over time, meaning reproducability is hindered. For these reasons, and also in order to host the model locally for better control (rather than using an API), I chose to use a different model. Meta's Llama 2 model \citep{touvron2023llama} seemed to offer a good balance between the apparent current trade-off between performance and scientific good practice, performing comparatively well in previous studies \citep{yuan2023futureTimeLlama} + OTHER EXAMPLES
+While many previous studies looking at LLM capabilities choose to look at ChatGPT models due to their notoriety in recent years and general good performance, these models come with several issues, as \citet{törnberg2024best} notes: it is unknown what the training data for the model is, leading to problems with transparency, and ChatGPT models have been shown to evolve over time, meaning reproducability is hindered. For these reasons, and also in order to host the model locally for better control (rather than using an API), I chose to use a different model. Meta's Llama 2 model \citep{touvron2023llama} seemed to offer a good balance between the apparent current trade-off between performance and scientific good practice, performing comparatively well in previous similar studies \citep{yuan2023futureTimeLlama, li2023labelsupervisedllamafinetuning}.
 
-Due to hardware constraints, I had to use a technique to improve the efficiency of the model training process since the smallest Llama model is 7 billion parameters. In this case I chose to use PEFT (Parameter efficint fine-tuning) \citep{peft}, which leverages the insight that LM fine-tuning usually only updates parameters at the end of the network. This made it possible to fine-tune the model without resorting to the huge amount of computing power usually necessary for fine-tuning LLMs.
+Due to hardware constraints, I had to use a technique to improve the efficiency of the model fine-tuning process since the smallest Llama model is 7 billion parameters. In this case I chose to use "parameter efficient fine-tuning" (PEFT) \citep{peft}, which leverages the insight that LM fine-tuning usually only updates parameters at the end of the network. This made it possible to fine-tune the model without resorting to the huge amount of computing power usually necessary for fine-tuning LLMs.
 
-I experimented both with the standard \textsf{Llama-2-7b} and \textsf{Llama-2-7b-chat}, however the latter ended up having difficulties responding in a formulaic way and rather added unnecessary or unrelated information, which is to be expected since it has been fine-tuned to fare well in a dialogue environment. This made it often difficult to extract the model's predicted label to use for evaluation. 
-
-During the course of this study, Llama 3 was released to the public \citep{meta2024llama3}, promising to have better reasoning skills and be better at following instructions effectively, so I therefore tried and compared both models in comparable settings.
+I experimented both with the standard \textsf{Llama-2-7b} and \textsf{Llama-2-7b-chat}, however the latter ended up having difficulties responding in a formulaic way and rather added unnecessary or unrelated information, which is to be expected since it has been fine-tuned to fare well in a dialogue environment. This made it often difficult to extract the model's predicted label to use for evaluation. During the course of this thesis, Llama 3 was released to the public \citep{meta2024llama3}, promising to have better reasoning skills and be better at following instructions effectively, so I therefore also tried and compared this.
 
 \subsubsection*{Training data}
-As the only currently existing data containing UMR aspect classes, I used the example UMR dataset\footnote{The UMR dataset can be found \hyperlink{https://umr4nlp.github.io/web/data.html}{here}.} provided by the creators of UMR. It contains 2022 sentences in 6 languages (Arapaho, Chinese, English, Kukama, Navajo and Sanapana) annotated according to the UMR schema. The texts are a mix of news, oral 
+As the only currently existing data containing UMR aspect classes, I used the example UMR dataset\footnote{The UMR v1.0 dataset can be found \hyperlink{https://umr4nlp.github.io/web/data.html}{here}.} provided by the creators of UMR. It contains a total of $2022$ sentences in 6 languages (Arapaho, Chinese, English, Kukama, Navajo and Sanapana) annotated according to the UMR schema. The texts are a mix of news, oral narration and interviews.
 
-In order to extract the verbs in the sentences I used Stanford NLP's Stanza POS tagger CITEEE, utilising the alignment given in the training data to find the corresponding node in the UMR graph and its aspect annotation. Table \ref*{umr_aspect_data} shows the class distribution of verbal events extracted from the dataset.
+In order to extract the verbs in the sentences I used Stanford NLP's Stanza POS tagger \citep{qi2020stanzapythonnaturallanguage}, utilising the alignment given in the training data to find the corresponding node in the UMR graph and its aspect annotation. Table \ref*{umr_aspect_data} shows the class distribution of verbal events extracted from the dataset.
 \begin{table}
     \centering
     \begin{tabular}{|c|c|c|c|}
         Class & No. examples in UMR data & No. examples in upsampling data & \textbf{Total} \\ \hline
-        Performance & 124 & 1 & 125\\
-        State & 55 & 0 & 55\\
-        Activity & 36 & 2 & 38\\
-        Endeavour & 17 & 14 & 31\\
-        Habitual & 2 & 31 & 33\\ \hline
-        \textbf{Total} & 234 & 48 & 282
+        \textsc{Performance} & $124$ & $1$ & $125$\\
+        \textsc{State} & $55$ & $0$ & $55$\\
+        \textsc{Activity} & $36$ & $2$ & $38$\\
+        \textsc{Endeavour} & $17$ & $14$ & $31$\\
+        \textsc{Habitual} & $2$ & $31$ & $33$\\ \hline
+        \textbf{Total} & $234$ & $48$ & $282$
     \end{tabular}
     \caption{Aspect classes of annotated verbal events in the UMR dataset.}
 \end{table}
+
 \label{umr_aspect_data}
 
-Here it is clear that the \emph{habitual} class is underrepresented, corroborating the results of \citet{Dahl1985TenseAA}'s study concluding that habituals and related aspect classes have a low frequency in actual use, and hence I manually added some datapoints to improve the balance. The added sentences were either found in existing online datasets and simly labelled with a UMR aspect class by hand or they were both manually composed and then labelled.
+Here it is clear that the \textsc{habitual} class is underrepresented, corroborating the results of \citet{Dahl1985TenseAA}'s study concluding that habituals and related aspect classes have a low frequency in actual use, and hence I manually added some datapoints to improve the balance. The added sentences were either found in existing online datasets and simply labelled with a UMR aspect class by hand, or they were both manually composed and then labelled.
 
-\citet{törnberg2024best} points out that, since it is unknown exactly which training data was used to train many LMs, one should exercise caution when evaluating their performance on a test set, since the model may have seen the test data before during pre-training. In this case, while it is impossible to rule out that the UMR dataset was used for Llama 2 pretraining, it is highly unlikely that it has seen the data in this form (i.e. as a sentence, a verb from this sentence and a UMR aspect label for this verb), and since the model was pre-trained with a next-token prediction task, it is very improbable that it would have memorised the labels for the data it is being tested on in my experiments. Nevertheless this cannot be ruled out and must be kept in mind when analysing the results.
+\citet{törnberg2024best} points out that, since it is unknown exactly which training data was used to train many LMs, one should exercise caution when evaluating their performance on a test set, since the model may have seen the test data before during pre-training. In this case, while it is impossible to rule out that the UMR dataset was used for Llama 2 or Llama 3 pre-training, it is highly unlikely that it has seen the data in this form (i.e. as a sentence, a verb from this sentence and a UMR aspect label for this verb), and since the model was pre-trained with a next-token prediction task, it is very improbable that it would have memorised the labels for the data it is being tested on in my experiments. Nevertheless, this cannot be ruled out and must be kept in mind when analysing the results.
 
-One interesting feature of the UMR \texttt{:aspect} parameter, is that it is used not only with verbs in the source sentence but also with nouns and adjectives (see for example \ref{nominal_event}).
+One interesting feature of the UMR \texttt{:aspect} parameter, is that it is used not only with verbs in the source sentence but also with nouns and adjectives (see for example \ref{nominal_event}) where these refer to an event.
 
 \begin{figure}[t]
     (s1p / publication-91 \\
@@ -54,18 +53,18 @@ One interesting feature of the UMR \texttt{:aspect} parameter, is that it is use
     \null\quad \quad\quad:aspect process) \\
     \null\quad :place (s1c / country :wiki "Philippines"  \\
     \null\quad \quad:name (s1n / name :op1 "Philippines"))))
-    \caption{UMR graph of \emph{200 dead, 1,500 feared missing in Philippines landslide.}}
+    \caption{UMR graph of the sentence "200 dead, 1,500 feared missing in Philippines landslide." in PENMAN notation.}
 \end{figure}
 \label{nominal_event}
 
-Since Russian NLP tools are scarce, it would be difficult to perform event extraction, so, in order to keep the results comparable between both languages, I chose to just to focus on verbal events. In my analysis the \texttt{:aspect} parameter occurred with a verb in the source sentence $74.8\%$ of the time, meaning most of the data from the UMR dataset could be used.
+Since Russian NLP tools are scarce, it would be difficult to perform event extraction, so, in order to keep the results comparable between both languages, I chose to just to focus on verbal events. In my analysis the \texttt{:aspect} parameter occurred with a verb in the source sentence $74.8\%$ of the time, meaning $282$ of the $377$ events from the UMR dataset could be used.
 
 \subsubsection*{Prompt engineering}
-Prompt engineering is a new but important field in NLP, and studies have shown the importance of good prompts when dealing with LLMs \citep{kaddour2023challenges, hsieh2023automatic, sahoo2024systematic}. \citet{törnberg2024best} recommends an iterative prompt engineering process of 
+Prompt engineering is a new but important field in NLP, and studies have shown the importance of good prompts when dealing with LLMs \citep{kaddour2023challenges, hsieh2023automatic, sahoo2024systematic}. \citet{törnberg2024best} recommends an iterative prompt engineering process of developing, testing and then improving the annotation guidelines together with LLM prompt until the desired quality is achieved. Since, as already mentioned, the annotation guidelines are already defined, the task consisted solely in finding an effective prompt. One of the issues to balance here, also underlined by \citet{törnberg2024best}, is the balance between length and detail, since a certain amount of information is necessary to carry out the task, yet LLMs seem to suffer when given a prompt which is too long (which is what I also found in my experiments: see \ref{table:long_normal_description}). I therefore decided on an adapted version of the succinct class descriptions provided in \citet{umr}, rather than the more extensive descriptions from the annotation guidelines.
 
 The model was given the following instruction for each datapoint:
 \begin{quotation}
-    The annotation distinguishes five base level aspectual values—State, Habitual, Activity, Endeavor, and Performance. The State value corresponds to stative events: no change occurs during the event. It also includes predicate nominals (be a doctor), predicate locations (be in the forest), and thetic (presentational) possession (have a cat). The Habitual value is annotated on events that occur regularly in the past or present. The Activity value indicates an event has not necessarily ended and may be ongoing at Document Creation Time (DCT). Endeavor is used for processes that end without reaching completion (i.e., termination), whereas Performance is used for processes that reach a completed result state. 
+    The State value corresponds to stative events: no change occurs during the event. The Habitual value is annotated on events that occur regularly. The Activity value indicates an event has not necessarily ended and may be ongoing at Document Creation Time. Endeavor is used for processes that end without reaching completion (i.e., termination), whereas Performance is used for processes that reach a completed result state.
 \end{quotation}
 followed by the following question:
 \begin{quotation}
@@ -76,16 +75,17 @@ followed by the following question:
     \centering
     \begin{tabular}{|c|c|c|}\hline
         \textbf{Prompt type} & \textbf{Llama 2 7B} & \textbf{Llama 3 8B} \\ \hline
-        No definitions & 0.198 & 0.479 \\ \hline
-        Normal  & 0.748 & 0.769 \\\hline
-        Long & 0.688 & 0.740  \\ \hline
+        No definitions & $0.198$ & $0.479$ \\ \hline
+        Normal  & $0.748$ & $0.769$ \\\hline
+        Long & $0.688$ & $0.740$  \\ \hline
     \end{tabular}
-    \caption{F1 score on test set from fine-tuning Llama 2 7B and 3 8B on different types of prompt}
+    \caption{F1 score on test set from fine-tuning Llama 2 7B and 3 8B on different types of prompt after $1000$ training steps.}
+    \label{table:long_normal_description}
 \end{table}
 
-The results show that without an explanation of the classes, the model fails, achieving roughly random accuracy. WHICH EPOCH ARE THESE RESULTS FORMATINGG
+The results on a hold-out test set show that without an explanation of the classes, the Llama 2 model fails, achieving roughly random accuracy, whereas the Llama 3 model performs significantly better but still well under the performance with the class descriptions.
 
-Interestingly the results also show that the extended prompt (WHERE TO LINK THIS) also exhibited poorer performance. This could be due to the fact that it contained more redundant information which is 
+I also experimented with a longer, more detailed prompt\footnote{For the long version, see \ref{quote:long_prompt}.}, and interestingly the results also show that the extended prompt also exhibited poorer performance. This could be due to the fact that the model has limited memory capacity and, since the prompt contained more redundant information, it "forgets" important parts of the description at the beginning. 
 
 \subsubsection*{Quantitative analysis of results}
 
@@ -93,113 +93,114 @@ Interestingly the results also show that the extended prompt (WHERE TO LINK THIS
     \centering
     \begin{tabular}{|c|c|c|c|c|}\hline
         \textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\ \hline
-        Performance & 0.90 & 0.56 & 0.69 & 16\\ \hline
-        State & 0.00 & 0.00 & 0.00 & 2\\\hline
-        Activity & 0.88 & 0.58 & 0.70 & 12\\\hline
-        Endeavour & 0.50 & 0.50 & 0.50 & 4\\\hline
-        Habitual & 0.76 & 1.00 & 0.86 & 37\\ \hline \hline
-        \textbf{Accuracy} &  &  & 0.77 & 71 \\ \hline
-        \textbf{Macro Avg.} & 0.61  & 0.53 & 0.55 & 71 \\ \hline
-        \textbf{Weighted Avg.} & 0.77  & 0.77 & 0.75 & 71 \\ \hline
-
+        \textsc{Performance} & $0.90$ & $0.56$ & $0.69$ & $16$\\ \hline
+        \textsc{State} & $0.00$ & $0.00$ & $0.00$ & $2$\\\hline
+        \textsc{Activity} & $0.88$ & $0.58$ & $0.70$ & $12$\\\hline
+        \textsc{Endeavor} & $0.50$ & $0.50$ & $0.50$ & $4$\\\hline
+        \textsc{Habitual} & $0.76$ & $1.00$ & $0.86$ & $37$\\ \hline \hline
+        \textbf{Accuracy} &  &  & $0.77$ & $71$ \\ \hline
+        \textbf{Macro Avg.} & $0.61$  & $0.53$ & $0.55$ & $71$ \\ \hline
+        \textbf{Weighted Avg.} & $0.77$  & $0.77$ & $0.75$ & $71$ \\ \hline
     \end{tabular}
-    \caption{Results on test set from fine-tuning Llama 2 on UMR aspect classes without upsampling. (UPDATE FORMATINGG!!!!!)}
+    \caption{Results on test set from fine-tuning Llama 2 on UMR aspect classes without upsampling.}
+    \label{llama_results_no_upsampling}
 \end{table}
-\label{llama_results_no_upsampling}
+
 
 \begin{table}
     \centering
     \begin{tabular}{|c|c|c|c|c|}\hline
         \textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\ \hline
-        Performance & 0.78 & 0.88 & 0.82 & 16\\ \hline
-        State & 1.00 & 0.75 & 0.86 & 8\\\hline
-        Activity & 1.00 & 0.56 & 0.71 & 9\\\hline
-        Endeavour & 0.89 & 0.62 & 0.73 & 13\\\hline
-        Habitual & 0.81 & 0.97 & 0.88 & 39\\ \hline \hline
-        \textbf{Accuracy} &  &  & 0.84 & 85 \\ \hline
-        \textbf{Macro Avg.} & 0.90  & 0.75 & 0.80 & 85 \\ \hline
-        \textbf{Weighted Avg.} & 0.85  & 0.84 & 0.83 & 85 \\ \hline
+        \textsc{Performance} & $0.78$ & $0.88$ & $0.82$ & $16$\\ \hline
+        \textsc{State} & $1.00$ & $0.75$ & $0.86$ & $8$\\\hline
+        \textsc{Activity} & $1.00$ & $0.56$ & $0.71$ & $9$\\\hline
+        \textsc{Endeavor} & $0.89$ & $0.62$ & $0.73$ & $13$\\\hline
+        \textsc{Habitual} & $0.81$ & $0.97$ & $0.88$ & $39$\\ \hline \hline
+        \textbf{Accuracy} &  &  & $0.84$ & $85$ \\ \hline
+        \textbf{Macro Avg.} & $0.90$  & $0.75$ & $0.80$ & $85$ \\ \hline
+        \textbf{Weighted Avg.} & $0.85$  & $0.84$ & $0.83$ & $85$ \\ \hline
 
     \end{tabular}
-    \caption{Results on test set from fine-tuning Llama 2 on UMR aspect classes with upsampling. (UPDATE FORMATINGG!!!!!)}
+    \caption{Results on test set from fine-tuning Llama 2 on UMR aspect classes with upsampling.}
 \end{table}
 \label{llama_results_upsampling}
 
-The models seemed to learn the aspect classes relatively well, and it is clear that in general, manual upsampling improved results across the board, as is to be expected. However, the comparison of this result to the one on the model trained without upsampled data should be taken with a grain of salt, since the testing set also included some upsampled data (as there were not enough of some classes - mostly habituals - to make it a fair test), which are by design more prototypical and thus "easier" than the natural data. Nevertheless, this result taken as a standalone one shows that the model was capable of recognising occurrences of the five UMR aspect classes with relatively high accuracy.
+The models seemed to learn the aspect classes relatively well, and it is clear that in general, manual upsampling improved results across the board, as is to be expected. However, the comparison of this result to the one without upsampled data should be taken with a grain of salt, since the testing set also included some upsampled data (as there were not enough of some classes - mostly habituals - to make it a fair test), which are by design more prototypical and thus "easier" than the natural data. Nevertheless, this result taken as a standalone one shows that the model was capable of recognising occurrences of the five UMR aspect classes with relatively high accuracy.
 
-\subsection{(Manual!!) Ambiguity annotation}
+\subsection{Manual ambiguity annotation}
 \label{sect:manual_amb_annotation}
-Since there are no existing datasets for aspectual ambiguity, I decided to annotate the training data I created for the Llama model. This means that I end up with a database of ambiguous sentences which can later be used for testing. This is a relatively hard task for annotation since it is rather open-ended (with $\sum_{i=1}^{5} \binom{5}{i}=31$ different possible annotations for a verb-sentence pair), and the interpretation of aspect is often rather a subjective process.
+Since there are no existing datasets for aspectual ambiguity within this classification framework, I decided to annotate the training data I created for the Llama model. This means that I end up with a database of ambiguous sentences which can later be used for testing. This is a relatively hard task for annotation since it is rather open-ended (with $\sum_{i=1}^{5} \binom{5}{i}=31$ different possible annotations for a verb-sentence pair), and the interpretation of aspect is often a rather subjective process.\footnote{This is evidenced by the often low inter-annotator agreement. For example, \citet{Friedrich2014AutomaticPO} found a Cohen's observed unweighted $\kappa$ of between $0.6$ and $0.7$ on a two-way classification task.}
 
-The annotation was done by an English native-speaker with a background in philosophy and myself. The annotators were given a detailed description of the UMR classes and asked to assign a class to each sentence-verb pair. If several readings were possible, the annotators were asked to write down all possibilities, indicating an aspectually ambiguous sentence. The annotators were also given the possibility to indicate when they were unsure on a particular sentence. See \ref{App:annguide} for the exact annotation guidelines.
+The annotation was done by an English native-speaker with a background in philosophy, and me, also an English native speaker. The annotators were given a detailed description of the UMR classes and asked to assign a class to each sentence-verb pair. If several readings were possible, the annotators were asked to write down all possibilities, indicating an aspectually ambiguous sentence. See \ref{App:annguide} for the exact annotation guidelines.
 
-For example, the following sentence-verb pair was annotated as belonging to \texttt{State} and \texttt{Activity} classes and hence has an ambiguous aspectual reading:
+For example, the following sentence-verb pair was annotated by annotator 1 as belonging to \textsc{State} and \textsc{Activity} classes and hence has an ambiguous aspectual reading:
 
 \begin{exe}
-    \ex[] {The first footage from the devastated village showed a sea of mud covering what had been lush green valley farmland. \textbf{covering}}
+    \ex[] {The first footage from the devastated village showed a sea of mud \textbf{covering} what had been lush green valley farmland.}
 \end{exe}
 \label{ambigExampleSent}
 
-\subsubsection{(Manual!!) Annotation results}
+\subsubsection*{Manual annotation results}
 
 The results of the annotations can be seen in table \ref{table:annot_results}.
 
 \begin{table}
+    \centering
     \begin{tabular}{|c|c|c|c|c|}\hline
-        & \multicolumn{2}{|c|}{Annotator 1} & \multicolumn{2}{|c|}{Annotator 2} \\
-         & Absolute freq. & Proportion & Absolute freq. & Proportion  \\ \hline
-        Agreement with UMR\footnotemark & 202 & 0.706 & 202 & 0.706 \\ \hline
-        Several labels (ambiguous) & 71 & 0.248 & 71 & 0.248 \\\hline
-        Unsure & 28 & 0.098 & 28 & 0.098\\\hline
+        & \multicolumn{2}{|c|}{\textbf{Annotator 1}} & \multicolumn{2}{|c|}{\textbf{Annotator 2}} \\
+        \cline{2-5}
+        & Num. & \% & Num. & \%  \\ \hline
+        Contains the gold-standard class & $202$ & $0.7063$ & $203$ & $0.7098$ \\ \hline
+        Ambiguous & $71$ & $0.248$ & $122$ & $0.248$ \\ \hline
+        Ambiguous excluding \textsc{habitual}& $41$ & $0.1434$ & $18$ & $0.0629$ \\ \hline
     \end{tabular}
-    \footnotetext{This is defined as at least one of the classes labelled being the same as the class in the UMR dataset.}
-    \caption{Analysis of annotated data. GET FOOTNOTE TO WORK HERE!!! AND UPDATE FOR ANNOTATOR 2}
+
+    \vspace{2em}
+
+    \begin{tabular}{|c|c|}\hline
+        \textbf{Metric} & \textbf{Value} \\ \hline
+        IAA & $0.552$ \\ \hline
+        $\geq 1 \text{ class in common}$ & $0.745$ \\ \hline
+        Ambiguity IAA & $0.633$  \\ \hline
+    \end{tabular}
+    \caption{Analysis of annotated data.}
 \end{table}
 \label{table:annot_results}
 
-It was interesting to note that the majority of occurrences of the habitual class (30 out of 34 or 88\% AND WHAT FOR ANNOTATOR 2) were also annotated with other labels, empirically motivating the theory that habituality is located in a different level of aspectual distinction than the other classes. This is also reflected in the UMR aspect lattice (see figure \ref{fig:umr_aspect_tree}), where habituals are on the second highest level of the tree. 
+It was interesting to note that the majority of occurrences of the \textsc{habitual} class (30 out of 34 ($88.2\%$) for annotator 1 and 104 out of 105 ($99.0\%$) for annotator 2) were also annotated with other labels, empirically motivating the theory that habituality is located in a different level of aspectual distinction than the other classes. This is also reflected in the UMR aspect lattice (see figure \ref{fig:umr_aspect_tree}), where habituals are on the second-highest level of the tree. 
 
-Almost all (WHAT NUMBER) the sentence-verb pairs marked with several verb classes by annotator 1 were also marked as ambiguous by annotator 2, however only WHAT PERCENTAGE of those classified as ambiguous by the latter were seen as such by annotator 1. This causes a problem with 
+Since I had two annotators who can choose between $1$ and $5$ classes for each datapoint, I used the following formula to calculate the inter annotator agreement (IAA):
+$$IAA = \frac{1}{N}\sum_{i=1}^{N}\frac{|A_{i,1} \cap A_{i,2}|}{|A_{i,1} \cup A_{i,2}|}$$
+where $A_{i,j}$ is the set of labels decided by annotator $j$ for datapoint $i$. I also calculated what proportion of datapoints had at least one class shared by both annotators in the following way:
+$$\geq 1 \text{ class in common} = \frac{1}{N}\sum_{i=1}^{N}\mathbf{1}_{|A_{i,1} \cap A_{i,2}| \geq 1}$$
 
-(DIFFERENT SETUP NOW)This presents a problem in how to design the experiment set-up. Since we want to encourage the model to learn prototypical examples of aspect classes to make sure it is not overly confident on ambiguous datapoints, it would make sense to remove the datapoints labelled as having more than one class from training set. However, this would lead to the habitual class being almost non-existant in the dataset. One solution would be to leave them in labelled as habituals, but this would lead to WHAT WOULD IT LEAD TO
+The vast majority ($87.0\%$) of sentence-verb pairs marked with several verb classes by annotator 1 were also marked as ambiguous by annotator 2, however only $69.9\%$ of those classified as ambiguous by the latter were seen as such by annotator 1. This indicates that annotator 2 had interpreted a broader definition of the classes, meaning there were more cases where several labels were possible. However, this causes a problem when deciding which labels to use. One possibility would be to take the class as $+$\textsc{ambiguous} where both annotators agree on it being ambiguous, however this would lead to an even smaller dataset where the different class interpretations of both annotators are confounded, which could therefore perhaps harm performance. The other possibility is just to take the annotations of one of the annotators, and I settled for this option, taking those of annotator 1. This is because, since ambiguity is already hard to recognise and define, I wanted to ensure a more constricted definition of aspectual ambiguity, as seems statistically to be the case for annotator 1.
 
-I therefore chose to keep datapoints which are 
-
-\subsubsection{Consequences for aspectology}
-Habitual on a different level
+DO WE KEEP HABITUALS?????
 
 \subsection{Larger dataset}
-In order to fine-tune the smaller model, a larger dataset is needed than the 209 sentences in the UMR example dataset. The only requirements for this larger dataset are that it is representative, clean and has enough exmaples to train the smaller model. It would also be an advantage if it is a sentence-aligned multilingual corpus, since this would make it possible to test the performance of a multilingual model in other languages where there are no labelled data from the Llama model. 
+In order to fine-tune the smaller model, a larger dataset is needed than the 209 sentences in the UMR example dataset. The only requirements for this larger dataset are that it is clean and has enough examples to train the smaller model. It would also be an advantage if it is a word-aligned multilingual corpus, since this would make it possible to extract the corresponding verb in another language and assign it the label assigned to the English verb. Thus, we can test the performance of a multilingual model in other languages where there are no labelled data from the Llama model. 
 
-WHY DID WE TAKE OUT HABITUAL? AND NOT ITERATIVE??
-
+The requirement of the corpus being word-aligned narrows down the options considerably, and for ease of use I therefore chose one of the default corpora offered in NLTK \citep{bird2009natural}: \hyperlink{https://cordis.europa.eu/project/id/23845/reporting}{COMTRANS}, which primarily consists of news articles and legal documents. 
 
 \section{Aspect classification}
 
-\subsection{BERT fine-tuning}
-Due to their size (and the subsequent large amount of data stored in the parameters), it is hard to carry out probing on LLMs, and, due the fact that they appeared recently, there has been less time to develop probing techniques, hence I decided to train a smaller model of the BERT \citep{devlin2019bert} family. These require more data to fine-tune than LLMs, and hence I used the fine-tuned Llama model to generate more training data in a technique known as knowledge distillation (KD). Knowledge distillation involves using a larger 'teacher' model to train a smaller 'student' model, often reaching the same or similar accuracy with a significantly smaller model. While not being able to probe the larger Llama model, smaller models are still an interesting artefact to consider and 
+\subsection{Smaller LM fine-tuning}
+Due to their size (and the subsequent large amount of data stored in the parameters), it is hard to carry out probing on LLMs, and, due the fact that they appeared recently, there has been less time to develop probing techniques, hence I decided to train a smaller model of the BERT \citep{devlin2019bert} family. These require more data to fine-tune than LLMs, and hence, as described above, I used the fine-tuned Llama model to generate more training data in a technique known as knowledge distillation (KD). Knowledge distillation involves using a larger 'teacher' model to train a smaller 'student' model, often reaching the same or similar accuracy with a significantly smaller model. 
 
-Furthermore, the complexity of larger LMs (especially those trained for generation rather than sequence classification (CHECK THIS!!!!)) means that their embedding space is noisier than smaller models that have been fine-tuned. This makes it harder to do the sort of probing described in later in this chapter.
-
-
-\subsection{Aspect latent space}
-Figure \ref{fig:fine-tuned_aspect_latent_space} provides a visualization of the \texttt{[CLS]} token embedding of verb-sentence pairs in the training set, together with their aspect label, from which several interesting observations can be made. For instance, it is interesting to note the positioning of \texttt{habitual} instances between \texttt{state} and \texttt{activity}, which accurately captures their semantics as somewhere between the more generic, non-episodic state and activities, denoting "an event [that] has not necessarily ended and may be ongoing at Document Creation Time (DCT)" \citep{umr}.
+\subsubsection{Aspect latent space}
+Figure \ref{fig:fine-tuned_aspect_latent_space} provides a visualisation of the \texttt{[CLS]} token embedding of verb-sentence pairs in the training set of a monolingual BERT model after fine-tuning, together with their aspect label, from which several interesting observations can be made. For instance, it is interesting to note the positioning of \textsc{habitual} instances between \textsc{state} and \textsc{activity}, which accurately captures their semantics as somewhere between the more generic, non-episodic state and activities, denoting "an event [that] has not necessarily ended and may be ongoing at Document Creation Time (DCT)" \citep{umr}.
 
 \begin{figure}
     \includegraphics[width=\textwidth]{img/aspect_latent_space.jpeg}
-    \caption{\texttt{[CLS]} embedding space of a BERT model fine-tuned on English verbs annotated for aspect in context, reduced to 2 dimensions by t-SNE.}
+    \caption[BERT aspect latent space]{\texttt{[CLS]} embedding space of a BERT model fine-tuned on English verbs annotated for aspect in context, reduced to 2 dimensions by t-SNE.}
     \label{fig:fine-tuned_aspect_latent_space}
 \end{figure}
 
-
 \subsection{Multilingual BERT fine-tuning}
-Since the LLM annotator Llama 3 can only be used in English, it is only possible to make training data in English. Luckily, however, there are multilingual models which can be trained with data using one language and then be used with languages other than that of the training data. I wanted to verify the performance of different models transferred to other languages and therefore needed a way of obtaining target labels for languages other than English.
+Since the LLM annotator Llama 3 can only reliably be used in English, it is only possible to make training data in English. Luckily, however, there are multilingual models which can be trained with data using one language and then be used with languages other than that of the training data at inference stage. I wanted to verify the performance of different models transferred to other languages and therefore needed a way of obtaining target labels for languages other than English.
 
-I therefore trained a WHICH MODEL using WHICH DATASET annotated by the fine-tuned Llama 3 model and applied. The choice for this particular dataset was the availability of word-level alignments, a rarity in parallel corpora (IS THIS TRUE), meaning once a verb has been identified in the English sentence and given a particular aspect class, it is easy to find the corresponding verb in the other language. I only included sentences where the corresponding word in the other language is also a verb, since I wish to focus on verb phrases rather than general event classification.
-
-In order to check the performance of this 
-
-Get results in English and results in French
+I therefore trained several models in English using the COMTRANS dataset annotated by the fine-tuned Llama 3 model and tested them both on an English hold-out test set and on a French one. The results, shown in \ref{tab:performance}, demonstrate that the models were all able to perform inference on French aspect without ever having seen any French training data, but that there was a performance drop between the languages, which is to be expected. On all metrics both in English and French, the \texttt{xlm-roberta-base} model outperformed all other models by a significant amount, and I therefore chose to use this model in the following experiments. 
 
 \begin{table}[h!]
     \centering
@@ -209,23 +210,23 @@ Get results in English and results in French
     \cmidrule(r){2-3} \cmidrule(r){4-5}
      & \textbf{F1 (best)} & \textbf{Acc} & \textbf{F1} & \textbf{Acc} \\
     \midrule
-    \texttt{bert-base-multilingual-uncased} & 0.640 & 0.791 & 0.452 & 0.587 \\
-    \texttt{bert-base-multilingual-cased}   & 0.647 & 0.790 & 0.450 & 0.572 \\
-    \texttt{xlm-roberta-base}               & \textbf{0.665} & \textbf{0.813} & \textbf{0.522} & \textbf{0.651} \\
-    \texttt{xlm-roberta-large}              & 0.647 & 0.797 & 0.447 & 0.629 \\
+    \texttt{bert-base-multilingual-uncased} & $0.640$ & $0.791$ & $0.452$ & $0.587$ \\
+    \texttt{bert-base-multilingual-cased}   & $0.647$ & $0.790$ & $0.450$ & $0.572$ \\
+    \texttt{xlm-roberta-base}               & $\mathbf{0.665}$ & $\mathbf{0.813}$ & $\mathbf{0.522}$ & $\mathbf{0.651}$ \\
+    \texttt{xlm-roberta-large}              & $0.647$ & $0.797$ & $0.447$ & $0.629$ \\
     \bottomrule
     \end{tabular}
     \caption{Model performance on English and French test sets after training on English training set.}
     \label{tab:performance}
-    \end{table}
+\end{table}
 
-Hence, it is clear that the result is worse than in English, as is to be expected, however still significantly higher than chance.
+\subsubsection{Telicity classification of motion verbs}
+In many Slavic languages, 
 
-\subsubsection{Russian aspect system}
-As explained in \ref{sec:asp_in_slav_lang}
-
-
-\subsubsection{Verb of motion clustering}
+- MVs have telic and atlic versions
+- less explicit in Germanic languages such as German
+- 
+GERMAN? RUSSIAN?
 Unlike in English, almost all Russian imperfective verbs of motion have both a telic and an atelic counterpart. The former is used to describe a motion with a destination \ref{sent:telic_mv}, the latter for one without \ref{sent:atelic_mv}.
 
 \begin{exe}
@@ -235,19 +236,25 @@ Unlike in English, almost all Russian imperfective verbs of motion have both a t
     \label{sent:atelic_mv}
 \end{exe}
 
+A qualitative analysis showed that the multilingual model, on the whole, seemed to be able to identify these two different scenarios, such as the one shown in \ref{tab:russian_mot_verb_outputs}. Here it is clear that the first example, which could be translated into English as "I was walking to school", was correctly identified as an \textsc{endeavor} (since the goal \emph{school} was not necessarily reached), and also its perfective counterpart in the second example "I walked to school" as \textsc{performance}. Equally, the class of \textbf{atelic imperfectives} was correctly classified as \textsc{activity}. However, it seemed to struggle with the semantics of the perfectivising \emph{po-} prefix, which often denotes doing an action for a short amount of time and then stopping again (i.e. boundedness), though it must be noted that the probability for \textsc{endeavor} in this example was also relatively high ($30.7\%$ compared to $68.6\%$ for \textsc{activity}).
+
 \begin{table}[h!]
     \centering
     \begin{tabular}{lllll}
-    \textbf{Telic imperfective:} & Ja \emph{šel} v školu. &$\rightarrow $& \textsc{endeavour} & \checkmark\\
+    \textbf{Telic imperfective:} & Ja \emph{šel} v školu. &$\rightarrow $& \textsc{endeavor} & \checkmark\\
     \textbf{Telic perfective:} & Ja \emph{pošel} v školu. & $\rightarrow$ & \textsc{performance}  & \checkmark\\
-    \textbf{Atelic imperfective:} & Ja \emph{guljal} po parku. & $\rightarrow$& \textsc{activity} & \checkmark\\
-    \textbf{Atelic perfective:} & Ja \emph{poguljal} po parku. & $\rightarrow$& \textsc{activity} & ?\\
+    \textbf{Atelic imperfective:} & Ja \emph{chodil} po parku. & $\rightarrow$& \textsc{activity} & \checkmark\\
+    \textbf{Atelic perfective:} & Ja \emph{pochodil} po parku. & $\rightarrow$& \textsc{activity} & ?\\
     \end{tabular}
     \caption{Model output of 3 example Russian sentences with motion verbs.}
     \label{tab:russian_mot_verb_outputs}
 \end{table}
 
-In UMR, events with no end goal are PROTOTYPISED? by activity, whereas telic events reaching completion are annotated with \texttt{performance}. We can verify that the model also makes this distinction HOW.
+In order to verify this qualitatively, I carried out the following experiment
+
+As already explained, German motion verbs do not have such an overt marking for telicity, and hence the acceptability of each verb is judges individually. 
+
+HERWEG AND WHO studied the acceptability of HOW MANY Germany verbs of motion in directional, local and temporal EXPLAIN THIS settings. I wanted to see how well these acceptability judgements correlate with the model predictions. HOW DID I DO THIS. 
 
 this empirically using the 
 
@@ -352,14 +359,16 @@ Using this we can
 \end{table}
 
 
-\subsubsection{Prefix clustering}
-An interesting application of this fine-tuned model is the 
+\subsubsection{A look at Russian verbal prefixes}
+Another experiment I carried out with the fine-tuned multilingual model is to look at whether I can find empirical evidence that some verbal prefixes in Russian have a tendency towards certain aspect classes due to their semantics, as has been suggested by theoretical works \citep{0a0c5a60-a736-3226-b927-03ba8af4fd75, dickey2000parameters}, beyond the more trivially identified binary Slavic perfective/imperfective parameter.
 
-ADD T-TEST FORMULA HERE
+In order to test the significance of my findings I use the statistical t-test, which is used to determine whether the mean of two groups is significantly different and by how much. The formula is the following:
 
-The probability of verbs with a prefix ($n=3489; \sigma = 0.3298; \mu = 0.1425$) being classified as the \textsc{state} class was lower than verbs without a prefix ($n=2473; \sigma = 0.4570; \mu = 0.3987$) by a statistically significant amount ($t = -25.1392; p < 1.3e-132$). This was also the case for the \textsc{activity} class, albeit by a much lesser degree ($t=-0.2841; p < 7.5e-2$). As can be seen in \ref{fig:fine-tuned_aspect_latent_space}, the opposite is also true for the \textsc{performance} class ($t=19.4150$), also with very high significance ($p<1.9e-081$). The differences between the \textsc{habitual} and \textsc{endeavour} classes was not significant.
+$$t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
 
-This corroborates WHAT
+where $\bar{x}_1$ and $\bar{x}_2$ are sample means, $s_1^2$ and $s_2^2$ are sample variances, and $n_1$ and $n_2$ are the sample sizes.
+
+The probability of verbs with a prefix ($n=3489; \sigma = 0.3298; \mu = 0.1425$) being classified as the \textsc{state} class was lower than verbs without a prefix ($n=2473; \sigma = 0.4570; \mu = 0.3987$) by a statistically significant amount ($t = -25.1392; p < 1.3\times 10^{-132}$). This was also the case for the \textsc{activity} class, albeit by a much lesser degree ($t=-0.2841; p < 7.5\times 10^{-2}$). As can be seen in \ref{fig:fine-tuned_aspect_latent_space}, the opposite is also true for the \textsc{performance} class ($t=19.4150$), also with very high significance ($p<1.9\times 10^{-81}$). The differences between the \textsc{habitual} and \textsc{endeavour} classes was not significant. This corroborates previous work that morphologically more complex, and thus usually semantically more complex, verbs are more likely to refer to a telic event (cf. English phrasal verbs transitioning from stative to dynamic, such as \emph{sit} and \emph{sit up} or \emph{see} and \emph{see in/off}) \citep{iacobini_ital_phrasal_verbs, wee_wrtched_words_article, Walková+2017+589+616, telicity_parameter_revisited}.
 
 \begin{figure}
     \includegraphics[width=\textwidth]{img/aspect_prediction_by_prefix.png}
@@ -367,18 +376,19 @@ This corroborates WHAT
     \label{fig:fine-tuned_aspect_latent_space}
 \end{figure}
 
-Let's take the example of the prefixes \emph{pro-} (FIND OUT HOW TO ADD RUSSIAN HERE) and \emph{pere-}. While both meaning "through", they both emphasise different parts of the action. While \emph{pere-} simply implies that the "inceptive" and "terminal" limits of the domain being crossed have been traversed, \emph{pro-} puts emphasis on the action inside the domain and on the duration of this traversal \citep{0a0c5a60-a736-3226-b927-03ba8af4fd75}. This theoretical hypothesis is validated by the results here, with verbs beginning with \emph{pro-} exhibiting being classed significantly more often as \textsc{activity} ($t=3.2400; p<0.0014$).
+We can also look at a more specific example, taking the two prefixes \emph{pro-} and \emph{pere-}. While both meaning "through", they both emphasise different parts of the action. While \emph{pere-} simply implies that the "inceptive" and "terminal" limits of the domain being crossed have been traversed, \emph{pro-} puts emphasis on the action inside the domain and on the duration of this traversal \citep{0a0c5a60-a736-3226-b927-03ba8af4fd75}. This theoretical hypothesis is validated by the results here, with verbs beginning with \emph{pro-} exhibiting being classed significantly more often as \textsc{activity} ($t=3.2400; p<0.0014$) and less often as \textsc{performance} ($t=-2.5284; p<0.0121$).
 
-both prefixes showing a significant difference in the 
+These findings provide empirical support for the notion that the semantics of verbal prefixes in Russian influence their aspectual classification, corroborating theoretical claims about their role in aspectual distinctions beyond the binary perfective/imperfective parameter. It must be noted that this is a rather coarse-grained approach, which misses a lot of crucial information\footnote{For example that prefix groups can contain subgroups which act differently and cancel each other out on the macro scale, cf. \citet{Janssen2012ADO}}, but the aim of this study is to discern and/or validate general tendencies in the behaviour of prefixes, rather than a more nuanced look at the verbs case by case, which lies more in the field of interest of theoretical linguistics.
 
 \section{Aspectual ambiguity}
 \subsection{Sentence-level ambiguity}
 DOES ENTROPY CORRELATE WITH AMBIGUITY PREDICTION??
-It is well known that LMs are often too confident of their predictions, even when wrong INSERT CITATION HERE
+It is well known that LMs are often too confident of their predictions, even when wrong \citep{friedrich-etal-2023-kind, } OTHER CITATIONS HERE.
 
 The first question that is interesting to ask (CHANGE DIESE FORMULIERUNG) is whether there is a correlation between the uncertainty of the aspect classification model and the output of the aspect ambiguity model, i.e. does a (supposed) ambiguous aspect reading of a sentence-verb pair correlate with uncertainty in the former's output. In order to quantify I take the concept of entropy and apply it to this case with the following formula:
-
-$$H_{aspect} = - \sum_{i=1}^{\#AspClass}p(x_i)log(p(x_i))$$
+\begin{equation} \label{equation:aspect_entropy}
+    H_{aspect} = - \sum_{i=1}^{\#AspClass}p(x_i)log(p(x_i))
+\end{equation}
 
 In this way, higher uncertainty (i.e. a more balanced probability across all classes) leads to a higher $H_{aspect}$ value. It must be noted that this value is not comparable with models outputting a different number of classes (such as the traditional Vendlerian classification with 4), or indeed with different aspect classification systems (IS THIS TRUE??), however it serves the purpose for use to compare between languages (REWORD).
 
@@ -395,14 +405,43 @@ where:
     \item $n$ is the total number of observations
 \end{itemize}
 
-I found that the model entropy value had a \emph{medium}\footnote{According to Cohen's interpretation of Pearson's correlation \citep{cohen1988spa}} correlation of $\rho = 0.3465$ ($p < 0.0006$) with the upsampled ambiguity data derived from the human annotations. This is an encouraging result, especially the significance, however the correlation is not particularly high, and we should expect this value to be even lower for languages other than English, which sadly decreases the reliability of any conclusions taken from using the entropy value of this model. Furthermore, there was no correlation with the annotations of the fine-tuned LLM ($\rho = 0.0028; p < 0.85$), which is a disappointing result. 
+I found that the model entropy value had a \emph{medium}\footnote{According to Cohen's interpretation of Pearson's correlation \citep{cohen1988spa}} correlation of $\rho = 0.3465$ ($p < 0.0006$) with the upsampled ambiguity data derived from the human annotations. This is an encouraging result, especially the significance, however the correlation is not particularly high, and we should expect this value to be even lower for languages other than English, which sadly decreases the reliability of any conclusions taken from using the entropy value of this model. Furthermore, there was no correlation with the annotations of the fine-tuned LLM ($\rho = 0.0028; p < 0.85$), which is a disappointing result.
 
-Nevertheless, while this correlation with human is too small to lead to meaningful results on the level of individual datapoints, with a large enough sample size we can still use this to find general tendencies on the macro level, such as at language level.
+Nevertheless, while this correlation with human is probably too small to lead to truly meaningful results on the level of individual datapoints, with a large enough sample size we can still use this to find general tendencies on the macro level, such as at language level.
 
-\subsection{Verb-level ambiguity (TAKE OUT?)}
+\subsection{Verb-level ambiguity (coercion / underspecification?)}
 
 \subsection{Language-level ambiguity: Cross-linguistic comparison}
 
-In order to compare between languages, it is first necessary to find a corpus available in the all the languages I wish to compare, if not parallel then with at least similar texts. To this end I decided to use TED2013 IS THIS TRUE???? corpus
+In order to compare between languages, it is first necessary to find a corpus available in the all the languages I wish to compare, if not parallel then with at least similar texts (so called \emph{comparable} corpora). To this end I decided to use TED2013 \citep{tiedemann-2012-parallel} and TED2020 \citep{reimers2020makingmonolingualsentenceembeddings}, which are openly available corpora comprising of TED talks translated into different languages.
 
-Since I am comparing verbal ambiguity, I wished to 
+Since I am comparing verbal ambiguity, I first extracted the verbs from the sentences, as I did previously, and hence compiled a list of 10,000 verbs in context for each language. I then ran inference on these verbs alone (without context) and calculated the mean aspect entropy, defined in \ref{equation:aspect_entropy}. TED2013 has 11 languages which are also supported by Stanza (for the verb extraction), and TED2020 has 32. The results for each language in TED2013 are shown in \ref{fig:lang_level}, and those from TED2020 are grouped by language family in \ref{fig:lang_level_2020}. From both graphics it is clear that, with the exception of Greek and Chinese, Slavic languages have consistently lower language-level verbal aspect entropy values. This is to be expected considering the overt lexicomorphological marking of aspect discussed in \ref{sec:asp_in_slav_lang}.
+
+The fact that Vietnamese had the highest entropy of the languages surveyed is unsurprising, given the fact that Vietnamese verbs do not mark for tense or aspect, but rather this information is given by the context.
+
+Greek also has a perfective/imperfective system with two different stems CHECK WORDING HERE.
+
+Arabic also encodes tense in 
+
+Finnish - rich verb morphology (contrast to Vietnamese), similarly to Slavic languages
+
+For the exact values, see \ref{App:lang_level_entropy_TED}.
+
+Do statistics test (t-test)!!
+
+\begin{landscape}
+    % Second figure
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{img/lang_level.jpeg}
+        \caption{Look at this graph}
+        \label{fig:lang_level}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{img/lang_level_2020.jpeg}
+        \caption{DESCRIPTION. The grey bars represent the mean entropy of each language family.}
+        \label{fig:lang_level_2020}
+    \end{figure}
+\end{landscape}
